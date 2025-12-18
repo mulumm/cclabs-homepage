@@ -115,8 +115,8 @@ const PatentDetail = ({ patentTitle, onBack }: PatentDetailProps) => {
 
         {/* 특허 상세 정보 카드 */}
         <div className="group relative bg-[#151b2b] rounded-3xl p-8 md:p-12 border border-white/5">
-          {/* 제목 */}
-          <h1 className="text-4xl md:text-4xl font-bold text-white mb-8 text-justify leading-tight">
+          {/* 제목 - 수정됨: text-justify -> text-left */}
+          <h1 className="text-4xl md:text-4xl font-bold text-white mb-8 text-left leading-tight">
             {patent.title}
           </h1>
 

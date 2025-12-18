@@ -100,6 +100,7 @@ const PeopleDetail = ({ personId, onBack }: PeopleDetailProps) => {
           <div className="md:col-span-2 sticky top-40">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-b from-[#4dabf7]/20 to-transparent rounded-[2rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+              {/* 수정됨: aspect-[4/5]를 aspect-[2/3]으로 변경 */}
               <div className="relative aspect-[4/5] w-full bg-[#1a2133] rounded-[1.5rem] overflow-hidden border border-white/10 shadow-2xl">
                 {imagePath ? (
                   <img
