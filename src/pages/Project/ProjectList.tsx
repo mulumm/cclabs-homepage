@@ -110,11 +110,13 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
 
         {/* Search Section */}
         <div className="mb-8 flex flex-col sm:flex-row gap-4 items-center">
+            {/* 드롭다운 영역 */}
             <div className="relative w-full sm:w-48" ref={dropdownRef}>
                 <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="w-full bg-[#151b2b] border border-white/10 rounded-lg px-4 py-2 text-white flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
+                    // [수정] 배경색(!bg-[#151b2b])과 텍스트(!text-white) 강제 고정
+                    className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg px-4 py-2 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 >
                     <span>
                         {SEARCH_CATEGORIES.find(c => c.key === searchCategory)?.label}
@@ -123,7 +125,8 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                 </button>
 
                 {isDropdownOpen && (
-                    <div className="absolute z-10 top-full mt-2 w-full bg-[#1c2436] border border-white/10 rounded-lg shadow-lg overflow-hidden">
+                    // [수정] 드롭다운 메뉴 배경(!bg-[#1c2436]) 및 z-index(z-50) 설정
+                    <div className="absolute z-50 top-full mt-2 w-full !bg-[#1c2436] border border-white/10 rounded-lg shadow-xl overflow-hidden">
                         <ul className="py-1">
                             {SEARCH_CATEGORIES.map(({ key, label }) => (
                                 <li key={key}>
@@ -133,7 +136,12 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                                             setSearchCategory(key);
                                             setIsDropdownOpen(false);
                                         }}
-                                        className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 ${searchCategory === key ? 'bg-[#4dabf7] text-[#0f1420]' : 'text-gray-200 hover:bg-[#4dabf7]/20'}`}
+                                        // [수정] 항목 배경 투명(!bg-transparent) -> hover 시 색상 변경 로직 적용
+                                        className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 
+                                            ${searchCategory === key 
+                                                ? '!bg-[#4dabf7] !text-[#0f1420] font-medium' 
+                                                : '!bg-transparent !text-gray-200 hover:!bg-[#252f45] hover:!text-white'
+                                            }`}
                                     >
                                         {label}
                                     </button>
@@ -153,7 +161,8 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                     placeholder={`'${SEARCH_CATEGORIES.find(c => c.key === searchCategory)?.label}'에서 검색...`}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full bg-[#151b2b] border border-white/10 rounded-lg pl-10 pr-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
+                    // [수정] input 배경(!bg-[#151b2b]) 강제 고정
+                    className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg pl-10 pr-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 />
             </div>
         </div>
@@ -173,7 +182,8 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
               <button 
                 key={p.title + idx} 
                 onClick={() => setSelected(p.title)}
-                className="w-full text-left group relative bg-[#151b2b] rounded-2xl p-6 md:p-8 border border-white/5 hover:border-[#4dabf7]/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/20"
+                // [수정] 리스트 아이템 배경(!bg-[#151b2b]) 강제 고정
+                className="w-full text-left group relative !bg-[#151b2b] rounded-2xl p-6 md:p-8 border border-white/5 hover:border-[#4dabf7]/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/20"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                   
@@ -190,7 +200,8 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                       )}
                     </div>
                     
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-[#4dabf7] transition-colors truncate pr-4">
+                    {/* [수정] 제목 텍스트 색상(!text-white) 강제 고정 */}
+                    <h3 className="text-xl md:text-2xl font-bold !text-white mb-2 group-hover:!text-[#4dabf7] transition-colors truncate pr-4">
                       {p.title}
                     </h3>
                     

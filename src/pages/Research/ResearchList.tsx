@@ -96,7 +96,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
   }
 
   return (
-    // style={{ colorScheme: 'dark' }} : 브라우저가 강제로 라이트 모드 스타일(흰 배경 등)을 입히는 것을 방지
     <div 
       className="w-full bg-[#0f1420] pt-32 pb-24 min-h-screen text-white"
       style={{ colorScheme: 'dark' }} 
@@ -122,12 +121,13 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
 
         {/* Search Section */}
         <div className="mb-8 flex flex-col sm:flex-row gap-4 items-center">
+            {/* 드롭다운 영역 */}
             <div className="relative w-full sm:w-48" ref={dropdownRef}>
                 <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    // !bg-[#151b2b] : 느낌표(!)를 사용하여 외부 스타일보다 우선순위를 높임
-                    className="w-full !bg-[#151b2b] border border-white/10 rounded-lg px-4 py-2 text-white flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
+                    // [수정] !bg-[#151b2b]와 !text-white로 배경과 글자색 강제 고정
+                    className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg px-4 py-2 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 >
                     <span>
                         {SEARCH_CATEGORIES.find(c => c.key === searchCategory)?.label}
@@ -136,7 +136,8 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                 </button>
 
                 {isDropdownOpen && (
-                    <div className="absolute z-10 top-full mt-2 w-full bg-[#1c2436] border border-white/10 rounded-lg shadow-lg overflow-hidden">
+                    // [수정] !bg-[#1c2436]로 드롭다운 박스 배경 강제 고정, z-index 50으로 상단 노출
+                    <div className="absolute z-50 top-full mt-2 w-full !bg-[#1c2436] border border-white/10 rounded-lg shadow-xl overflow-hidden">
                         <ul className="py-1">
                             {SEARCH_CATEGORIES.map(({ key, label }) => (
                                 <li key={key}>
@@ -146,7 +147,12 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                                             setSearchCategory(key);
                                             setIsDropdownOpen(false);
                                         }}
-                                        className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 ${searchCategory === key ? 'bg-[#4dabf7] text-[#0f1420]' : 'text-gray-200 hover:bg-[#4dabf7]/20'}`}
+                                        // [수정] !bg-transparent로 부모 배경 따르게 설정, hover 시에만 색상 변경
+                                        className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 
+                                            ${searchCategory === key 
+                                                ? '!bg-[#4dabf7] !text-[#0f1420] font-medium' 
+                                                : '!bg-transparent !text-gray-200 hover:!bg-[#252f45] hover:!text-white'
+                                            }`}
                                     >
                                         {label}
                                     </button>
@@ -166,7 +172,7 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                     placeholder={`'${SEARCH_CATEGORIES.find(c => c.key === searchCategory)?.label}'에서 검색...`}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    // !bg-[#151b2b] 및 !text-white로 강제 고정
+                    // [수정] input 배경도 !bg-[#151b2b]로 강제 고정
                     className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg pl-10 pr-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 />
             </div>
@@ -187,7 +193,7 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
               <button 
                 key={it.title + idx} 
                 onClick={() => setSelected(it.title)}
-                // !bg-[#121723] : 글로벌 스타일 오버라이딩 방지. 어두운 배경 고정.
+                // [수정] 리스트 아이템 배경도 !bg-[#121723]로 강제 고정
                 className="w-full text-left group relative !bg-[#121723] rounded-2xl p-6 md:p-8 border border-white/5 hover:border-[#4dabf7]/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/20"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -206,7 +212,7 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                       )}
                     </div>
                     
-                    {/* !text-white: 텍스트 색상도 강제로 하얀색 고정 */}
+                    {/* [수정] 제목 글자색 강제 고정 */}
                     <h3 className="text-xl font-bold !text-white mb-2 group-hover:!text-[#4dabf7] transition-colors line-clamp-2">
                       {it.title}
                     </h3>

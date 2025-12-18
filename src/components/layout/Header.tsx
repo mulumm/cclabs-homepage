@@ -16,8 +16,62 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
 
   const subMenus: { [key: string]: string[] } = {
     People: ['ADVISOR', 'ALUMNI', "MASTER'S STUDENTS", 'UNDERGRADUATE STUDENTS'],
-    Research: ['International Conference', 'International Journal','Korean Conference', 'Korean Journal'],
+    Research: ['International Conference', 'International Journal', 'Korean Conference', 'Korean Journal'],
     Project: ['GOVERNMENT PROJECT', 'INDUSTRY COLLABORATION'],
+  };
+
+  // [핵심] 텍스트 매핑 로직을 함수로 분리 (유지보수 용이성)
+  const mapToCanonical = (menu: string, subItem: string) => {
+    const lowered = subItem.toLowerCase();
+    if (menu === 'People') {
+      if (lowered.includes('alumni')) return 'Alumni';
+      if (lowered.includes('advisor')) return 'Advisor';
+      if (lowered.includes('master')) return "master's student";
+      if (lowered.includes('undergrad')) return 'undergraduate student';
+      return subItem;
+    }
+    if (menu === 'Research') {
+      if (lowered.includes('international') && lowered.includes('conference')) return 'International conference';
+      if (lowered.includes('international') && lowered.includes('journal')) return 'International journal';
+      if (lowered.includes('korean') && lowered.includes('conference')) return 'Korean academic conference';
+      if (lowered.includes('korean') && lowered.includes('journal')) return 'Korean journal';
+      return subItem;
+    }
+    if (menu === 'Project') {
+      if (lowered.includes('government')) return 'Government projects';
+      if (lowered.includes('industry')) return 'Industry Collaboration';
+      return subItem;
+    }
+    return subItem;
+  };
+
+  // [핵심] 네비게이션 통합 핸들러
+  const handleNavigation = (menu: MenuType, subItem?: string) => {
+    // 1. 페이지 변경 요청 (React State 업데이트)
+    onPageChange(menu);
+
+    // 2. URL Hash 설정 (페이지 내부 필터링용)
+    // subItem이 있으면 해당 필터로, 없으면(메인메뉴 클릭 시) 초기화
+    if (subItem) {
+      const canonical = mapToCanonical(menu, subItem);
+      window.location.hash = `#${menu.toLowerCase()}:${encodeURIComponent(canonical)}`;
+    } else {
+      // 서브메뉴 없이 메인 메뉴 클릭 시 해시를 초기화하거나 기본값으로 설정
+      // 예: #project: 로 설정하여 전체 목록을 보여주도록 유도
+      if (['People', 'Research', 'Project'].includes(menu)) {
+        window.location.hash = `#${menu.toLowerCase()}:`;
+      } else {
+        // News, Patent 등 필터가 없는 페이지는 해시 제거
+        window.history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // 3. UI 상태 정리
+    setHoveredMenu(null);
+    setIsMobileOpen(false);
+    
+    // 4. 강제 스크롤 상단 이동 (페이지 전환 시 스크롤이 아래에 남아있는 경우 방지)
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -26,9 +80,9 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
         <div className="flex justify-between items-center h-20">
 
           {/* 로고 영역 */}
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => onPageChange('Main')}>
+          <div className="flex-shrink-0 cursor-pointer" onClick={() => handleNavigation('Main')}>
             <img
-              src="/src/assets/cclab_icon.svg"
+              src="/cclab_icon.svg"
               alt="CCLAB"
               className="h-10 w-auto object-contain hover:opacity-90 transition-opacity"
             />
@@ -45,21 +99,7 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
                   onMouseLeave={() => setHoveredMenu(null)}
                 >
                   <button
-                    onClick={() => {
-                      try {
-                        // clear page-specific hash so main view opens (avoid lingering sub-selection)
-                        if (item === 'Project') {
-                          window.location.hash = '#project:';
-                        } else if (item === 'Research') {
-                          window.location.hash = '#research:';
-                        } else if (item === 'People') {
-                          window.location.hash = '#people:';
-                        }
-                      } catch {
-                        // ignore
-                      }
-                      onPageChange(item);
-                    }}
+                    onClick={() => handleNavigation(item)}
                     className={`
                       relative bg-transparent border-none p-0 cursor-pointer outline-none focus:outline-none focus:ring-0
                       text-sm font-medium tracking-wide transition-colors duration-200 uppercase
@@ -78,66 +118,18 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
                   {/* 드롭다운 메뉴 */}
                   {subMenus[item as keyof typeof subMenus] && hoveredMenu === item && (
                     <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-[#1a202c] border border-white/10 shadow-2xl min-w-[200px] py-2 rounded-b-lg">
-                      {subMenus[item as keyof typeof subMenus].map((subItem, index) => {
-                        // Map subItem text to canonical category used by each page
-                        const mapToCanonical = (menu: string, s: string) => {
-                          const lowered = s.toLowerCase();
-                          if (menu === 'People') {
-                            if (lowered.includes('alumni')) return 'Alumni';
-                            if (lowered.includes('advisor')) return 'Advisor';
-                            if (lowered.includes('master')) return "master's student";
-                            if (lowered.includes('undergrad')) return 'undergraduate student';
-                            return s;
-                          }
-                          if (menu === 'Research') {
-                            // normalize various labels to ResearchMain's categories
-                            if (lowered.includes('international') && lowered.includes('conference')) return 'International conference';
-                            if (lowered.includes('international') && lowered.includes('journal')) return 'International journal';
-                            if (lowered.includes('korean') && lowered.includes('conference')) return 'Korean academic conference';
-                            if (lowered.includes('korean') && lowered.includes('journal')) return 'Korean journal';
-                            // fallback: title-case
-                            return s;
-                          }
-                          if (menu === 'Project') {
-                            if (lowered.includes('government')) return 'Government projects';
-                            if (lowered.includes('industry')) return 'Industry Collaboration';
-                            return s;
-                          }
-                          return s;
-                        };
-
-                        const canonical = mapToCanonical(item, subItem);
-
-                        return (
-                          <div
-                            key={index}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              // navigate to parent page
-                              onPageChange(item);
-                              // write hash for page to pick up selection
-                              try {
-                                if (item === 'People') {
-                                  window.location.hash = `#people:${encodeURIComponent(canonical)}`;
-                                } else if (item === 'Research') {
-                                  window.location.hash = `#research:${encodeURIComponent(canonical)}`;
-                                } else if (item === 'Project') {
-                                  window.location.hash = `#project:${encodeURIComponent(canonical)}`;
-                                } else {
-                                  // generic fallback
-                                  window.location.hash = `#${item.toLowerCase()}:${encodeURIComponent(canonical)}`;
-                                }
-                              } catch {
-                                // ignore
-                              }
-                              setHoveredMenu(null);
-                            }}
-                            className="px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 cursor-pointer uppercase tracking-wider text-center transition-colors"
-                          >
-                            {subItem}
-                          </div>
-                        );
-                      })}
+                      {subMenus[item as keyof typeof subMenus].map((subItem, index) => (
+                        <div
+                          key={index}
+                          onClick={(e) => {
+                            e.stopPropagation(); // 부모 클릭 방지
+                            handleNavigation(item, subItem);
+                          }}
+                          className="px-4 py-3 text-sm text-gray-300 hover:text-white hover:bg-white/5 cursor-pointer uppercase tracking-wider text-center transition-colors"
+                        >
+                          {subItem}
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
@@ -161,11 +153,26 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
             {menuItems.map((item) => (
               <div key={item}>
                 <button
-                  onClick={() => { onPageChange(item); setIsMobileOpen(false); }}
+                  onClick={() => handleNavigation(item)}
                   className="block w-full text-left px-3 py-4 text-base font-bold text-white bg-transparent border-none hover:bg-white/5 border-b border-white/5 uppercase focus:outline-none"
                 >
                   {item}
                 </button>
+                {/* 모바일에서도 서브메뉴를 보여주고 싶다면 아래 주석 해제 */}
+                {/* {subMenus[item] && (
+                  <div className="pl-6 bg-[#0a0d14]">
+                    {subMenus[item].map((sub, idx) => (
+                      <div 
+                        key={idx} 
+                        className="py-3 text-sm text-gray-400 border-b border-white/5"
+                        onClick={() => handleNavigation(item, sub)}
+                      >
+                        {sub}
+                      </div>
+                    ))}
+                  </div>
+                )} 
+                */}
               </div>
             ))}
           </div>
