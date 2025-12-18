@@ -114,7 +114,7 @@ const PeoplePage = () => {
 
   const imgSrc = (p: PersonData) => {
     const name = p.people_image || p.image_name;
-    return name ? `/src/assets/uploads/people/${name}` : null;
+    return name ? `/uploads/people/${name}` : null;
   };
 
   // 인원 수에 따른 그리드 클래스 생성 함수

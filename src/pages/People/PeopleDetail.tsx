@@ -63,7 +63,7 @@ const PeopleDetail = ({ personId, onBack }: PeopleDetailProps) => {
       }} />;
   }
 
-  const imagePath = person?.people_image ? `/src/assets/uploads/people/${person.people_image}` : null;
+  const imagePath = person?.people_image ? `/uploads/people/${person.people_image}` : null;
 
   if (loading || !person) {
     return (

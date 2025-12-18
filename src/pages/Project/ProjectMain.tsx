@@ -128,7 +128,7 @@ const ProjectPage = () => {
               {/* Ongoing */}
               <div className="bg-transparent">
                 <h3 className="text-xl font-bold !text-white mb-6 border-b border-[#4dabf7] pb-3 inline-block">Ongoing</h3>
-                <div className="space-y-2">W
+                <div className="space-y-2">
                   {loading ? <p className="text-gray-400">Loading...</p> : govProgress.length === 0 ? <p className="text-gray-400">No projects</p> : govProgress.map((p) => (
                     <button key={p.title} onClick={() => setSelectedProject(p.title)} className="w-full text-left group/item appearance-none focus:outline-none bg-transparent">
                       {/* [수정] 배경색 #121723 강제 적용 */}
