@@ -1,0 +1,26 @@
+{
+  "title": "3D 메쉬 모델의 기술자 생성 방법 및 포즈 변형된 3D 메쉬 모델 인식 방법(A Method For Generating A Discriptor Of 3D Mesh Model And A Method For identifying a Pose-Transformed 3D Mesh Model)",
+  "associate": "상명대학교산학협력단",
+  "patent_num": "1020160097751",
+  "date": "2016-08-01",
+  "abstract": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "본 발명은 입력된 3D 메쉬(Mesh) 모델에서 토폴로지 구조를 생성하고, 생성된 토폴로지 구조에 포함된 토폴로지 노드 각각에 대한 국부체적특징을 산출하여 3D 메쉬 모델의 기술자(descriptor)를 생성하는 기술자 생성하는 3D 메쉬 모델의 기술자 생성 방법 및 상기 3D 메쉬 모델의 기술자 생성 방법에 따라 생성된 기술자들의 비교를 통하여 3D 메쉬 모델의 포즈 변형 여부를 인식하는 포즈 변형된 3D 메쉬 모델 인식 방법에 관한 것이다."
+          }
+        ]
+      }
+    ]
+  },
+  "image_name": "3D 메쉬 모델의 기술자 생성 방법 및 포즈 변형된 3D 메쉬 모델 인식방법.jpg",
+  "createdAt": "2025-12-01T09:45:55.886Z",
+  "uploadsPath": "/uploads/patent"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Video Searching and Fingerprint Detection by Using the Image Query and PlaceNet-Based Shot Boundary Detection Method",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2018-09-26"
+  },
+  "link": "https://doi.org/10.3390/app8101735",
+  "authors": "DaYou Jiang(1저자), Jongweon Kim(교신저자)",
+  "abstract": "This work presents a novel shot boundary detection (SBD) method based on the Place-centric deep network (PlaceNet), with the aim of using video shots and image queries for video searching (VS) and fingerprint detection. The SBD method has three stages. In the first stage, we employed Local Binary Pattern-Singular Value Decomposition (LBP-SVD) features for candidate shot boundaries selection. In the second stage, we used the PlaceNet to select the shot boundary by semantic labels. In the third stage, we used the Scale-Invariant Feature Transform (SIFT) descriptor to eliminate falsely detected boundaries. The experimental results show that our SBD method is effective on a series of SBD datasets. In addition, video searching experiments are conducted by using one query image instead of video sequences. The results under several image transitions by using shot fingerprints have shown good precision.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "VideoSearching.png",
+  "createdAt": "2025-12-16T04:22:28.014Z"
+}

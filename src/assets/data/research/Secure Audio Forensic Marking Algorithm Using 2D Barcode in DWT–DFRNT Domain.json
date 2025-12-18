@@ -1,0 +1,20 @@
+{
+  "title": "Secure Audio Forensic Marking Algorithm Using 2D Barcode in DWT–DFRNT Domain",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Distributed Sensor Networks",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2014-01-01"
+  },
+  "link": "https://journals.sagepub.com/doi/epub/10.1155/2014/292650",
+  "authors": "De Li(1저자), JongWeon Kim(2저자)",
+  "abstract": "We created a robust and secure forensic marking algorithm through the process of hiding information in a two-dimensional (2D) barcode and embedding it into the discrete wavelet transformation-discrete fractional random transformation (DWT-DFRNT) domain using the quantization technique. We hid information in the 2D barcode, encoded it with the block code that we developed, and then converted it through scrambling. The security of the algorithm was greatly improved by increasing the calculation complexity through hiding the embedded information. Forensic marks were embedded into the DWT-DFRNT dual domain. The 2D-DWT used for this was applied to the frequency division and the DFRNT was applied to increase the algorithm security by randomly mixing the pieces of information so that they could be embedded in unpredictable locations in a certain frequency space. The bit error generated in the extraction process was corrected by the self-error-correction function of the block code and 2D barcode. The experimental result showed that the information contained in the 2D barcode was accurately extracted from the forensic marks within the error correction range.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "SecureAudio.png",
+  "createdAt": "2025-12-15T07:35:59.262Z"
+}

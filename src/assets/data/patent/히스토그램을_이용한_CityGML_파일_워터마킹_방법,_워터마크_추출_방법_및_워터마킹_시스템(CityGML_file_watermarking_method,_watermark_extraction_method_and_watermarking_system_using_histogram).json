@@ -1,0 +1,36 @@
+{
+  "title": "히스토그램을 이용한 CityGML 파일\n워터마킹 방법, 워터마크 추출 방법 및 워터마킹 시스템\n(CityGML file watermarking method, watermark extraction method and watermarking system using histogram)",
+  "associate": "상명대학교산학협력단",
+  "patent_num": "1020190132805",
+  "date": "2020-09-14",
+  "abstract": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "본 발명은 3D 공간정보를 나타내는 CityGML 파일의 워터마킹에 관한 것으로서, 구체적으로는 CityGML 파일을 분석하여 얻은 3D 모델의 공간좌표의 일축값을 특정 사이즈 단위로 양자화(quantization)함으로써 도출한 히스토그램을 이용한 워터마킹 방법, 워터마크 추출 방법 및 워터마킹 시스템에 관한 것이다."
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "본 발명은 「((a) CityGML 파일에서 3D 모델의 공간좌표 정보를 추출하고, 상기 공간좌표의 일축값을 특정 사이즈(이하 'Q 사이즈') 단위로 구분하여 양자화(quantization)하는 단계; (b) 동일한 양자화값의 개수를 집계하고, 상기 양자화값 개수 기준의 오름차순 또는 내림차순으로 정렬한 히스토그램을 생성하는 단계; (c) 문자로 구성된 워터마크의 아스키코드를 2진수로 변환하고, 상기 2진수의 각 자리수를 정렬된 히스토그램의 각 구간에 순차적으로 반복하여 매칭시키는 단계; (d) Q/2 미만의 α값을 설정하여, 상기 2진수의 1이 매칭된 구간의 각 양자화값은 상기 α값을 더한 값으로 변환하고, 상기 2진수의 0이 매칭된 구간의 각 양자화값은 상기 α값을 뺀 값으로 변환한 변환 양자화값 생성 단계; (e) CityGML 파일의 공간좌표 일축값을 상기 변환 양자화값으로 치환하는 단계; 를 포함하는 히스토그램을 이용한 CityGML 파일 워터마킹 방법」을 제공한다."
+          }
+        ]
+      }
+    ]
+  },
+  "image_name": "히스토그램을_이용한_ＣｉｔｙＧＭＬ_파일_워터마킹_방법,_워터마크_추출_방법_및_워터마킹_시스템(CityGML_file_watermarking_method,_watermark_extraction_method_and_watermarking_system_using_histogram).jpg",
+  "createdAt": "2025-12-01T10:10:43.700Z",
+  "uploadsPath": "/uploads/patent"
+}

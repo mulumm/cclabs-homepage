@@ -1,0 +1,20 @@
+{
+  "title": "Coordinate quantization transformation CityGML watermarking",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia Tools and Applications",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2022-02-03"
+  },
+  "link": "10.1007/s11042-022-11943-y",
+  "authors": "Ruichen Jin(1저자), Jongweon Kim(교신저자)",
+  "abstract": "As most of the contents are becoming digitized, robust and invisible copyright notation of visible digital contents is required. In this paper, we proposed a blind watermarking method for CityGML (City Geography Markup Language) model using a group coordinate quantization transformation (CQT) algorithm. Firstly, the Vertices of CityGML models were extracted from a text file. Secondly, the candidate coordinate of the vertex set was selected and it was quantized by a given space. Then, the quantized vertex set groups were sorted and selected. Finally, the watermark was inserted by altering their mean values. We embedded the watermark on buildings or objects on the map and the data load should be guaranteed and imperceptible should be maintained. The proposed method is blind and efficient for CityGML data copyright protection compared to the existing method.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "CoordinateQuantization.png",
+  "createdAt": "2025-12-16T04:06:46.534Z"
+}

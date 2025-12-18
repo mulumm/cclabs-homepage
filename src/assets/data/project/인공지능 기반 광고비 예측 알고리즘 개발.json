@@ -1,0 +1,13 @@
+{
+  "title": "인공지능 기반 광고비 예측 알고리즘 개발",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2024-04-01",
+  "end_date": "2025-01-31",
+  "participant": "전경민, 조현서",
+  "project_method": "XGBoost(Extreme Gradient Boosting)알고리즘을 활용하여 클릭 수를 예측한다. 광고비 예측 모델은 광고주의 클릭당 입찰과와 직접적으로 연결되어 있는 클릭 수를 중점으로 정확히 예측한다.\n\n",
+  "project_target": "광고대행사의 현실적인 문제 해결인 최소한의 비용으로 최대한의 매출 창출을 위한 AI를 통해 광고비 예측 모델 개발\n\n",
+  "abstract": "인공지능 기반 광고비 예측 알고리즘 개발\n",
+  "imageName": "인공지능_기반_광고비_예측_알고리즘_개발.png",
+  "createdAt": "2025-12-16T04:41:43.662Z"
+}

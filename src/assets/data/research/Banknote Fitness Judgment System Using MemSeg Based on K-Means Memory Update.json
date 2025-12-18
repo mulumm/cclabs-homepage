@@ -1,0 +1,20 @@
+{
+  "title": "Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update",
+  "status": "International conference",
+  "progress_status": "publish",
+  "scholarly_society": "International Conference on Electronics, Information and Communications (ICEIC)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2025-02-18"
+  },
+  "link": "10.1109/ICEIC64972.2025.10879726",
+  "authors": "Hui-Jae Bae(1저자), Dae-Sik Jung(2저자), Byung-Jun Kang(3저자)",
+  "abstract": "In general, determining the authenticity of damaged banknotes can often be challenging. To address this, the Bank of Korea exchanges banknotes that are not suitable for circulation due to damage or wear. In this study, we propose a banknote authenticity judgment system using MemSeg based on K-means memory update. This system identifies damage to banknotes more objectively and quickly. When memory update is performed using K-means, normal images with various feature patterns are updated uniformly in the memory. The experimental results show that the image-AUROC is improved by an average of 4.27% compared to the existing method. This proves that the proposed method is more objective.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "BanknoteFitness.png",
+  "createdAt": "2025-12-15T05:57:51.452Z"
+}

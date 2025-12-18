@@ -1,0 +1,20 @@
+{
+  "title": "인공지능 기반 광고비 예측 알고리즘 개발",
+  "status": "Korean academic conference",
+  "progress_status": "publish",
+  "scholarly_society": "한국정보처리학회",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-05-23"
+  },
+  "link": "https://doi.org/10.3745/PKIPS.y2024m05a.834",
+  "authors": "전경민(1저자), 강재하(2저자), 배희재(3저자), 윤은수(4저자), 김종원(교신저자), 정대식(교신저자), 송영기(교신저자), 김경수(교신저자)",
+  "abstract": "시장 경쟁력을 확보하고 기업을 성장시키기 위해서는 광고 행위가 필수적이므로 현재까지 효율적으로 광고하기 위한 여러 가지 방안들이 활용되었다. 이 중에는 타 업체와의 경쟁전략을 위해서 경쟁업체의 광고비를 파악하려는 과정도 포함 되어있다. 이에 디지털 광고 측면에서는 상대적으로 광고의 노출, 클릭, 시간 대 등의 관련 정보를 획득하기 용이하므로 본 연구에서는 대량의 데이터를 이용하고 XGBoost(Extreme Gradient Boosting) 알고리즘을 활용하여 크롤링된 데이터 그룹을 분석하고, 클릭 수를 예측하는 모델을 구현하였다. 실험 결과 모델의 RMSE(Root Mean Squared Error) Average 가 1.13 정도 나온 것을 확인하였고 이에 따른 과적합을 피하기 위한 방안을 검토하였다.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "인공지능기반.png",
+  "createdAt": "2025-12-15T07:19:39.758Z"
+}

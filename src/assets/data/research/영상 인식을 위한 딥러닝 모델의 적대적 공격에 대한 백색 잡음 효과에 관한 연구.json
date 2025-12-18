@@ -1,0 +1,20 @@
+{
+  "title": "영상 인식을 위한 딥러닝 모델의 적대적 공격에 대한 백색 잡음 효과에 관한 연구",
+  "status": "Korean journal",
+  "progress_status": "publish",
+  "scholarly_society": "한국정보전자통신기술학회 논문지(JIIECT)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2022-02-01"
+  },
+  "link": "https://doi.org/10.17661/jkiiect.2022.15.1.27",
+  "authors": "이영석(1저자), 김종원(교신저자)",
+  "abstract": "본 논문에서는 영상 데이터에 대한 적대적 공격으로부터 생성된 적대적 예제로 인하여 발생할 수 있는 딥러닝 시스템의 오분류를 방어하기 위한 방법으로 분류기의 입력 영상에 백색 잡음을 가산하는 방법을 제안하였다. 제안된 방법은 적대적이든 적대적이지 않던 구분하지 않고 분류기의 입력 영상에 백색 잡음을 더하여 적대적 예제가 분류기에서 올바른 출력을 발생할 수 있도록 유도하는 것이다. 제안한 방법은 FGSM 공격, BIM 공격 및 CW 공격으로 생성된 적대적 예제에 대하여 서로 다른 레이어 수를 갖는 Resnet 모델에 적용하고 결과를 고찰하였다. 백색 잡음의 가산된 데이터의 경우 모든 Resnet 모델에서 인식률이 향상되었음을 관찰할 수 있다. 제안된 방법은 단순히 백색 잡음을 경험적인 방법으로 가산하고 결과를 관찰하였으나 에 대한 엄밀한 분석이 추가되는 경우 기존의 적대적 훈련 방법과 같이 비용과 시간이 많이 소요되는 적대적 공격에 대한 방어 기술을 제공할 수 있을 것으로 사료된다.\n\n\nIn this paper we propose white noise adding method to prevent missclassification of deep learning system by adversarial attacks. The proposed method is that adding white noise to input image that is benign or adversarial example. The experimental results are showing that the proposed method is robustness to 3 adversarial attacks such as FGSM attack, BIN attack and CW attack. The recognition accuracies of Resnet model with 18, 34, 50 and 101 layers are enhanced when white noise is added to test data set while it does not affect to classification of benign test dataset. The proposed model is applicable to defense to adversarial attacks and replace to time- consuming and high expensive defense method against adversarial attacks such as adversarial training method and deep learning replacing method.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "영상인식을위한.png",
+  "createdAt": "2025-12-16T04:02:18.129Z"
+}

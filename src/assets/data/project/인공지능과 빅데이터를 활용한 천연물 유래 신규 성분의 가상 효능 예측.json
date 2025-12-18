@@ -1,0 +1,13 @@
+{
+  "title": "인공지능과 빅데이터를 활용한 천연물 유래 신규 성분의 가상 효능 예측",
+  "status": "Government projects",
+  "progress_status": "progress",
+  "start_date": "2025-03-01",
+  "end_date": "2026-02-28",
+  "participant": "전경민, 박선균",
+  "project_method": "구조(2D/3D) 유사도 기반 후보 타겟 자동 필터링 알고리즘 개발\nGNN(Graph Neural Network) 기반 DTI 예측 모델 구현 (AUROC ≥ 0.85)\nPPI 네트워크 및 KEGG 기반 질병 연관성 분석\nUni-dock 기반 도킹 시뮬레이션을 통한 정량적 효능 검증",
+  "project_target": "천연물 유래 신규 성분의 성분-표적-질병 상호작용을 규명하는 AI 기반 End-to-End 분석 프레임워크 구축\n실험 전 단계에서 후보 성분의 활성을 사전 평가할 수 있는 정밀 예측 체계 확립\n정량적 성과: 국내 특허 출원 1건, SCI(E) 논문 1편, SW 등록 1건 달성",
+  "abstract": "천연물 유래 신규 성분의 구조 정보만으로 타겟 단백질을 예측하고, 네트워크 약리학 및 도킹 시뮬레이션을 통합하여 실제 실험 없이도 효능과 작용 기전을 정량적으로 분석할 수 있는 인공지능 기반 가상 효능 예측 시스템 개발",
+  "imageName": "천연물_가상_효능_예측.png",
+  "createdAt": "2025-12-17T12:48:30.000Z"
+}

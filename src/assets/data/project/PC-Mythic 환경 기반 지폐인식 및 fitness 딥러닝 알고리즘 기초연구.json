@@ -1,0 +1,13 @@
+{
+  "title": "PC-Mythic 환경 기반 지폐인식 및 fitness 딥러닝 알고리즘 기초연구",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2024-10-24",
+  "end_date": "2025-01-28",
+  "participant": "배희재",
+  "project_method": "데이터 분석 및 전처리 (제공: 현대->상명대)\nResNet 기반 지폐 인식 (PC-Mythic 사용)\n딥러닝 알고리즘을 사용하여 지폐 fitness 분류 (MemSeg 기반)\n성능평가 및 개선 (Jetson Nano & PC-Mythic)",
+  "project_target": "\n딥러닝(ResNet) 기반 지폐인식(지폐 권종 인식)모델 개발 및 최적화\n지폐 fitness 분류 알고리즘 개발 및 최적화\nJetson Nano와 PC-Mythic 환경에서 지폐인식 및 fitness 분류 딥러닝 알고리즘 탑재 및 성능 비교 실험",
+  "abstract": "본 연구는 딥러닝 기반 지폐 인식 및 상태(fitness) 분류 시스템을 설계하고, 실제 임베디드 환경에서의 성능을 평가·개선하는 것을 목표로 한다. 현대에서 제공한 실제 지폐 데이터를 활용하여 데이터 분석 및 전처리를 수행하였으며, 지폐 영상의 특성을 반영한 학습 데이터셋을 구축하였다. 지폐 인식 단계에서는 ResNet 기반의 딥러닝 모델을 적용하여 PC-Mythic 환경에서 학습 및 검증을 진행하였다. 또한 지폐의 훼손 정도 및 품질 상태를 분류하기 위해 MemSeg 기반의 딥러닝 알고리즘을 활용한 fitness 분류 모델을 설계하였다. 제안한 모델의 성능은 정확도 및 분류 성능 지표를 통해 평가하였으며, Jetson Nano와 PC-Mythic 환경에서의 추론 성능을 비교 분석하여 임베디드 시스템 적용 가능성을 검증하였다. 실험 결과, 제안한 방법은 지폐 인식 및 fitness 분류에서 안정적인 성능을 보였으며, 하드웨어 환경에 따른 성능 차이를 분석함으로써 실제 산업 현장 적용을 위한 개선 방향을 제시하였다.",
+  "imageName": "PC-Mythic_환경_기반_지폐인식.png",
+  "createdAt": "2025-12-16T04:17:39.526Z"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "AI/빅데이터 기술을 활용한 네트워크약리학 기반의 약물효능 및 작용기전 분석서비스",
+  "status": "Industry Collaboration",
+  "progress_status": "progress",
+  "start_date": "2024-03-01",
+  "end_date": "",
+  "participant": "강재하",
+  "project_method": "RAG와 LLM를 통해 pipeline을 구축함.",
+  "project_target": "네트워크 약리학 기반의 RAG와 LLM 기술을 바탕으로 의약 연구 기여를 하고자 함\n",
+  "abstract": "네트워크 약리학 기반의 RAG와 LLM 기술을 바탕으로 의약 연구에 도움을 줌\n",
+  "imageName": "네트워크_약리학_기반_약물_효능_및_작용기전_분석_서비스.png",
+  "createdAt": "2025-12-16T04:19:46.893Z"
+}

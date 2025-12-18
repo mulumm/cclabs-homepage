@@ -1,0 +1,36 @@
+{
+  "title": "인공지능 심층학습 기반의 영상물 인식 시스템 및 방법(Artificial intelligence deep-learning based video object recognition system and method)",
+  "associate": "상명대학교산학협력단",
+  "patent_num": "1021035210000",
+  "date": "2020-04-16",
+  "abstract": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "본 발명은 인공지능의 심층학습(Deep Learning)으로 다양한 이미지를 사전 학습하고, 상기 사전 학습 결과를 반영하여 유통되는 영상물에 대해 프레임 단위로 이미지를 분석하고, 경우에 따라 영상물의 음성정보도 함께 분석하여 시간순으로 키워드를 도출해 낸 후 사전에 축적되어 있던 영상물 대본의 시계열적 키워드와 비교하는 방식의 인공지능 심층학습 기반의 영상물 인식 시스템 및 방법에 관한 것이다."
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "본 발명은 「인공지능에 의해 구현되는 시스템으로서, 다수의 오브젝트 이미지를 키워드로 심층학습(Deep-Learning)하는 데이터셋 학습부; 영상물 대본에서 키워드를 추출하여 시계열적으로 나열, 저장하는 DB부; 영상물을 프레임 단위 이미지 분석을 통해, 이미지 상의 오브젝트들과 오브젝트 간의 관계를 키워드로 추출하여 시계열적으로 나열하는 영상물 분석부; 및 상기 DB부와 영상물 분석부의 키워드를 비교하여 유사성을 판단하는 비교판단부; 를 포함하는 인공지능 심층학습 기반의 영상물 인식 시스템」을 제공한다."
+          }
+        ]
+      }
+    ]
+  },
+  "image_name": "인공지능_심층학습_기반의_영상물_인식_시스템_및_방법(Artificial_intelligence_deep-learning_based_video_object_recognition_system_and_method).jpg",
+  "createdAt": "2025-12-01T10:02:51.305Z",
+  "uploadsPath": "/uploads/patent"
+}

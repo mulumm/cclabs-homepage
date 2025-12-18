@@ -1,0 +1,20 @@
+{
+  "title": "Art painting detection and identification based on deep learning and image local features",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia Tools and Applications",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2018-07-23"
+  },
+  "link": "https://link.springer.com/article/10.1007/s11042-018-6387-5",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "Many art paintings are placed in film scenes or TV programs as decoration. To prevent using unauthorized copyrighted art paintings, we propose a method that combines a deep learning based object detector and hand-crafted image local features to identify copyrighted art paintings from images that contain them. The object detector is trained with our collected data to be able to detect art paintings. If a query image is input, the object detector will detect the art painting regions, then, the copyrighted art paintings can be identified by matching image local features between the art painting regions and the original copyrighted art paintings that have already been stored in advance. To test the ability of the proposed method from different aspects, we prepared four different kinds of test images: Famous, Monitor Easy, Monitor Hard, and Print. Finally, we provide a practicability analysis of our method based on the experimental results on these test images. Additionally, compared with Scale Invariant Feature Transform (SIFT), our approach outperformed by more than 20%. © 2018, Springer Science+Business Media, LLC, part of Springer Nature.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ArtPainting.png",
+  "createdAt": "2025-12-16T04:26:56.981Z"
+}

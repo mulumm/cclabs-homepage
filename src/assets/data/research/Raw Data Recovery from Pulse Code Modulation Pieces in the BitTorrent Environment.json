@@ -1,0 +1,20 @@
+{
+  "title": "Raw Data Recovery from Pulse Code Modulation Pieces in the BitTorrent Environment",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia and Ubiquitous Engineering",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2014-09-05"
+  },
+  "link": "https://www.researchgate.net/profile/Jihah-Nah/publication/273903815_Raw_Data_Recovery_from_Pulse_Code_Modulation_Pieces_in_the_BitTorrent_Environment/links/65488ef43fa26f66f4db13e2/Raw-Data-Recovery-from-Pulse-Code-Modulation-Pieces-in-the-BitTorrent-Environment.pdf",
+  "authors": "Jihah Nah(1저자), Jongweon Kim(2저자)",
+  "abstract": "BitTorrent is an issue for copyright protection and infringements should be punished based on evidence of invasion of the rights of others. In the BitTorrent system, seeders possess the complete content and leechers have partial content, and the content is shared among peers. Copyrighted content is easily distinguished with complete content but it might not be obvious with partial content. Thus, we propose an original content recovery technology based on Pulse Code Modulation pieces obtained from the CD ripping of music held by leechers. The proposed technique uses a correlation-based method that exploits the similarity of music. We verified that the proposed algorithm could recover pieces of files by comparing the output value of a correlator with that of the input piece, using a number of wave file channels and 8/16 bits.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "RawData.png",
+  "createdAt": "2025-12-15T07:30:40.353Z"
+}

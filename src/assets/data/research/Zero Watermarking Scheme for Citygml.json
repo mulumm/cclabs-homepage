@@ -1,0 +1,20 @@
+{
+  "title": "Zero Watermarking Scheme for Citygml",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Journal of Theoretical and Applied Information Technology",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2018-11-30"
+  },
+  "link": "https://www.jatit.org/volumes/Vol96No22/13Vol96No22.pdf",
+  "authors": "DaYou Jiang(1저자), Jongweon Kim(2저자)",
+  "abstract": "City Geography Markup Language (CityGML) is developed as an open data model, which is based on the XML format for the storage and exchange of virtual 3D city models. CityGML defines the basic entities, attributes, and relations of a 3D city model. With respect to the cost-effective sustainable maintenance of 3D city models, it allows the reuse of the same data in different application fields. However, the copyright protection in suchlike virtual 3D city filed is not popular. Therefore, we present a zero watermarking scheme based on the global geometry property of the point cloud for CityGML. Firstly, the paper analyzes the data structure of CityGML and discusses the feasibility data for watermark. Secondly, extracts the point and topology information from CityGML. Finally, generates the zero-watermarking by using the global geometry property from vertex norm. We conduct several experiments on CityGML models with translation, rotation, uniform scaling, vertex re-ordering, simplification, smoothing, and noise attacks. Experiments show the scheme can satisfy the requests for copyright protection of CityGML models.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ZeroWatermarking.png",
+  "createdAt": "2025-12-16T04:20:44.446Z"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "엣지디바이스 기반 people-counting 최적화 연구",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2023-11-16",
+  "end_date": "2024-02-01",
+  "participant": "박선균",
+  "project_method": "열화상 카메라를 활용하여 데이터를 수집한다.\n이후 데이터 전처리를 통해 데이터를 가공한다.\nNPU칩이 내장된 cam을 활용하여 성능 분석한다.\n이후 최적화를 통해 모델의 성능을 올린다.\n",
+  "project_target": "엣지디바이스 내에서 열화상 데이터를 활용한 people counting 모델 개발",
+  "abstract": "열화상 데이터를 취득한 후, 이후 전처리 과정을 거친 후 \n엣지디바이스 내에서 열화상 데이터를 활용한 people counting 모델 개발을 한다.",
+  "imageName": "엣지디바이스_기반_people-counting_최적화_연구.png",
+  "createdAt": "2025-12-16T04:12:22.281Z"
+}

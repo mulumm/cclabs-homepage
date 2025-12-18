@@ -1,0 +1,20 @@
+{
+  "title": "Hybrid Iris Recognition for Authentication Systems in AI Edge Device (NPU) Environments",
+  "status": "International conference",
+  "progress_status": "publish",
+  "scholarly_society": "International Conference on Green and Human Information Technology(ICGHIT)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2025-01-15"
+  },
+  "link": "http://211.37.148.105/icghit/icghit2025/booklet2025.pdf",
+  "authors": "Hui-Jae Bae(1저자), Eunsu Yun(2저자), SeonKyun Park(3저자), Jongweon Kim(4저자), Dae Sik Jung(5저자)",
+  "abstract": "In this study, we developed a deep learning-based hybrid iris recognition that operates on AI edge devices (NPU) and analyzed its performance in various hardware environments. The goal is to extract the unique patterns of the iris for fast and accurate recognition. We applied the YOLOv8 model for the segmentation of the iris, pupil, and eyelid regions. Furthermore, eyelash removal and iris code extraction were conducted to enhance the matching process. Performance evaluation results showed that the average IoU (Intersection over Union) value across all classes was above 0.94, and the inference speed in the NPU environment was 42.7 ms. This research presents an iris recognition system that demonstrates high performance even in edge device environments. Future research aims to improve generalization performance by utilizing diverse datasets and to implement a real-time system.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "HybridIris.png",
+  "createdAt": "2025-12-15T06:15:44.629Z"
+}

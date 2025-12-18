@@ -1,0 +1,13 @@
+{
+  "title": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템(MemSeg)",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2024-03-01",
+  "end_date": "2024-10-21",
+  "participant": "배희재, 윤은수",
+  "project_method": "데이터 전처리 (데이터 분류 및 전처리 진행)\nMemSeg 모델 학습 (random 알고리즘 이용)\nMemSeg 모델 학습 (k-means 알고리즘 이용)\n성능평가 및 개선",
+  "project_target": "딥러닝을 이용한 지폐 정사 알고리즘 개발\nmemory에 sample올리는 방법에 따른 성능 비교",
+  "abstract": "딥러닝을 이용한 지폐 정사 알고리즘 개발\n",
+  "imageName": "메모리_기반_세그멘테이션_네트워크를_활용한_지폐_정사_판단_시스템(MemSeg).png",
+  "createdAt": "2025-12-16T04:46:13.467Z"
+}

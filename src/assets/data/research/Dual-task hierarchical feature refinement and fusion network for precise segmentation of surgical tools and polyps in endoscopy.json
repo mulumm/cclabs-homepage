@@ -1,0 +1,20 @@
+{
+  "title": "Dual-task hierarchical feature refinement and fusion network for precise segmentation of surgical tools and polyps in endoscopy",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "ScienceDirect",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2025-06-12"
+  },
+  "link": "https://www.sciencedirect.com/journal/expert-systems-with-applications",
+  "authors": "Zain Ul Abidin, Rizwan Ali Naqvi, Muhammad Zubair Islam, Hyung Seok Kim, Abbas Jafar, Daesik Jeong, Seung-Won Lee",
+  "abstract": "Advancements in computer vision have significantly influenced healthcare, particularly the early detection and treatment of colorectal cancer, a leading cause of cancer-related deaths worldwide. Accurately segmenting polyps and surgical instruments in endoscopic images is essential for enhancing diagnostic accuracy and surgical precision. However, substantial challenges persist due to polyps’ diverse morphologies, imaging conditions, and visual noise. To address these, we proposed and investigated the Hierarchical Feature Refinement and Fusion Network (hereafter, HFRF-Net), a dual-task deep learning framework for precisely segmenting colorectal polyps and surgical tools. HFRF-Net incorporates two novel modules: the Diverse Scope Synthesis Block (hereafter, DSSB) and the Feature Emphasis and Aggregation Block (hereafter, FEAB). DSSB captures rich multi-scale and context-aware features by combining a wide-scope path, an enhanced residual block, a multi-scale path, and a dynamic gating mechanism. Applied in the decoder, FEAB integrates attention mechanisms to refine spatial and semantic representations, ensuring accurate outputs. HFRF-Net was rigorously evaluated on five publicly available datasets: Kvasir SEG, CVC ClinicDB, CVC ColonDB, Kvasir Instrument, and UW Sinus Surgery Live. On each dataset, the respective Dice Similarity Coefficients of 96.75%, 97.28%, 90.05%, 96.35%, and 93.74%, surpassed state-of-the-art performance. Extensive ablation studies confirmed each module’s individual contributions while experiments demonstrated robustness against both Gaussian and salt-and-pepper noise. These results highlight HFRF-Net’s potential as a reliable and high-performance AI-driven solution for medical image\nsegmentation. Its effectiveness across multiple datasets and resilience to perturbations underscore its value in real-time clinical environments, where precision and reliability are critical for diagnostic accuracy and intraoperative guidance.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "Dual-task hierarchical feature refinement and fusion network for precise segmentation of surgical tools and polyps in endoscopy.png",
+  "createdAt": "2025-12-18T02:22:45.021Z"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "임베디드 생체신호 획득용 인터페이스 및 신호처리/분석 S/W제작",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2017-07-18",
+  "end_date": "2017-09-18",
+  "participant": "정대식",
+  "project_method": " - ",
+  "project_target": "운동 중, 근육활동 정보 추출을 위한 근전도 센서 인터페이스 개발\n\nPPG를 이용하여 운동 행위 시의 심박수, 호흡수의 변화를 측정하는 센서 인터페이스 개발",
+  "abstract": " - ",
+  "imageName": "임베디드_생체신호_획득용_인터페이스.png",
+  "createdAt": "2025-12-16T04:39:37.673Z"
+}

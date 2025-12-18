@@ -1,0 +1,20 @@
+{
+  "title": "A 3D Skeletonization Algorithm for 3D Mesh Models Using Partial Parallel 3D Thinning Algorithm",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "MDPI(applied science)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2017-02-04"
+  },
+  "link": "https://www.mdpi.com/2076-3417/7/2/139",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "A three-dimensional (3D) skeletonization algorithm extracts the skeleton of a 3D model and provides it for many applications, such as 3D model classification and identification. There are three major skeletonization methodologies used in the literature, distance transform field-based methods, Voronoi diagram-based methods, and thinning-based methods. However, the existing algorithms cannot preserve the connectivity of the skeletons of the 3D mesh models. In this paper, we propose a 3D skeletonization algorithm for 3D mesh models using a partial parallel thinning algorithm and a 3D skeleton correcting algorithm. The proposed algorithm uses pre-defined removing and recovering templates. The partial parallel 3D thinning algorithm separates 62 symmetrical removing templates into two groups based on symmetry. It thins a model with the templates of each group in each thinning procedure. The 3D skeleton correcting algorithm uses six correcting templates to inspect the disconnected voxels in the skeleton and corrects them. The experimental results show several comparisons of skeletons extracted by different skeletonization algorithms. The proposed algorithm can extract the skeleton of each branch of a model and preserve the connectivity.\n",
+  "method": "본 논문은 3D 메시(mesh) 모델로부터 형상의 위상(topology)을 유지한 상태에서 중심 골격(skeleton)을 추출하기 위해, **Partial Parallel 3D Thinning Algorithm**을 기반으로 한 새로운 3D 스켈레톤화(skeletonization) 알고리즘을 제안한다. 먼저 입력 3D 메시 모델을 이산 공간의 3D 복셀(voxel) 표현으로 변환한 뒤, 반복적인 thinning 연산을 수행한다. 제안 방법의 핵심은 전체 복셀을 동시에 처리하는 완전 병렬 방식이 아니라, **부분 병렬(partial parallel) 방식**을 사용하여 단순점(simple point)만을 선택적으로 제거함으로써 형상의 연결성(connectivity)과 위상을 보존하는 데 있다. 각 thinning 단계에서 복셀의 국소 이웃 구조를 분석하여 삭제 가능 여부를 판단하고, 골격의 중심선이 유지되도록 설계되었다. 이를 통해 잡음에 민감한 기존 병렬 thinning 기법의 단점을 완화하고 안정적인 3D 골격을 생성한다.\n",
+  "result": "실험 결과, 제안된 스켈레톤화 알고리즘은 다양한 형태의 3D 메시 모델에 대해 위상 손실 없이 중심 골격을 정확히 추출하는 데 성공하였다. 기존 3D thinning 기반 방법과 비교했을 때, 불필요한 가지(branch)의 발생이 줄어들고 골격의 연속성이 향상되었음을 확인하였다. 또한 계산 효율 측면에서도 완전 순차 방식 대비 빠른 처리 속도를 유지하면서, 완전 병렬 방식보다 안정적인 결과를 제공하였다. 이를 통해 제안 방법이 3D 모델 분석, 형상 인식, 의료 영상 처리 등 골격 기반 응용 분야에 적합함을 입증하였다.\n",
+  "method_image_name": "A 3D Skeletonization Algorithm for 3D Mesh Models Using Partial Parallel 3D Thinning Algorithm_method.png",
+  "result_image_name": "A 3D Skeletonization Algorithm for 3D Mesh Models Using Partial Parallel 3D Thinning Algorithm_result.png",
+  "createdAt": "2025-12-17T05:41:05.511Z"
+}

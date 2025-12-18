@@ -1,0 +1,36 @@
+{
+  "title": "3D 모델 깊이 이미지를 이용한 딥러닝 기반의 3D 모델 유사성 판단 방법(Deep learning based 3D model Similarity evaluation method using depth image)",
+  "associate": "상명대학교산학협력단",
+  "patent_num": "1020278800000",
+  "date": "2019-09-26",
+  "abstract": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "본 발명은 특정 3D 모델 간의 유사성 검토를 통해 저작권을 침해 여부를 판단하기 위한 것으로서, 구체적으로는 인공지능이 원본 3D 모델과 그 원본 3D 모델을 변형시킨 변형 3D 모델의 특징을 깊이 이미지(depth image)를 통해 딥러닝 모델로 사전 학습하고, 유사성 여부가 문제되는 질의(query) 3D 모델로부터 추출한 깊이 이미지를 통해 학습된 3D 모델과 질의 3D 모델간의 유사성 인식 결과를 도출하는 방법에 관한 것이다."
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "hardBreak"
+          },
+          {
+            "type": "text",
+            "text": "본 발명은 「질의(query) 3D 모델이 특정 3D 모델의 저작권을 침해하는지 여부를 판단하는 방법으로서, 인공지능에 의한 (a) 사전 학습단계; 및 (b) 유사성 인식단계; 를 포함하며, 상기 (a) 사전 학습단계는, (a-1) 원본 3D 모델로부터 변형 3D 모델을 생성시키는 단계; (a-2) 상기 원본 3D 모델과 변형 3D 모델의 크기를 정규화하는 단계; (a-3) 정규화된 원본 3D 모델과 변형 3D 모델의 방향별 깊이 이미지(depth image)를 생성하는 단계; 및 (a-4) 상기 깊이 이미지를 딥러닝 알고리즘으로 학습하는 단계; 를 포함하고, 상기 (b) 유사성 인식단계는, (b-1) 질의 3D 모델을 입력받는 단계; (b-2) 상기 질의 3D 모델의 크기를 정규화하는 단계; (b-3) 정규화된 질의 3D 모델의 방향별 깊이 이미지를 생성하는 단계; 및 (b-4) 상기 질의 3D 모델의 깊이 이미지를 상기 딥러닝 알고리즘에 입력하여, 학습된 3D 모델과의 유사성 인식 결과를 도출하는 단계; 를 포함하는 3D 모델 깊이 이미지를 이용한 딥러닝 기반의 3D 모델 유사성 판단 방법」을 제공한다."
+          }
+        ]
+      }
+    ]
+  },
+  "image_name": "3D_모델_깊이_이미지를_이용한_딥러닝_기반의_3D_모델_유사성_판단_방법(Deep_learning_based_3D_model_Similarity_evaluation_method_using_depth_image).jpg",
+  "createdAt": "2025-12-01T10:01:25.167Z",
+  "uploadsPath": "/uploads/patent"
+}

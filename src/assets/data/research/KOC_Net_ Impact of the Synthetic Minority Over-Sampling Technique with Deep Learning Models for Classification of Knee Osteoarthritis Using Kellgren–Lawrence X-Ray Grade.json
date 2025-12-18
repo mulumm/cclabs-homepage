@@ -1,0 +1,20 @@
+{
+  "title": "KOC_Net: Impact of the Synthetic Minority Over-Sampling Technique with Deep Learning Models for Classification of Knee Osteoarthritis Using Kellgren–Lawrence X-Ray Grade",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Mathematics",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-11-12"
+  },
+  "link": "https://doi.org/10.3390/math12223534",
+  "authors": "Syeda Nida Hassan(1저자), Mudassir Khalil(2저자), Humayun Salahuddin(3저자), Rizwan Ali Naqvi(4저자), Daesik Jeong(교신저자), Seung-Won Lee(교신저자)",
+  "abstract": "One of the most common diseases afflicting humans is knee osteoarthritis (KOA). KOA occurs when the knee joint cartilage breaks down, and knee bones start rubbing together. The diagnosis of KOA is a lengthy process, and missed diagnosis can have serious consequences. Therefore, the diagnosis of KOA at an initial stage is crucial which prevents the patients from Severe complications. KOA identification using deep learning (DL) algorithms has gained popularity during the past few years. By applying knee X-ray images and the Kellgren–Lawrence (KL) grading system, the objective of this study was to develop a DL model for detecting KOA. This study proposes a novel model based on CNN called knee osteoarthritis classification network (KOC_Net). The KOC_Net model contains 05 convolutional blocks, and each convolutional block has three components such as Convlotuioanl2D, ReLU, and MaxPooling 2D. The KOC_Net model is evaluated on two publicly available benchmark datasets which consist of X-ray images of KOA based on the KL grading system. Additionally, we applied contrast-limited adaptive histogram equalization (CLAHE) methods to enhance the contrast of the images and utilized SMOTE Tomek to deal with the problem of minority classes. For the diagnosis of KOA, the classification performance of the proposed KOC_Net model is compared with baseline deep networks, namely Dense Net-169, Vgg-19, Xception, and Inception-V3. The proposed KOC_Net was able to classify KOA into 5 distinct groups (including Moderate, Minimal, Severe, Doubtful, and Healthy), with an AUC of 96.71%, accuracy of 96.51%, recall of 91.95%, precision of 90.25%, and F1-Score of 96.70%. Dense Net-169, Vgg-19, Xception, and Inception-V3 have relative accuracy rates of 84.97%, 81.08%, 87.06%, and 83.62%. As demonstrated by the results, the KOC_Net model provides great assistance to orthopedics in making diagnoses of KOA.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "KOC_Net.png",
+  "createdAt": "2025-12-15T06:39:37.605Z"
+}

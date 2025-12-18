@@ -1,0 +1,20 @@
+{
+  "title": "Revolutionizing agriculture with artificial intelligence: plant disease detection methods, applications, and their limitations",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Frontiers in Plant Science",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-03-13"
+  },
+  "link": "https://doi.org/10.3389/fpls.2024.1356260",
+  "authors": "Abbas Jafar(1저자), Nabila Bibi(2저자), Rizwan Ali Naqvi(교신저자), Abolghasem Sadeghi-Niaraki(4저자), Daesik Jeong(교신저자)",
+  "abstract": "Accurate and rapid plant disease detection is critical for enhancing long-term agricultural yield. Disease infection poses the most significant challenge in crop production, potentially leading to economic losses. Viruses, fungi, bacteria, and other infectious organisms can affect numerous plant parts, including roots, stems, and leaves. Traditional techniques for plant disease detection are time-consuming, require expertise, and are resource-intensive. Therefore, automated leaf disease diagnosis using artificial intelligence (AI) with Internet of Things (IoT) sensors methodologies are considered for the analysis and detection. This research examines four crop diseases: tomato, chilli, potato, and cucumber. It also highlights the most prevalent diseases and infections in these four types of vegetables, along with their symptoms. This review provides detailed predetermined steps to predict plant diseases using AI. Predetermined steps include image acquisition, preprocessing, segmentation, feature selection, and classification. Machine learning (ML) and deep understanding (DL) detection models are discussed. A comprehensive examination of various existing ML and DL-based studies to detect the disease of the following four crops is discussed, including the datasets used to evaluate these studies. We also provided the list of plant disease detection datasets. Finally, different ML and DL application problems are identified and discussed, along with future research prospects, by combining AI with IoT platforms like smart drones for field-based disease detection and monitoring. This work will help other practitioners in surveying different plant disease detection strategies and the limits of present systems.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "RevolutionizingAgriculture.png",
+  "createdAt": "2025-12-15T07:24:35.170Z"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "회전각도를 모르는 이미지 파일의 워터마크 검출 방법(Digital Watermark Detecting Method for Image file With Unknown Rotation Angle)",
+  "associate": "상명대학교산학협력단",
+  "patent_num": "1020160023868",
+  "date": "2016-02-29",
+  "abstract": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "본 발명은 주파수 도메인에 워터마크를 삽입하거나 이미 삽입된 워터마크를 검출하기 위해 이미지 파일을 정규화 하는 방법 및 워터마크가 삽입된 상태에서 회전 공격을 받은 이미지 파일에서 효과적으로 워터마크를 검출할 수 있게 해주는 워터마크 검출 방법에 관한 것으로, 본 발명에 따른 이미지 파일의 정규화 방법에 의하면 회전공격에 강인한 워터마크 삽입이 가능하게 되고, 본 발명에 따른 워터마크 검출 방법에 의하면 이미지 파일이 회전된 경우에 있어 그 회전 각도를 모르더라도 효율적으로 워터마크를 검출할 수 있게 된다."
+          }
+        ]
+      }
+    ]
+  },
+  "image_name": "회전각도를 모르는 이미지 파일의 워터마크 검출 방법.jpg",
+  "createdAt": "2025-12-01T09:44:59.045Z",
+  "uploadsPath": "/uploads/patent"
+}

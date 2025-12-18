@@ -1,0 +1,20 @@
+{
+  "title": "Digital Watermarking Using Group Quantization for CityGML Objects",
+  "status": "International conference",
+  "progress_status": "publish",
+  "scholarly_society": "International Conference on Ubiquitous and Future Networks(ICUFN)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2019-07-02"
+  },
+  "link": "https://doi.org/10.1109/ICUFN.2019.8806040",
+  "authors": "Ruichen Jin(1저자), Jongweon Kim(2저자)",
+  "abstract": "In this paper, we proposed a watermarking method using group quantization for CityGML. We used the watermarking method using group quantization and the distribution of position of coordinates in consideration of the CityGML structural characteristics. By sorting the position of the coordinates, this method is robust against noise attacks and the invisibility is high.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "DigitalWatermarking.png",
+  "createdAt": "2025-12-16T04:44:00.636Z"
+}

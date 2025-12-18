@@ -1,0 +1,20 @@
+{
+  "title": "PSI Analysis of Adversarial-Attacked DCNN Models",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2023-08-28"
+  },
+  "link": "https://doi.org/10.3390/app13179722",
+  "authors": "Youngseok Lee(1저자), Jongweon Kim(교신저자)",
+  "abstract": "In the past few years, deep convolutional neural networks (DCNNs) have surpassed human performance in tasks related to recognizing objects. However, DCNNs are also threatened by performance degradation due to adversarial examples. DCNNs are essentially black-boxed, and it is not known how the output is determined internally; consequently, it is not known how adversarial attacks cause performance degradation inside the DCNNs. To observe the internal neuronal activities of DCNN models for adversarial examples, we analyzed the population sparseness index (PSI) values at each layer of two representative DCNN models, namely AlexNet and VGG11. From the experimental results, we observed that the internal responses of the two DCNN models to adversarial examples exhibited distinct layer-wise PSI values, differing from the internal responses to benign examples. The main contribution of this study is the discovery of significant differences in the internal responses of two specific DCNN models to adversarial and benign examples by PSI. Furthermore, our research has the potential not only to contribute to the design of more robust DCNN models against adversarial examples but also to bridge the gap between the fields of artificial intelligence and neurophysiology of the brain.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "PSIAnalysis.png",
+  "createdAt": "2025-12-15T07:35:26.557Z"
+}

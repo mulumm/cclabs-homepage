@@ -1,0 +1,20 @@
+{
+  "title": "3D Mesh Model Exterior Salient Part Segmentation Using Prominent Feature Points and Marching Plane",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "KSII Transactions on Internet and Information Systems",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2019-03-30"
+  },
+  "link": "https://doi.org/10.3837/tiis.2019.03.017",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "In computer graphics, 3D mesh segmentation is a challenging research field. This paper presents a 3D mesh model segmentation algorithm that focuses on removing exterior salient parts from the original 3D mesh model based on prominent feature points and marching plane. To begin with, the proposed approach uses multi-dimensional scaling to extract prominent feature points that reside on the tips of each exterior salient part of a given mesh. Subsequently, a set of planes intersect the 3D mesh; one is the marching plane, which start marching from prominent feature points. Through the marching process, local cross sections between marching plane and 3D mesh are extracted, subsequently, its corresponding area are calculated to represent local volumes of the 3D mesh model. As the boundary region of an exterior salient part generally lies on the location at which the local volume suddenly changes greatly, we can simply cut this location with the marching plane to separate this part from the mesh. We evaluated our algorithm on the Princeton Segmentation Benchmark, and the evaluation results show that our algorithm works well for some categories.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "3DMeshModel.png",
+  "createdAt": "2025-12-16T04:16:09.053Z"
+}

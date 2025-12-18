@@ -1,0 +1,20 @@
+{
+  "title": "The Contourlet Domain Comic Zero Watermarking Algorithm Based on Discrete Cosine Transform and Singular Value Decomposition",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia and Ubiquitous Engineering",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2014-09-10"
+  },
+  "link": "https://file1.earticle.net/PDF/Direct?key=G1xW+ka9lbLiogW8lsOWiP1KKUgeZyQ10XO+EysixKW8WzKk5Jgj2WZL29n/WcRJMvoLHVZdnrsoiNikOOW0m6hFdg3/SAnXYdVgIq4kTnIYWLw2RNiYpWTmjKalCy2jJmWTYox8jt9EruVjODp60XH6n5BwUQeS1hJaKBI4vVlavKDKct5+6Ffm20/ht2p4gAA7DmSGTZ4=",
+  "authors": "De Li(1저자), Haifeng Shi(1저자), JongWeon Kim(교신저자)",
+  "abstract": "Through to analyze the characteristics of the digital cartoon image, proposed a based on discrete cosine transform (DCT) and singular value decomposition (SVD) combined contourlet transform with zero watermarking algorithm, the algorithm first for image contourlet transform and then make the low-frequency subband DCT and SVD decomposition again after operation block, the largest singular value as the image feature extracting for zero watermarking structure. In order to improve the security of the algorithm, introducing into visual cryptography processing the watermark image, the zero watermarking features obtained and secret sharing for the logic operation is zero watermarking characteristics of the final value.. The simulation results show that the algorithm has strong robustness.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "TheContourlet.png",
+  "createdAt": "2025-12-15T07:19:15.571Z"
+}

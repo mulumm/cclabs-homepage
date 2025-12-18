@@ -1,0 +1,20 @@
+{
+  "title": "Art Painting Identification using Convolutional Neural Network",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "International Journal of Applied Engineering Research",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2017-11-15"
+  },
+  "link": "https://www.ripublication.com/ijaer17/ijaerv12n4_17.pdf",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "Convolutional Neural Network (CNN) applications have been\nsuggested for many multimedia processing tasks and achieved\ngreat success. In this paper, we present a methodology about\nhow to apply CNN for art painting identification. Each art\npainting image is distorted by various operations, such as lens\ndistortion, scaling, rotation, etc., to simulate potential situation\nthat it would be appeared on TV programs or photographs or\nmovies. The distortions are carried out randomly by computer\nto make large datasets for CNN to training. And then, we\nstudied about how the architecture and parameters of CNN\neffects the identification accuracy. In the end, we compare our\nmethod with the Scale-Invariant Feature Transform (SIFT),\nwhich is a state-of-the-art hand-crafted feature, and the result\nshows the proposed method outperform SIFT by 13.6%.",
+  "method": "본 논문은 전통적인 특징 기반 기법 대신 **Convolutional Neural Network(CNN)** 를 이용하여 회화 작품(art painting)을 자동으로 식별하는 방법을 제안한다. 연구의 핵심 아이디어는 회화의 색상, 질감, 붓 터치, 형태적 패턴과 같은 고수준 시각적 특성을 사람이 정의한 특징이 아닌, CNN이 데이터로부터 직접 학습하도록 하는 것이다. 먼저 회화 이미지 데이터셋을 수집한 후, 크기 정규화 및 픽셀 값 정규화와 같은 기본적인 전처리를 수행한다. 이후 다층 구조의 CNN을 구성하여 합성곱(convolution) 계층을 통해 지역적 시각 특징을 추출하고, 풀링(pooling) 계층을 통해 특징의 공간적 불변성을 확보한다. 최종적으로 완전연결층(fully connected layer)과 softmax 분류기를 사용하여 작품 또는 작가 단위의 식별을 수행한다. 네트워크는 지도학습 방식으로 학습되며, 역전파(backpropagation) 알고리즘을 통해 가중치를 최적화한다.\n",
+  "result": "실험 결과, CNN 기반 회화 식별 방법은 색상 히스토그램, SIFT, Gabor 필터 등 전통적인 수작업 특징(hand-crafted features)을 사용하는 기존 기법들보다 높은 식별 정확도를 보였다. 특히 작품의 조명 변화, 해상도 차이, 세부 손실이 존재하는 조건에서도 비교적 안정적인 분류 성능을 유지하였다. 논문에서는 CNN이 회화의 전역적 스타일 정보뿐 아니라 붓 터치와 같은 미세 질감 정보까지 효과적으로 학습할 수 있음을 실험적으로 확인하였으며, 이를 통해 딥러닝 기반 접근법이 회화 식별 문제에 적합함을 입증하였다. 이러한 결과는 CNN이 예술 작품 분석 분야에서 특징 설계 부담을 줄이고 성능을 향상시킬 수 있는 강력한 대안임을 보여준다.\n",
+  "method_image_name": "Art Painting Identification using Convolutional Neural Network_method.png",
+  "result_image_name": "Art Painting Identification using Convolutional Neural Network_result.png",
+  "createdAt": "2025-12-17T05:34:17.309Z"
+}

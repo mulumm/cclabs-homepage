@@ -1,0 +1,13 @@
+{
+  "title": "마이크로 라이센싱 기반의 3D 프린팅 디지털 저작물 보호 및 관리기술개발",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2015-07-27",
+  "end_date": "2016-07-26",
+  "participant": "- ",
+  "project_method": " -",
+  "project_target": "3D 저작물 기반의 보호 및 관리 기술 개발\n  - STL상의 특징추출/분석 알고리즘(SW)\n  - 2D object상의 특징 추출 및 분석 알고리즘(SW)\n3D 저작물 보호 및 관리 프로토타입 개발\n  - Clustering 최적화 알고리즘(SW)\n  - 3D object상의 특징 추출 및 분석 알고리즘(SW)\n3D 저작물 클리어링 센터 구축 및 검증\n  - 특징 방식 별 DB 시스템 구축(SYS)\n  - 특징 추출 최적화 시스템(SYS)\n  - 3D 객체 역분석 특징 시스템(SYS)",
+  "abstract": " - ",
+  "imageName": "마이크로_라이센싱_기반의_3D.png",
+  "createdAt": "2025-12-16T04:50:05.979Z"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Robustness of Deep Learning Models for Vision Tasks",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2023-03-30"
+  },
+  "link": "https://doi.org/10.3390/app13074422",
+  "authors": "Youngseok Lee(1저자), Jongweon Kim(교신저자)",
+  "abstract": "In recent years, artificial intelligence technologies in vision tasks have gradually begun to be applied to the physical world, proving they are vulnerable to adversarial attacks. Thus, the importance of improving robustness against adversarial attacks has emerged as an urgent issue in vision tasks. This article aims to provide a historical summary of the evolution of adversarial attacks and defense methods on CNN-based models and also introduces studies focusing on brain-inspired models that mimic the visual cortex, which is resistant to adversarial attacks. As the origination of CNN models was in the application of physiological findings related to the visual cortex of the time, new physiological studies related to the visual cortex provide an opportunity to create more robust models against adversarial attacks. The authors hope this review will promote interest and progress in artificially intelligent security by improving the robustness of deep learning models for vision tasks.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "RobustnessOf.png",
+  "createdAt": "2025-12-16T03:51:38.851Z"
+}

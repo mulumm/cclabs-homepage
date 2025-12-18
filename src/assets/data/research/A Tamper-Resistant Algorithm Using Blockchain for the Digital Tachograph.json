@@ -1,0 +1,20 @@
+{
+  "title": "A Tamper-Resistant Algorithm Using Blockchain for the Digital Tachograph",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Electronics",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2021-03-02"
+  },
+  "link": "https://doi.org/10.3390/electronics10050581",
+  "authors": "Yongbae Kim(1저자), Juyong Back(2저자), Jongweon Kim(교신저자)",
+  "abstract": "A tachograph in a vehicle records the vehicle operating conditions, such as speed, distance, brake operation conditions, acceleration, GPS information, etc., in intervals of one second. For accidents, the tachograph records information, such as the acceleration and direction of a vehicle traveling in intervals of 1/100 s for 10 s before and after the accident occurs as collision data. A vehicle equipped with a tachograph is obliged to upload operation data to administrative organizations periodically via other auxiliary storage devices like a USB attached external memory or online wireless communication. If there is a problem with the recorded contents, data may be at risk of being tampered with during the uploading process. This research proposed tamper-resistant technology based on blockchain for data in online and offline environments. The suggested algorithm proposed a new data recording mechanism that operates in low-level hardware of digital tachographs for tamper-resistance in light blockchains and on/offline situations. The average encoding time of the proposed light blockchain was 1.85 ms/Mb, while the average decoding time was 1.65 ms/Mb. With the outliers in statistical tests removed, the estimated average encoding and decoding time was 1.32 ms/Mb and 1.29 ms/Mb, respectively, and the tamper verification test detected all the tampered data.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ATemperResistant.png",
+  "createdAt": "2025-12-16T04:11:46.432Z"
+}

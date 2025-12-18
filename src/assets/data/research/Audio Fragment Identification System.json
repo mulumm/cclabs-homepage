@@ -1,0 +1,20 @@
+{
+  "title": "Audio Fragment Identification System",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia and Ubiquitous Engineering",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-09-12"
+  },
+  "link": "https://gvpress.com/journals/IJMUE/vol9_no12/28.pdf",
+  "authors": "Xun Jin(1저자), Jongweon Kim(2저자)",
+  "abstract": "Audio identification technologies are becoming of increasing interest for copyright protection and digital forensic. In this paper, we propose an audio fragment identification system for efficient audio identifying applications in practice. To identify an audio file fragment, we have to decode it according to its format. Thus, we precede format classification of audio fragment using Support Vector Machine in advance. After identify the format, fragment recovery is implemented by adding a maximum similar frame header in front of the fragment. Then we extract a chroma feature from the decoded audio data to achieve audio identification. The experimental results show the evaluations of the format classification, fragment recovery and audio identification.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "AudioFragment.png",
+  "createdAt": "2025-12-15T07:07:22.009Z"
+}

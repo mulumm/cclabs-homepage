@@ -1,0 +1,20 @@
+{
+  "title": "Artwork Recognition for Panorama Images Based on Optimized ASIFT and Cubic Projection",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "International Journal of Machine Learning and Computing",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2018-02-01"
+  },
+  "link": "10.18178/ijmlc.2018.8.1.663",
+  "authors": "Dayou Jiang(1저자), Jongweon Kim(교신저자)",
+  "abstract": "Few studies have been published on the object recognition for panorama images. To prevent the infringement of artworks in 360-degree images, we put forward an efficient method for artworks recognition inside 360-degree images in this paper. To start with, we employed the improved cubic projection to transform the distorted panorama image. Then, we used the optimized Affine Invariant Feature Transform (ASIFT) algorithm for extracting local features of transformed image. Finally, the feature point matching is based on one-to-one mapping constrain. The overall performance of the method is investigated on panorama dataset and the experimental results are compared with other well-known local feature extraction methods and original panorama image. The experimental results show that using the proposed method can improve around 30% of the accuracy for relatively higher distorted panorama images and reduce the computing time.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ArtworkRecognition.png",
+  "createdAt": "2025-12-16T04:31:21.589Z"
+}

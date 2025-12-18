@@ -1,0 +1,20 @@
+{
+  "title": "Image Retrieval Method Based on Image Feature Fusion and Discrete Cosine Transform",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2021-06-19"
+  },
+  "link": "https://doi.org/10.3390/app11125701",
+  "authors": "DaYou Jiang(1저자), Jongweon Kim(교신저자)",
+  "abstract": "This paper presents a new content-based image retrieval (CBIR) method based on image feature fusion. The deep features are extracted from object-centric and place-centric deep networks. The discrete cosine transform (DCT) solves the strong correlation of deep features and reduces dimensions. The shallow features are extracted from a Quantized Uniform Local Binary Pattern (ULBP), hue-saturation-value (HSV) histogram, and dual-tree complex wavelet transform (DTCWT). Singular value decomposition (SVD) is applied to reduce the dimensions of ULBP and DTCWT features. The experimental results tested on Corel datasets and the Oxford building dataset show that the proposed method based on shallow features fusion can significantly improve performance compared to using a single type of shallow feature. The proposed method based on deep features fusion can slightly improve performance compared to using a single type of deep feature. This paper also tests variable factors that affect image retrieval performance, such as using principal component analysis (PCA) instead of DCT. The DCT can be used for dimensional feature reduction without losing too much performance.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ImageRetrieval.png",
+  "createdAt": "2025-12-16T04:09:09.521Z"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Autocorrelation Modulation-Based Audio Blind Watermarking Robust Against High Efficiency Advanced Audio Coding",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2019-07-10"
+  },
+  "link": "https://doi.org/10.3390/app9142780",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "High Efficiency Advanced Audio Coding (HE-AAC) is a lossy compression method for digital audio data which supplies high-quality audio at a very low bit rate. In this paper, the audio blind watermarking algorithm, on the basis of autocorrelation modulation, is introduced to maximize the robustness against low-bit rate HE-AAC. The watermark is embedded by modulating the normalized correlation of the original signal as well as its delayed version. The signal-to-noise ratio of before and after HE-AAC compression decides the strength of the embedding watermark. The watermarking embedding strength is guaranteed by the feedback process. The effectiveness of the proposed method is proven using the Perceptual Evaluation of Audio Quality algorithm and bit error rate of recovered watermarks under HE-AAC compression on mono, stereo and 5.1 channel audio. Experimental results show that the proposed method provides good performance in terms of imperceptibility, robustness and data payload compared with some recent state-of-the-art watermarking methods under an MPEG-2 Audio Layer III (MP3) compression attack.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "AutocorrelationModulation.png",
+  "createdAt": "2025-12-16T04:13:28.455Z"
+}

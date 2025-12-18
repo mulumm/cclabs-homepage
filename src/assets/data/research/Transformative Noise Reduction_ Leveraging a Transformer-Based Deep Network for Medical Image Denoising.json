@@ -1,0 +1,20 @@
+{
+  "title": "Transformative Noise Reduction: Leveraging a Transformer-Based Deep Network for Medical Image Denoising",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Mathematics",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-07-24"
+  },
+  "link": "https://doi.org/10.3390/math12152313",
+  "authors": "Rizwan Ali Naqvi(1저자), Amir Haider(2저자), Hak Seob Kim(3저자), Daesik Jeong(교신저자), Seung-Won Lee(교신저자)",
+  "abstract": "Medical image denoising has numerous real-world applications. Despite their widespread use, existing medical image denoising methods fail to address complex noise patterns and typically generate artifacts in numerous cases. This paper proposes a novel medical image denoising method that learns denoising using an end-to-end learning strategy. Furthermore, the proposed model introduces a novel deep–wider residual block to capture long-distance pixel dependencies for medical image denoising. Additionally, this study proposes leveraging multi-head attention-guided image reconstruction to effectively denoise medical images. Experimental results illustrate that the proposed method outperforms existing qualitative and quantitative evaluation methods for numerous medical image modalities. The proposed method can outperform state-of-the-art models for various medical image modalities. It illustrates a significant performance gain over its counterparts, with a cumulative PSNR score of 8.79 dB. The proposed method can also denoise noisy real-world medical images and improve clinical application performance such as abnormality detection.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "TransformativeNoise.png",
+  "createdAt": "2025-12-15T06:44:56.569Z"
+}

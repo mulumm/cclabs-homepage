@@ -1,0 +1,20 @@
+{
+  "title": "Texture Image Retrieval Using DTCWT-SVD and Local Binary Pattern Features",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Journal of Information Processing Systems",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2017-12-01"
+  },
+  "link": "https://doi.org/10.3745/JIPS.02.0077",
+  "authors": "Dayou Jiang(1저자), Jongweon Kim(교신저자)",
+  "abstract": "The combination texture feature extraction approach for texture image retrieval is proposed in this paper. Two kinds of low level texture features were combined in the approach. One of them was extracted from singular value decomposition (SVD) based dual-tree complex wavelet transform (DTCWT) coefficients, and the other one was extracted from multi-scale local binary patterns (LBPs). The fusion features of SVD based multi-directional wavelet features and multi-scale LBP features have short dimensions of feature vector. The comparing experiments are conducted on Brodatz and Vistex datasets. According to the experimental results, the proposed method has a relatively better performance in aspect of retrieval accuracy and time complexity upon the existing methods.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "TextureImage.png",
+  "createdAt": "2025-12-16T04:40:08.741Z"
+}

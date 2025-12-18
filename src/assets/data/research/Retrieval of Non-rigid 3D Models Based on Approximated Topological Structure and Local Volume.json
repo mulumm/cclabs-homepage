@@ -1,0 +1,20 @@
+{
+  "title": "Retrieval of Non-rigid 3D Models Based on Approximated Topological Structure and Local Volume",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "KSII TRANSACTIONS ON INTERNET AND INFORMATION SYSTEMS(TIIS)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2017-08-31"
+  },
+  "link": "https://koreascience.kr/article/JAKO201731063181836.pdf",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "With the increasing popularity of 3D technology such as 3D printing, 3D modeling, etc., there\nis a growing need to search for similar models on the internet. Matching non-rigid shapes has\nbecome an active research field in computer graphics. In this paper, we present an efficient and\neffective non-rigid model retrieval method based on topological structure and local volume.\nThe integral geodesic distances are first calculated for each vertex on a mesh to construct the\ntopological structure. Next, each node on the topological structure is assigned a local volume\nthat is calculated using the shape diameter function (SDF). Finally, we utilize the Hungarian\nalgorithm to measure similarity between two non-rigid models. Experimental results on the\nlatest benchmark (SHREC’ 15 Non-rigid 3D Shape Retrieval) demonstrate that our method\nworks well compared to the state-of-the-art.",
+  "method": "본 연구는 비강체(non-rigid) 3D 모델 검색을 위해 근사된 위상 구조(approximated topological structure) 와 국소 부피(local volume) 를 결합한 표현 방법을 제안한다. 먼저 각 정점에서 다른 정점까지의 적분 지오데식 거리를 계산하여 모델의 전역적 형태 정보를 획득하고, 이를 기반으로 돌출부와 중심부를 대표하는 특징 정점(feature vertices) 을 추출한다. 이후 특징 정점들을 지오데식 최단 경로로 연결하여 모델의 구조적 특성을 나타내는 토폴로지 노드 집합을 구성한다. 각 노드 주변에서는 Shape Diameter Function(SDF) 을 이용해 국소 부피 정보를 계산함으로써 포즈 변화에도 강인한 기하적 특성을 추출한다. 최종적으로 두 3D 모델 간의 유사도는 토폴로지 노드와 국소 부피 값을 기반으로 한 거리 행렬을 생성하고, Hungarian algorithm을 이용한 최적 매칭 비용으로 계산한다.",
+  "result": "제안한 방법은 SHREC’15 Non-rigid 3D Shape Retrieval 데이터셋에서 평가되었으며, NN, First Tier, Second Tier, E-measure, DCG 등 표준 검색 성능 지표를 사용하였다. 실험 결과, 제안 방법은 기존 비강체 3D 모델 검색 기법들과 비교하여 동등하거나 더 우수한 검색 성능을 보였으며, 특히 포즈 변화가 큰 모델들에서 높은 강인성을 나타냈다. 또한 위상 구조 정보만 사용한 경우보다 국소 부피(SDF)를 함께 사용했을 때 검색 정확도가 유의미하게 향상됨을 확인하였다. 이러한 결과를 통해 제안 기법이 비강체 변형에 강인하면서도 효율적인 3D 모델 검색 방법임을 입증하였다.",
+  "method_image_name": "Retrieval_of_Non-rigid_3D_Models_Based_on_Approximated_Topological_Structure_and_Local_Volume.png",
+  "result_image_name": "Retrieval of Non-rigid 3D Models Based on Approximated Topological Structure and Local Volume_result.png",
+  "createdAt": "2025-12-17T05:10:56.907Z"
+}

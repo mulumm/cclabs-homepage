@@ -1,0 +1,20 @@
+{
+  "title": "A 2D-View Depth Image- and CNN-Based 3D Model Identification Method",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Applied Sciences",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2017-09-25"
+  },
+  "link": "https://doi.org/10.3390/app7100988",
+  "authors": "Yiyu Hong(1저자), Jongweon Kim(교신저자)",
+  "abstract": "With the rapid development of three-dimensional (3D) technology and an increase in the number of available models, issues with copyright protection of 3D models are inevitable. In this paper, we propose a 2D-view depth image- and convolutional neural network (CNN)-based 3D model identification method. To identify a 3D model, we first need an adequate number of the modified versions that could be made by copyright infringers. Then, they can be represented by a number of 2D-view depth images that are captured from evenly distributed vertices on a regular convex polyhedron. Finally, a CNN is trained by these depth images to acquire the capability of identifying the 3D model. The experiment carried out with the dataset of Shape Retrieval Contest 2015 (SHREC’15): Non-Rigid 3D Shape Retrieval shows the practicability of our method, which yields 93.5% accuracy. The effectiveness of the proposed method is demonstrated via evaluation in the latest standard benchmark SHREC’17 Deformable Shape Retrieval with Missing Parts. It clearly shows superior or comparable performance to state-of-the-art methods, shown by the fact that it is in the top three of the 11 participating methods (without counting different runs).",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "A2DViewDepth.png",
+  "createdAt": "2025-12-16T04:45:35.690Z"
+}

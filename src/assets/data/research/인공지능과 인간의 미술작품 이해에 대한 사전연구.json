@@ -1,0 +1,20 @@
+{
+  "title": "인공지능과 인간의 미술작품 이해에 대한 사전연구",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Asia-pacific Journal of Convergent Research Interchange (APJCRI)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2023-09-06"
+  },
+  "link": "10.47116/apjcri.2023.09.06",
+  "authors": "김종원(1저자)",
+  "abstract": "인공지능 기술의 등장 이전부터 미술 창작 분야에서는 기계기술을 이용하여 미술작품을 창작하는 시도가 많이 이루어졌다. 딥러닝에 기반한 심층 신경망의 등장은 미술 창작의 새로운 전환점이라 부를 만큼 다양한 인공지능 창작물을 생산할 수 있게 하였으며, 창작성과 저작권에 대한 논란을 불러오고 있다. 인공지능은 미술의 이해와 감상에 대한 고찰 없이 창작으로 결과를 만들어내므로 인간의 감정과 미적 반응에 해당하는 이해가 가능한 것인지 확인할 수 없다. 본 논문에서는 인공지능이 창작을 넘어서 미술작품을 이해할 가능성을 확인하기 위하여 인간과 인공지능의 미술작품을 이해하는 메커니즘과 그 차이점을 분석하고 기본적인 선과 다각형의 데이터 세트를 대표적인 4가지 심층 신경망에 학습시키고 인식실험을 수행하였다. 기초적인 실험 결과, 학습방식과 데이터 레이블링(정보제공량)에 따라서 인식성능이 최대 98.7%이상으로 향상되는 것을 확인하였으나 구성의 복잡성이 올라가면 인식성능이 92.8%로 하락하는 것을 관찰할 수 있었다. 마지막으로 본 연구에서는 인간과 같은 예술적 이해를 위해서 인공지능 연구에 필요한 과제들을 제안함으로써 향후 인공지능의 발전방향을 제시하고자 하였다. 미술작품을 이해할 수 있는 인공지능을 개발하기 위해서는 첫째, 다양하고 대표적인 미술 데이터 세트 선별, 둘째, 맥락 정보 개발, 셋째, 의미론과 상징주의 통합, 넷째, 사용자 피드백 및 상호 작용 고려, 다섯째, 도메인 전문가와 협업, 여섯째, 다중모드 접근방식을 활용하여 다학제적인 연구팀의 구성과 추진전략이 필요하다.\n\n\nPrior to the advent of artificial intelligence (AI) technology, significant efforts were made to leverage machine technology in the realm of art creation. However, the emergence of deep neural networks powered by deep learning has introduced a transformative era in art, representing a crucial inflection point. This development caused controversy over creativity and copyright. Due to AI's nature of producing results solely through creation, without considering the understanding and appreciation of art, there remains an unresolved question of whether it can genuinely comprehend human emotions and aesthetic reactions. This paper aims to explore the potential of AI in understanding art beyond its creative capabilities. We delve into the mechanisms and disparities between human and AI comprehension of art. The basic experiment yielded positive results, confirming that the recognition performance can be significantly enhanced, reaching a maximum accuracy of 98.7% or higher. The improvement was contingent upon the learning method employed and the level of data labeling, providing valuable insights into the effectiveness of different approaches. However, it was observed that the recognition performance experienced a decline to 92.8% as the complexity of the configuration increased, indicating potential limitations and challenges in handling intricate setups. The primary objective of this study was to propose essential tasks for advancing artificial intelligence research in achieving a human-like understanding of art. By outlining these tasks, the study aimed to provide a roadmap for the future development of artificial intelligence in the field of artistic comprehension.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "인공지능과인간의.png",
+  "createdAt": "2025-12-15T07:27:16.766Z"
+}

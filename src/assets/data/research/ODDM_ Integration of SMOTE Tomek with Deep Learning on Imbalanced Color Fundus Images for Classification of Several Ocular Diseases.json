@@ -1,0 +1,20 @@
+{
+  "title": "ODDM: Integration of SMOTE Tomek with Deep Learning on Imbalanced Color Fundus Images for Classification of Several Ocular Diseases",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "MDPI",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2025-08-18"
+  },
+  "link": "https://www.mdpi.com/2313-433X/11/8/278",
+  "authors": "Afraz Danish Ali Qureshi , Hassaan Malik , Ahmad Naeem , Syeda Nida Hassan , Daesik Jeong and Rizwan Ali Naqvi \n",
+  "abstract": "Ocular disease (OD) represents a complex medical condition affecting humans. OD diagnosis is a challenging process in the current medical system, and blindness may occur if the disease is not detected at its initial phase. Recent studies showed significant outcomes in the identification of OD using deep learning (DL) models. Thus, this work aims to develop a multi-classification DL-based model for the classification of seven ODs, including normal (NOR), age-related macular degeneration (AMD), diabetic retinopathy (DR), glaucoma (GLU), maculopathy (MAC), non-proliferative diabetic retinopathy (NPDR), and proliferative diabetic retinopathy (PDR), using color fundus images (CFIs). This work proposes a custom model named the ocular disease detection model (ODDM) based on a CNN. The proposed ODDM is trained and tested on a publicly available ocular disease dataset (ODD). Additionally, the SMOTE Tomek (SM-TOM) approach is also used to handle the imbalanced distribution of the OD images in the ODD. The performance of the ODDM is compared with seven baseline models, including DenseNet-201 (R1), EfficientNet-B0 (R2), Inception-V3 (R3), MobileNet (R4), Vgg-16 (R5), Vgg-19 (R6), and ResNet-50 (R7). The proposed ODDM obtained a 98.94% AUC, along with 97.19% accuracy, a recall of 88.74%, a precision of 95.23%, and an F1-score of 88.31% in classifying the seven different types of OD. Furthermore, ANOVA and Tukey HSD (Honestly Significant Difference) post hoc tests are also applied to represent the statistical significance of the proposed ODDM. Thus, this study concludes that the results of the proposed ODDM are superior to those of baseline models and state-of-the-art models.\n",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "ODDM Integration of SMOTE Tomek with Deep Learning on Imbalanced Color Fundus Images for Classification of Several Ocular Diseases.png",
+  "createdAt": "2025-12-18T02:30:37.741Z"
+}

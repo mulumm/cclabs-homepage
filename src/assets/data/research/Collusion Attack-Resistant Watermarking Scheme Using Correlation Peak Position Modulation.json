@@ -1,0 +1,20 @@
+{
+  "title": "Collusion Attack-Resistant Watermarking Scheme Using Correlation Peak Position Modulation",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Multimedia Tools and Applications",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2016-11-01"
+  },
+  "link": "https://www.mdpi.com/2076-3417/7/2/139",
+  "authors": "Jihah Nah(1저자), Jongweon Kim(교신저자)",
+  "abstract": "In this paper, we propose a new digital watermarking algorithm that hides specific information related to content-users. The proposed algorithm uses a correlation peak position modulation (CPPM) to ensure robustness and sufficient capacity, and this is modulated by user information. For a JPEG compression operation with a quality factor of 35, the other methods show a bit error rate of 2.45 % when two messages are embedded, but using CPPM this is reduced to 0 %, even with four messages. In case of a collusion attack, CPPM can detect up to 12 attackers, compared with a maximum of five attackers with position-based watermarking. Our experiments demonstrate that the proposed algorithm is a competitive method for image watermarking.\n",
+  "method": "본 논문은 다수의 워터마크 사용자들이 결탁(collusion)하여 워터마크를 제거하거나 약화시키는 공격에 강인한 **디지털 워터마킹 기법**을 제안한다. 제안 방식은 **Correlation Peak Position Modulation (CPPM)** 을 기반으로 하며, 워터마크 정보를 신호의 상관 함수(correlation function)에서 나타나는 **피크 위치(position)** 에 변조하여 삽입한다. 워터마크는 주파수 영역 또는 변환 영역에서 삽입되며, 단순한 진폭 변화가 아닌 위치 정보로 인코딩되기 때문에 여러 워터마크 신호가 평균화되더라도 피크 위치가 유지되는 특성을 갖는다. 추출 과정에서는 원본 신호 없이도 상관 분석을 통해 피크 위치를 검출함으로써 워터마크 정보를 복원할 수 있도록 설계되었다.\n",
+  "result": "실험 결과, 제안된 CPPM 기반 워터마킹 기법은 평균 공격, 최대값 공격 등 다양한 collusion attack 시나리오에서 기존 워터마킹 방식보다 높은 검출 성공률을 보였다. 또한 영상 품질 저하를 최소화하면서도 워터마크의 강인성(robustness)을 유지하는 것으로 나타났다. 특히 다수 사용자가 결탁하여 워터마크를 조작하려는 상황에서도 상관 피크 위치가 안정적으로 유지되어 워터마크 식별이 가능함을 실험적으로 입증하였다. 이를 통해 제안 기법이 저작권 보호 및 콘텐츠 추적 분야에 효과적으로 활용될 수 있음을 보여준다.\n",
+  "method_image_name": "",
+  "result_image_name": "",
+  "createdAt": "2025-12-17T05:43:38.037Z"
+}

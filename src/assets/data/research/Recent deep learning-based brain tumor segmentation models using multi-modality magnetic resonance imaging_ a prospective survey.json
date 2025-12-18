@@ -1,0 +1,20 @@
+{
+  "title": "Recent deep learning-based brain tumor segmentation models using multi-modality magnetic resonance imaging: a prospective survey",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Frontiers in Bioengineering and Biotechnology",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-07-22"
+  },
+  "link": "https://doi.org/10.3389/fbioe.2024.1392807",
+  "authors": "Zain Ul Abidin(1저자), Rizwan Ali Naqvi(2저자), Amir Haider(3저자), Hyung Seok Kim(4저자), Daesik Jeong(교신저자), Seung Won Lee(교신저자)",
+  "abstract": "Radiologists encounter significant challenges when segmenting and determining brain tumors in patients because this information assists in treatment planning. The utilization of artificial intelligence (AI), especially deep learning (DL), has emerged as a useful tool in healthcare, aiding radiologists in their diagnostic processes. This empowers radiologists to understand the biology of tumors better and provide personalized care to patients with brain tumors. The segmentation of brain tumors using multi-modal magnetic resonance imaging (MRI) images has received considerable attention. In this survey, we first discuss multi-modal and available magnetic resonance imaging modalities and their properties. Subsequently, we discuss the most recent DL-based models for brain tumor segmentation using multi-modal MRI. We divide this section into three parts based on the architecture: the first is for models that use the backbone of convolutional neural networks (CNN), the second is for vision transformer-based models, and the third is for hybrid models that use both convolutional neural networks and transformer in the architecture. In addition, in-depth statistical analysis is performed of the recent publication, frequently used datasets, and evaluation metrics for segmentation tasks. Finally, open research challenges are identified and suggested promising future directions for brain tumor segmentation to improve diagnostic accuracy and treatment outcomes for patients with brain tumors. This aligns with public health goals to use health technologies for better healthcare delivery and population health management.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "RecentDeep.png",
+  "createdAt": "2025-12-15T07:00:16.307Z"
+}

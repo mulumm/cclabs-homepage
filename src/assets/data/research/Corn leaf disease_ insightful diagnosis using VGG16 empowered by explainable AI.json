@@ -1,0 +1,20 @@
+{
+  "title": "Corn leaf disease: insightful diagnosis using VGG16 empowered by explainable AI",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "Frontiers in Plant Science",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2024-06-26"
+  },
+  "link": "https://doi.org/10.3389/fpls.2024.1402835",
+  "authors": "Maria Tariq(1저자), Usman Ali(2저자), Sagheer Abbas(3저자), Shahzad Hassan(4저자), Rizwan Ali Naqvi(5저자), Muhammad Adnan Khan(6저자), Daesik Jeong(교신저자)",
+  "abstract": "The agricultural sector is pivotal to food security and economic stability worldwide. Corn holds particular significance in the global food industry, especially in developing countries where agriculture is a cornerstone of the economy. However, corn crops are vulnerable to various diseases that can significantly reduce yields. Early detection and precise classification of these diseases are crucial to prevent damage and ensure high crop productivity. This study leverages the VGG16 deep learning (DL) model to classify corn leaves into four categories: healthy, blight, gray spot, and common rust. Despite the efficacy of DL models, they often face challenges related to the explainability of their decision-making processes. To address this, Layer-wise Relevance Propagation (LRP) is employed to enhance the model's transparency by generating intuitive and human-readable heat maps of input images. The proposed VGG16 model, augmented with LRP, outperformed previous state-of-the-art models in classifying corn leaf diseases. Simulation results demonstrated that the model not only achieved high accuracy but also provided interpretable results, highlighting critical regions in the images used for classification. By generating human-readable explanations, this approach ensures greater transparency and reliability in model performance, aiding farmers in improving their crop yields.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "CornLeaf.png",
+  "createdAt": "2025-12-15T07:15:18.282Z"
+}
