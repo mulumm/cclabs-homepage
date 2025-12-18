@@ -17,6 +17,10 @@ const PeopleDetail = ({ personId, onBack }: PeopleDetailProps) => {
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [personId]);
+
+  useEffect(() => {
     const load = async () => {
       try {
         const modules = import.meta.glob<{ default: PeopleDetailData }>(

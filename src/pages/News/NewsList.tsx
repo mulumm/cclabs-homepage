@@ -99,7 +99,7 @@ const NewsPage = () => {
                   >
                     <div className="w-full h-48 bg-gray-700 rounded-md overflow-hidden mb-3">
                       {it.image_name ? (
-                        <img src={`/src/assets/uploads/news/${it.image_name}`} alt={it.title} className="w-full h-full object-cover" />
+                        <img src={`/uploads/news/${it.image_name}`} alt={it.title} className="w-full h-full object-cover" />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-gray-400">No Image</div>
                       )}
@@ -130,7 +130,7 @@ const NewsPage = () => {
                   >
                     <div className="w-full h-48 bg-gray-700 rounded-md overflow-hidden mb-3">
                       {it.image_name ? (
-                        <img src={`/src/assets/uploads/news/${it.image_name}`} alt={it.title} className="w-full h-full object-cover" />
+                        <img src={`/uploads/news/${it.image_name}`} alt={it.title} className="w-full h-full object-cover" />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-gray-400">No Image</div>
                       )}

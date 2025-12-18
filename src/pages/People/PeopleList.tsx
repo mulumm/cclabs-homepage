@@ -85,10 +85,17 @@ const PeoplePage = () => {
       try {
         const h = window.location.hash || '';
         if (h.startsWith('#people:')) {
+          setSelectedPerson(null);
+          
           const val = decodeURIComponent(h.split(':')[1] || '');
-          if (!val) return;
+          if (!val) {
+            setSelectedCategory(categories[0]);
+            return;
+          }
           const found = categories.find((c) => c.toLowerCase() === val.toLowerCase());
-          if (found) setSelectedCategory(found);
+          if (found) {
+            setSelectedCategory(found);
+          }
         }
       } catch {
         // ignore

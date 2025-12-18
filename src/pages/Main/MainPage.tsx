@@ -122,7 +122,7 @@ const MainPage = () => {
             playsInline
             poster="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=2070&auto=format&fit=crop"
           >
-            <source src="/src/assets/main_video.mp4" type="video/mp4" />
+            <source src="/main_video.mp4" type="video/mp4" />
           </video>
 
           <div className="absolute inset-0 bg-[#0f1420]/50 mix-blend-multiply"></div>

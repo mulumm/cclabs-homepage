@@ -74,8 +74,7 @@ const PatentPage = () => {
                 Patents
               </h1>
               <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
-                현재 CCLabs에서 보유 및 출원 중인 <br className="hidden md:block" />
-                지식재산권 현황입니다.
+                This is the current status of intellectual property rights held by CCLabs.
               </p>
             </div>
 
@@ -155,7 +154,7 @@ const PatentPage = () => {
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-around gap-12">
                       <div className="text-center md:text-left">
                         <h2 className="text-2xl font-bold text-white mb-2"> CCLabs Patent Status</h2>
-                        <p className="text-gray-500 font-light">CCLabs의 지식재산권을 바탕으로 기술 혁신을 이어갑니다.</p>
+                        <p className="text-gray-500 font-light">Continuing technological innovation based on <p></p>CCLabs intellectual property rights.</p>
                       </div>
                       <div className="flex flex-col items-center">
                         <div className="text-7xl font-black text-[#4dabf7] mb-2 tracking-tighter">

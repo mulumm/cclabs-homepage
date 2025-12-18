@@ -86,7 +86,7 @@ const PatentDetail = ({ patentTitle, onBack }: PatentDetailProps) => {
   
   // 이미지 경로 생성 - 실제 파일 시스템 경로 사용
   const imagePath = patent.image_name
-    ? `/src/assets/uploads/patents/${patent.image_name}`
+    ? `/uploads/patents/${patent.image_name}`
     : null;
 
   // 디버깅용 로그
@@ -106,10 +106,10 @@ const PatentDetail = ({ patentTitle, onBack }: PatentDetailProps) => {
         <div className="flex justify-end mb-8">
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-[#4dabf7] hover:text-white transition-colors group"
+            className="flex items-center gap-2 rounded-lg bg-[#151b2b] px-4 py-2 text-gray-300 transition-colors group hover:bg-[#1f273b] hover:text-white"
           >
-            <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-            <span>돌아가기</span>
+            <ChevronLeft size={20} className="transition-transform group-hover:-translate-x-1" />
+            <span>Back</span>
           </button>
         </div>
 

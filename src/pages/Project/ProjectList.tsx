@@ -101,7 +101,7 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
           </div>
           <button 
             onClick={onBack} 
-            className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors px-4 py-2 rounded-full hover:bg-white/5"
+            className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors px-4 py-2 rounded-full bg-gray-500/10 hover:bg-gray-500/20"
           >
             <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
             <span>Back</span>

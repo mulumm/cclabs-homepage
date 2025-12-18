@@ -4,7 +4,7 @@ import type { ResearchData } from '../../types';
 import ResearchList from './ResearchList';
 import ResearchDetail from './ResearchDetail';
 
-// [수정됨] 순서 변경: International이 먼저 나오도록 수정
+// 순서: International이 먼저 나오도록 설정
 const CATEGORIES = [
   'International conference',
   'International journal',
@@ -70,7 +70,7 @@ const ResearchPage = () => {
     load();
   }, []);
 
-  // Read URL hash to support header-driven category selection
+  // URL hash 변경 감지
   useEffect(() => {
     const handleHash = () => {
       try {
@@ -109,11 +109,14 @@ const ResearchPage = () => {
   }
 
   return (
-    <div className="w-full bg-[#0f1420] pt-32 pb-24 min-h-screen text-white">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+    <div 
+      className="w-full !bg-[#0f1420] pt-32 pb-24 min-h-screen !text-white"
+      style={{ colorScheme: 'dark' }}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">Academic Publications</h2>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white">Research</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight !text-white">Research</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">Let me introduce the academic papers and research results of our lab</p>
         </div>
 
@@ -124,7 +127,7 @@ const ResearchPage = () => {
             return (
               <div 
                 key={cat} 
-                className={`group relative bg-[#151b2b] rounded-3xl p-8 md:p-10 border border-white/5 hover:border-opacity-50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1`}
+                className={`group relative !bg-[#151b2b] rounded-3xl p-8 md:p-10 border border-white/5 hover:border-opacity-50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1`}
                 style={{ borderColor: 'rgba(255,255,255,0.05)' }} 
               >
                 {/* Header */}
@@ -133,12 +136,12 @@ const ResearchPage = () => {
                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${theme.bg} ${theme.border} border`}>
                       <span className={`${theme.color}`}>{theme.icon}</span>
                     </div>
-                    <h2 className="text-2xl font-bold text-white leading-tight max-w-[200px]">{cat}</h2>
+                    <h2 className="text-2xl font-bold !text-white leading-tight max-w-[200px]">{cat}</h2>
                   </div>
                   
                   <button 
                     onClick={() => setSelectedCategory(cat)} 
-                    className={`flex items-center gap-2 ${theme.color} hover:text-white transition-colors group/btn`}
+                    className={`flex items-center gap-2 ${theme.color} hover:!text-white transition-colors group/btn px-4 py-2 rounded-lg bg-gray-500/10 hover:bg-gray-500/20`}
                   >
                     <span className="font-medium text-sm">View All</span>
                     <ArrowRight size={16} className="transform group-hover/btn:translate-x-1 transition-transform" />
@@ -156,19 +159,24 @@ const ResearchPage = () => {
                       <button 
                         key={it.title} 
                         onClick={() => setSelectedResearch(it.title)} 
-                        className="w-full text-left group/item"
+                        className="w-full text-left group/item appearance-none focus:outline-none bg-transparent"
                       >
-                        <div className={`py-3 border-b border-white/5 hover:border-opacity-50 transition-colors`}>
-                          <h4 className={`font-bold text-gray-200 group-hover/item:text-white transition-colors mb-2 truncate text-base`}>
+                        
+                        <div 
+                          className="p-4 rounded-lg border border-white/5 transition-all hover:border-white/20"
+                          style={{ backgroundColor: '#121723' }}
+                        >
+                          <h4 className={`font-bold !text-gray-200 group-hover/item:!text-white transition-colors mb-2 truncate text-lg`}>
                             {it.title}
                           </h4>
-                          <div className="flex flex-col items-start gap-1 text-xs text-gray-500">
-                            <div className="flex items-center gap-2 w-full min-w-0">
+                          
+                          <div className="flex flex-col items-start gap-1 text-xs !text-gray-400">
+                            <div className="flex items-center gap-2 w-full min-w-0 text-base">
                                 <Users size={12} className="flex-shrink-0" />
                                 <p className="truncate">{it.authors || 'No authors'}</p>
                             </div>
                             {(it.date?.publish || it.date?.accept || it.date?.submit || it.date?.prepare) && (
-                                <div className="flex items-center gap-2 font-mono">
+                                <div className="flex items-center gap-2 font-mono text-base">
                                     <Calendar size={12} />
                                     <span>{it.date?.publish || it.date?.accept || it.date?.submit || it.date?.prepare}</span>
                                 </div>
@@ -184,9 +192,9 @@ const ResearchPage = () => {
           })}
         </div>
 
-        {/* Statistics Section (수정됨) */}
+        {/* Statistics Section */}
         <div className="mt-20 relative overflow-hidden bg-gradient-to-r from-[#1a2333] to-[#151b2b] rounded-3xl border border-white/5 p-8 md:p-12">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Research Statistics</h2>
+          <h2 className="text-3xl font-bold !text-white mb-12 text-center">Research Statistics</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {CATEGORIES.map((c) => {
                const theme = THEMES[c];
@@ -195,7 +203,6 @@ const ResearchPage = () => {
                   <div className={`text-3xl md:text-4xl font-bold mb-3 ${theme.color} group-hover:scale-110 transition-transform duration-300`}>
                     {stats.counts[c] ?? 0}
                   </div>
-                  {/* [수정됨] 명칭 그대로 사용 (replace 제거) */}
                   <p className="text-gray-400 text-xs uppercase tracking-wider text-center max-w-[150px] leading-relaxed">
                     {c}
                   </p>

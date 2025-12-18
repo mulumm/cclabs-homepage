@@ -42,7 +42,13 @@ const ResearchDetail: React.FC<Props> = ({ researchTitle, onBack }) => {
           <div className="text-center py-24">
             <p className="text-gray-400">해당 연구 정보를 찾을 수 없습니다.</p>
             {onBack && (
-              <button onClick={onBack} className="mt-6 px-4 py-2 bg-[#4dabf7] text-black rounded">Back</button>
+              // 수정됨: 에러 화면의 Back 버튼도 어두운 테마로 변경
+              <button 
+                onClick={onBack} 
+                className="mt-6 px-6 py-2 rounded-lg bg-[#151b2b] border border-white/10 text-gray-400 hover:text-white hover:bg-[#1c2438] transition-all"
+              >
+                Back
+              </button>
             )}
           </div>
         </div>
@@ -50,7 +56,7 @@ const ResearchDetail: React.FC<Props> = ({ researchTitle, onBack }) => {
     );
   }
 
-  const imgSrc = item.result_image_name ? `/src/assets/uploads/research/${item.result_image_name}` : null;
+  const imgSrc = item.result_image_name ? `/uploads/research/${item.result_image_name}` : null;
 
   return (
     <div className="w-full bg-[#0f1420] pt-32 pb-24 min-h-screen text-white">
@@ -59,7 +65,11 @@ const ResearchDetail: React.FC<Props> = ({ researchTitle, onBack }) => {
         {/* Back Button */}
         <div className="flex justify-end mb-6">
           {onBack && (
-            <button onClick={onBack} className="flex items-center gap-2 text-[#4dabf7] hover:text-white transition-colors group">
+            // 수정됨: 화면 배경색과 어우러지는 짙은 남색 배경 + 은은한 테두리 적용
+            <button 
+              onClick={onBack} 
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151b2b] border border-white/10 text-gray-400 hover:text-white hover:bg-[#1c2438] transition-all group shadow-sm"
+            >
               <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
               <span>back</span>
             </button>

@@ -7,6 +7,10 @@ const NewsDetail = ({ newsTitle, onBack }: NewsDetailProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const load = async () => {
       try {
         const modules = import.meta.glob<{ default: NewsData }>('../../assets/data/news/*.json', { eager: true });
@@ -55,10 +59,10 @@ const NewsDetail = ({ newsTitle, onBack }: NewsDetailProps) => {
         <div className="flex justify-end mb-6">
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-[#4dabf7] hover:text-white transition-colors group"
+            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group px-4 py-2 rounded-full bg-gray-500/10 hover:bg-gray-500/20"
           >
             <ChevronLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-            <span>돌아가기</span>
+            <span>Back</span>
           </button>
         </div>
 
@@ -67,7 +71,7 @@ const NewsDetail = ({ newsTitle, onBack }: NewsDetailProps) => {
 
         <div className="w-full h-[420px] bg-gray-800 rounded-md overflow-hidden mb-6">
           {item.image_name ? (
-            <img src={`/src/assets/uploads/news/${item.image_name}`} alt={item.title} className="w-full h-full object-cover" />
+            <img src={`/uploads/news/${item.image_name}`} alt={item.title} className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-400">No Image</div>
           )}
