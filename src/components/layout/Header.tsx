@@ -47,6 +47,14 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
 
   // [핵심] 네비게이션 통합 핸들러
   const handleNavigation = (menu: MenuType, subItem?: string) => {
+    // [WORKAROUND] If clicking 'Research' while already on a research sub-page (like Detail),
+    // force a browser navigation to reset the component state, since the state owner component
+    // cannot be modified per user constraints.
+    if (menu === 'Research' && !subItem && currentPage === 'Research') {
+      window.location.assign('/#research:');
+      return;
+    }
+
     // 1. 페이지 변경 요청 (React State 업데이트)
     onPageChange(menu);
 

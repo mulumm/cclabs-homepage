@@ -77,6 +77,7 @@ const ResearchPage = () => {
         const h = window.location.hash || '';
         if (h.startsWith('#research:')) {
           const v = decodeURIComponent(h.slice('#research:'.length));
+          setSelectedResearch(null);
           setSelectedCategory(v || null);
         }
       } catch {

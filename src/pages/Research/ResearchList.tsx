@@ -31,6 +31,22 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
     window.scrollTo(0, 0);
   }, []);
 
+  // URL 해시 변경 감지하여 상세 페이지 닫기
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      // research: 로 시작하는 해시이고 selected가 있으면 리스트로 돌아가기
+      if (hash.startsWith('#research:') && selected) {
+        setSelected(null);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, [selected]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -126,7 +142,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                 <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    // [수정] !bg-[#151b2b]와 !text-white로 배경과 글자색 강제 고정
                     className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg px-4 py-2 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 >
                     <span>
@@ -136,7 +151,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                 </button>
 
                 {isDropdownOpen && (
-                    // [수정] !bg-[#1c2436]로 드롭다운 박스 배경 강제 고정, z-index 50으로 상단 노출
                     <div className="absolute z-50 top-full mt-2 w-full !bg-[#1c2436] border border-white/10 rounded-lg shadow-xl overflow-hidden">
                         <ul className="py-1">
                             {SEARCH_CATEGORIES.map(({ key, label }) => (
@@ -147,7 +161,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                                             setSearchCategory(key);
                                             setIsDropdownOpen(false);
                                         }}
-                                        // [수정] !bg-transparent로 부모 배경 따르게 설정, hover 시에만 색상 변경
                                         className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 
                                             ${searchCategory === key 
                                                 ? '!bg-[#4dabf7] !text-[#0f1420] font-medium' 
@@ -172,7 +185,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                     placeholder={`'${SEARCH_CATEGORIES.find(c => c.key === searchCategory)?.label}'에서 검색...`}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    // [수정] input 배경도 !bg-[#151b2b]로 강제 고정
                     className="w-full !bg-[#151b2b] !text-white border border-white/10 rounded-lg pl-10 pr-4 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4dabf7]"
                 />
             </div>
@@ -193,7 +205,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
               <button 
                 key={it.title + idx} 
                 onClick={() => setSelected(it.title)}
-                // [수정] 리스트 아이템 배경도 !bg-[#121723]로 강제 고정
                 className="w-full text-left group relative !bg-[#121723] rounded-2xl p-6 md:p-8 border border-white/5 hover:border-[#4dabf7]/30 transition-all duration-300 hover:shadow-lg hover:shadow-black/20"
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -212,7 +223,6 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                       )}
                     </div>
                     
-                    {/* [수정] 제목 글자색 강제 고정 */}
                     <h3 className="text-xl font-bold !text-white mb-2 group-hover:!text-[#4dabf7] transition-colors line-clamp-2">
                       {it.title}
                     </h3>
