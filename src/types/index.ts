@@ -158,6 +158,7 @@ export interface ProjectData {
   progress_status: 'progress' | 'completed' | string;
   start_date?: string;
   end_date?: string;
+  PI?: string;
   participant?: string;
   project_method?: string;
   project_target?: string;

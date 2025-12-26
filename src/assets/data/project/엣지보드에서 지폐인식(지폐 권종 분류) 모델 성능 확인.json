@@ -4,6 +4,7 @@
   "progress_status": "completed",
   "start_date": "2024-04-16",
   "end_date": "2025-03-12",
+  "PI": "정대식",
   "participant": "배희재, 윤은수",
   "project_method": "\n서버에서 지폐 인식 모델 학습 및 성능 확인\n젯슨 나노보드에 모델 탑재 및 성능 확인 (running time)\n엣지보드(딥인사이트)에 모델 탑재 및 성능 확인 (running time)\n모델 최적화 및 성능 개선 확인",
   "project_target": "\n딥러닝 기반 지폐인식(지폐 권종 분류) 모델 개발\nJetson Nano와 딥인사이트 제공 AI Edge Board에 딥러닝기반 지폐인식(지폐 권종 분류) 모델 탑재 및 성능 비교 실험\nCatchCam을 사용한 실시간 데모를 통한 성능 확인”",

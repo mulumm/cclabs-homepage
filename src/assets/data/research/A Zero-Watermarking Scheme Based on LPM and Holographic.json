@@ -10,7 +10,7 @@
     "publish": "2014-08-06"
   },
   "link": "https://file1.earticle.net/PDF/Direct?key=G1xW+ka9lbLiogW8lsOWiP1KKUgeZyQ10XO+EysixKW8WzKk5Jgj2WZL29n/WcRJfnwq27d7lXjinKKp0keb855rKOctq9QAMrrdGNf6/+xv5/pqSF+ooqv8a5hJH/ntCiJvuU54pLxkI95iXqGji6qhNjxJxrB74WyoEhBImGf737480WmaiE2/RM74Z70QiwhwgGxGV9E=",
-  "authors": "De Li(1저자), Lu Yan Qiao(2저자), JongWeon Kim(3저자)",
+  "authors": "De Li(1저자), Lu Yan Qiao(2저자), JongWeon Kim(교신저자)",
   "abstract": "This paper proposes a novel watermarking scheme against geometric attacks, combined with the holographic technology and the log-polar transform. In this paper, we first use discrete cosine transform into the original image, then do edge detection for the low frequency part, then do log-polar transform to edge image and make it binarization. We use a key to choose a certain size of the binary image to do holographic processing, then make it binarization and do logical operation with the watermarked image which do Anrold transformation, get the zero-watermarking. Finally, we register it in IPR database to obtain copyright protection. The experimental results show that compared with other zero-watermarking algorithms, this scheme has better robustness. It not only can effectively resist the noise, cropping, JPEG compression and other conventional attacks, but also can effectively resist geometric attacks such as rotation, scaling.",
   "method": "",
   "result": "",

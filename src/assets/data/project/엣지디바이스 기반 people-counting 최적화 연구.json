@@ -4,6 +4,7 @@
   "progress_status": "completed",
   "start_date": "2023-11-16",
   "end_date": "2024-02-01",
+  "PI": "정대식",
   "participant": "박선균",
   "project_method": "열화상 카메라를 활용하여 데이터를 수집한다.\n이후 데이터 전처리를 통해 데이터를 가공한다.\nNPU칩이 내장된 cam을 활용하여 성능 분석한다.\n이후 최적화를 통해 모델의 성능을 올린다.\n",
   "project_target": "엣지디바이스 내에서 열화상 데이터를 활용한 people counting 모델 개발",

@@ -10,7 +10,7 @@
     "publish": "2019-07-02"
   },
   "link": "https://doi.org/10.1109/ICUFN.2019.8806040",
-  "authors": "Ruichen Jin(1저자), Jongweon Kim(2저자)",
+  "authors": "Ruichen Jin(1저자), Jongweon Kim(교신저자)",
   "abstract": "In this paper, we proposed a watermarking method using group quantization for CityGML. We used the watermarking method using group quantization and the distribution of position of coordinates in consideration of the CityGML structural characteristics. By sorting the position of the coordinates, this method is robust against noise attacks and the invisibility is high.",
   "method": "",
   "result": "",

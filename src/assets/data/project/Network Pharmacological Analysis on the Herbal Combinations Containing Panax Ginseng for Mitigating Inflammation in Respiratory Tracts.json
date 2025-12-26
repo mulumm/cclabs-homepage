@@ -4,6 +4,7 @@
   "progress_status": "progress",
   "start_date": "2025-01-01",
   "end_date": "",
+  "PI": "정대식",
   "participant": "강재하 ",
   "project_method": "네트워크 약리학(Network pharmacology) 분석을 통해 COVID-19에 대한 각 약초의 항염증 효과 추론.\n약물 간 상호작용을 정량적으로 측정하기 위해 HSA(Highest Single Agent) 및 Bliss 시너지 점수 계산.\n시험관 내(In vitro) 실험 데이터를 기반으로 실험설계법(DOE) 분석을 적용하여 약물 조합의 최적 비율 탐색.\nNCI-H292 세포에서의 MUC5AC mRNA 발현 및 RAW264.7 대식세포에서의 질소산화물(NO) 농도를 측정하여 항염증 효과 및 시너지 효과 확인.",
   "project_target": "COVID-19 감염 후 발생할 수 있는 호흡기계 염증 질환 완화를 위한 복합 생약(Ephedrae Herba, Platycodonis Radix, Ginseng Radix, Schisandrae Fructus)의 항염증 효능 연구.\nTNF-alpha, NF-kB, 칼슘 등 특정 신호 전달 경로를 표적으로 하여 염증을 감소시키고 호흡기계 기능을 개선하는 작용 기전 규명.\n실험설계법(DOE) 분석 및 시너지 점수 계산을 통해 항염증 효과를 극대화하는 최적의 생약 조합 비율 도출.",

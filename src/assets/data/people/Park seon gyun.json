@@ -4,7 +4,7 @@
   "createdAt": "2025-12-15T03:22:09.287Z",
   "name": "Park Seon Gyun",
   "korean_name": "박선균",
-  "role": "undergraduate student",
+  "role": "master's student",
   "email": "qkrtjsrbs315@gmail.com",
   "research": "Biological Artificial Intelligence, Computer Vision, NPU  ",
   "interest": "Biological Artificial Intelligence, Computer Vision, Optimization",
@@ -12,5 +12,6 @@
   "career": "",
   "projects": "FRU 및 감정 분석 서비스 개발",
   "journal": "Hybrid Iris Recognition for Authentication Systems in AI Edge Device (NPU) Environments",
+  "degree":"1학년 2학기",
   "people_image": "박선균.jpg"
 }

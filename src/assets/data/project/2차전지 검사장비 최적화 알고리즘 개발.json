@@ -4,6 +4,7 @@
   "progress_status": "completed",
   "start_date": "2024-05-02",
   "end_date": "2024-12-07",
+  "PI": "정대식",
   "participant": "박선균",
   "project_method": "머신러닝 회귀 모델 기반 배터리 성능 예측 기술 개발\n주성분 분석(PCA)기반 충,방전과 관련이 높은 데이터 전처리 알고리즘 개발\n데이터 분석을 위한 시각화 프로그램 개발",
   "project_target": "AI 기술 기반 배터리 유형별 최적 공정 parameter 도출 및 이의 적용으로 battery Formation 제조 공정의 완전 자동화를 통한 Battery 생산성 향상\n",

@@ -4,6 +4,7 @@
   "progress_status": "progress",
   "start_date": "2024-03-01",
   "end_date": "",
+  "PI": "정대식",
   "participant": "강재하",
   "project_method": "RAG와 LLM를 통해 pipeline을 구축함.",
   "project_target": "네트워크 약리학 기반의 RAG와 LLM 기술을 바탕으로 의약 연구 기여를 하고자 함\n",

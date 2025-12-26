@@ -205,6 +205,13 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                       {p.title}
                     </h3>
                     
+                    {p.PI && (
+                        <div className="flex items-center gap-2 text-sm text-gray-300 mb-1 font-medium">
+                            <User size={14} className="text-gray-500" />
+                            <span>PI : {p.PI}</span>
+                        </div>
+                    )}
+                    
                     <div className="flex items-center gap-2 text-sm text-gray-400">
                       <User size={14} className="text-gray-500" />
                       <span className="truncate">{p.participant || 'No participants listed'}</span>

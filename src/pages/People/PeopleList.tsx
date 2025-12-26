@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Mail, BookOpen, ArrowRight } from 'lucide-react';
+import { Mail, BookOpen, ArrowRight, GraduationCap } from 'lucide-react';
 import type { PersonData } from '../../types';
 import PeopleDetail from './PeopleDetail';
 
@@ -28,6 +28,7 @@ const PeoplePage = () => {
       education?: string;
       career?: string;
       people_image?: string;
+      degree?: string;
     };
 
     const load = async () => {
@@ -117,17 +118,9 @@ const PeoplePage = () => {
     return name ? `/uploads/people/${name}` : null;
   };
 
-  // 인원 수에 따른 그리드 클래스 생성 함수
   const getGridClass = (count: number) => {
-    if (count === 1) {
-      // 1명일 때: 중앙 정렬, 최대 너비 제한 (너무 넓어지지 않게)
-      return 'grid-cols-1 max-w-md';
-    }
-    if (count === 2) {
-      // 2명일 때: 2열 그리드, 최대 너비 적당히 제한
-      return 'grid-cols-1 md:grid-cols-2 max-w-4xl';
-    }
-    // 3명 이상일 때: 기본 3열 그리드, 전체 너비 사용
+    if (count === 1) return 'grid-cols-1 max-w-md';
+    if (count === 2) return 'grid-cols-1 md:grid-cols-2 max-w-4xl';
     return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl';
   };
 
@@ -173,12 +166,14 @@ const PeoplePage = () => {
               <p className="text-gray-400 text-lg">해당 카테고리에 등록된 멤버가 없습니다.</p>
             </div>
           ) : (
-            /* 동적 그리드 클래스 적용: mx-auto로 컨테이너 자체를 중앙 정렬 */
             <div className={`grid gap-6 lg:gap-8 mx-auto transition-all duration-500 ${getGridClass(filtered.length)}`}>
               {filtered.map((p, idx) => {
                 const researchAreas = Array.isArray(p.research) 
                   ? p.research 
                   : (p.research ? p.research.split(',').map(s => s.trim()) : []);
+
+                // 안전한 타입 접근을 위해 변수 추출
+                const extraData = p.extra as { degree?: string };
 
                 return (
                   <button
@@ -249,13 +244,28 @@ const PeoplePage = () => {
                           )}
                         </div>
 
+                        {/* =================================================== */}
+                        {/* Degree Section (Modified to match Header style) */}
+                        {/* =================================================== */}
+                        {extraData?.degree && (
+                          <div>
+                            <div className="flex items-center gap-2 text-[#4dabf7] mb-2">
+                              <GraduationCap size={16} />
+                              <span className="text-xs font-bold uppercase tracking-wider">Degree</span>
+                            </div>
+                            <p className="text-gray-400 text-sm pl-6 leading-relaxed">
+                              {extraData.degree}
+                            </p>
+                          </div>
+                        )}
+                        
                         {/* Email Section */}
                         <div>
-                           <div className="flex items-center gap-2 text-[#4dabf7] mb-2">
+                            <div className="flex items-center gap-2 text-[#4dabf7] mb-2">
                             <Mail size={16} />
                             <span className="text-xs font-bold uppercase tracking-wider">Contact</span>
                           </div>
-                          <p className="text-gray-400 font-mono text-sm pl-6 break-all">
+                          <p className="text-gray-400 font-mono text-sm pl-6 break-all hover:text-white transition-colors">
                             {p.email || 'No email provided'}
                           </p>
                         </div>

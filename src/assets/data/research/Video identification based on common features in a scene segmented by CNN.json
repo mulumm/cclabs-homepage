@@ -10,7 +10,7 @@
     "publish": "2017-12-01"
   },
   "link": "10.17548/ksaf.2017.12.30.63",
-  "authors": "김종원(1저자), 한성준(2저자), 김용배(3저자), 이정재(4저자)",
+  "authors": "김종원(교신저자), 한성준(2저자), 김용배(3저자), 이정재(4저자)",
   "abstract": "Video fingerprinting is an important issue in the copyright protection field as digital environment enables the copyright infringement to get easier and easier. Copyright owners want to identify contents on the net and to block infringed contents. In this paper, we propose an efficient algorithm to identify video contents even if we only have a video frame. The algorithm divides a video content into scenes using deep learning network and then extracts common feature from a scene. We use deep learning with convolution neural network for video scene segmentation. It can be more precise than traditional method that use histogram. The feature database contains only a set of common features per a scene. The proposed algorithm can reduce the size of the database by a factor of a hundred, which can reduce the database comparison time by a factor of a few.",
   "method": "",
   "result": "",

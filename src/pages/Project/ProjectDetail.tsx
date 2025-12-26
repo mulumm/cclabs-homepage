@@ -94,6 +94,12 @@ const ProjectDetail = ({ projectTitle, onBack }: ProjectDetailProps) => {
         </div>
 
         <div className="space-y-4 !text-gray-200">
+          {item.PI && (
+            <div>
+              <h3 className="font-semibold !text-white">PI</h3>
+              <p className="!text-gray-300">{item.PI}</p>
+            </div>
+          )}
           <div>
             <h3 className="font-semibold !text-white">Participants</h3>
             <p className="!text-gray-300">{item.participant}</p>

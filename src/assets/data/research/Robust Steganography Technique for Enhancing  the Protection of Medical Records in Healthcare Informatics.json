@@ -10,7 +10,7 @@
     "publish": "2025-03-24"
   },
   "link": "https://ieeexplore.ieee.org/document/10937490",
-  "authors": "Hammad Riaz , Rizwan Ali Naqvi , Manzoor Ellahi , M. Arslan Usman , M. Rehan Usman , Daesik \nJeong, and Seung Won Lee\n",
+  "authors": "Hammad Riaz , Rizwan Ali Naqvi , Manzoor Ellahi , M. Arslan Usman , M. Rehan Usman , Daesik \nJeong(교신저자), and Seung Won Lee\n",
   "abstract": "The secrecy and security of patients’ details are among the biggest concerns in Healthcare Information Systems. The Electronic Patient Records (EPR) data, along with doctors’ comments can be embedded inside carrier DICOM Images using the proposed scheme. The confidential information is scattered into different sets, and rather than embedding it in a single DICOM image, it is embedded into multiple carriers for enhanced security. These scans can be used together to hide the confidential patient data using the proposed technique. The prototype steganography scheme is tested utilizing LSB Substitution and dummy secret data is embedded inside DICOM Images. The achieved results are imperceptible to the human visual \nsystem (HVS). Performance matrices i.e., PSNR, MSE, RMSE, SSIM, NR-IQA parameters (BRISQUE, NIQE, PIQE), as well as entropy, are calculated for cover and stego images. The proposed scheme has been found to be resilient and computationally secure.",
   "method": "",
   "result": "",

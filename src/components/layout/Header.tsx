@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 // 타입 정의
-export type MenuType = 'Main' | 'People' | 'Research' | 'Project' | 'News' | 'Patent' | 'Recruitment';
+export type MenuType = 'Main' | 'People' | 'Research' | 'Project' | 'Playground' |'News' | 'Patent' | 'Recruitment';
 export interface HeaderProps {
   currentPage: string;
   onPageChange: (page: MenuType) => void;
@@ -12,7 +12,7 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const menuItems: MenuType[] = ['Main', 'People', 'Research', 'Project', 'News', 'Patent', 'Recruitment'];
+  const menuItems: MenuType[] = ['Main', 'People', 'Research', 'Project', 'Playground','News', 'Patent', 'Recruitment'];
 
   const subMenus: { [key: string]: string[] } = {
     People: ['ADVISOR', 'ALUMNI', "MASTER'S STUDENTS", 'UNDERGRADUATE STUDENTS'],
@@ -47,6 +47,11 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
 
   // [핵심] 네비게이션 통합 핸들러
   const handleNavigation = (menu: MenuType, subItem?: string) => {
+    if (menu === 'Playground') {
+      alert('업데이트 예정입니다.');
+      return;
+    }
+    
     // [WORKAROUND] If clicking 'Research' while already on a research sub-page (like Detail),
     // force a browser navigation to reset the component state, since the state owner component
     // cannot be modified per user constraints.

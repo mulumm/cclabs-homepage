@@ -4,6 +4,7 @@
   "progress_status": "completed",
   "start_date": "2024-05-01",
   "end_date": "2024-08-31",
+  "PI": "정대식",
   "participant": "배희재, 윤은수, 박선균",
   "project_method": "데이터 분석 및 전처리 (데이터 선정, 라벨링&포멧 선정)\n홍채인식 학습 (GPU) (YOLOv8n-seg model)\n특징 추출 및 분류 알고리즘 분석 (MFC 통합 프로그램)\nNPU 실험 - mythic board (SDK 설치 및 inference time 측정)\nJetson Nano 실험 (환경 설정 및, inference time 측정)",
   "project_target": "딥러닝(ex.CNN, DNN등) 기반 홍채인식 알고리즘 개발 및 최적화\n홍채영역 검출 전처리 및 홍채코드 추출 알고리즘 개발\nJetson Nano와 현대 MIB 제공 AI Edge Board에 딥러닝을 이용한 홍채인식 알고리즘 탑재 및 성능 비교 실험”\n연구방법Permalink",

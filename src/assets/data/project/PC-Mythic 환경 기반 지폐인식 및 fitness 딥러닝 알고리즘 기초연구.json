@@ -4,6 +4,7 @@
   "progress_status": "completed",
   "start_date": "2024-10-24",
   "end_date": "2025-01-28",
+  "PI": "정대식",
   "participant": "배희재",
   "project_method": "데이터 분석 및 전처리 (제공: 현대->상명대)\nResNet 기반 지폐 인식 (PC-Mythic 사용)\n딥러닝 알고리즘을 사용하여 지폐 fitness 분류 (MemSeg 기반)\n성능평가 및 개선 (Jetson Nano & PC-Mythic)",
   "project_target": "\n딥러닝(ResNet) 기반 지폐인식(지폐 권종 인식)모델 개발 및 최적화\n지폐 fitness 분류 알고리즘 개발 및 최적화\nJetson Nano와 PC-Mythic 환경에서 지폐인식 및 fitness 분류 딥러닝 알고리즘 탑재 및 성능 비교 실험",

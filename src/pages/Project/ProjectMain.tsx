@@ -139,6 +139,7 @@ const ProjectPage = () => {
                         <h4 className="font-bold !text-gray-200 group-hover/item:!text-[#4dabf7] transition-colors mb-1 truncate">{p.title}</h4>
                         {/* [수정] flex-col로 변경하여 수직 배치 */}
                         <div className="flex flex-col items-start gap-1 text-sm mt-1">
+                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI : {p.PI}</p>}
                            <p className="!text-gray-400 truncate w-full">{p.participant || ''}</p>
                            <p className="!text-gray-500 font-mono text-xs">{formatDate(p.start_date)}</p>
                         </div>
@@ -162,6 +163,7 @@ const ProjectPage = () => {
                         <h4 className="font-bold !text-gray-300 group-hover/item:!text-white transition-colors mb-1 truncate">{p.title}</h4>
                          {/* [수정] flex-col로 변경하여 수직 배치 */}
                          <div className="flex flex-col items-start gap-1 text-sm mt-1">
+                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
                            <p className="!text-gray-500 truncate w-full">{p.participant || ''}</p>
                            <p className="!text-gray-600 font-mono text-xs">{formatDate(p.start_date)}</p>
                         </div>
@@ -209,6 +211,7 @@ const ProjectPage = () => {
                          <h4 className="font-bold !text-gray-200 group-hover/item:!text-green-400 transition-colors mb-1 truncate">{p.title}</h4>
                           {/* [수정] flex-col로 변경하여 수직 배치 */}
                           <div className="flex flex-col items-start gap-1 text-sm mt-1">
+                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
                            <p className="!text-gray-400 truncate w-full">{p.participant || ''}</p>
                            <p className="!text-gray-500 font-mono text-xs">{formatDate(p.start_date)}</p>
                         </div>
@@ -232,6 +235,7 @@ const ProjectPage = () => {
                          <h4 className="font-bold !text-gray-300 group-hover/item:!text-white transition-colors mb-1 truncate">{p.title}</h4>
                           {/* [수정] flex-col로 변경하여 수직 배치 */}
                           <div className="flex flex-col items-start gap-1 text-sm mt-1">
+                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
                            <p className="!text-gray-500 truncate w-full">{p.participant || ''}</p>
                            <p className="!text-gray-600 font-mono text-xs">{formatDate(p.start_date)}</p>
                         </div>

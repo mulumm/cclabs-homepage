@@ -10,7 +10,7 @@
     "publish": "2014-09-09"
   },
   "link": "https://gvpress.com/journals/IJMUE/vol9_no9/5.pdf",
-  "authors": "Youngseok Lee(1저자), Jongweon Kim(2저자)",
+  "authors": "Youngseok Lee(1저자), Jongweon Kim(교신저자)",
   "abstract": "In this paper we investigated applicability of metadata to identify music contents in MP3 files. Metadata in MP3 include information associated with music contents such as a table of Hoffman code, scale factors, stereo types. We considered music contents in MP3 file as a function of metadata. Our idea is reasonable since music contents in MP3 file are controlled by characteristics of metadata. In order to identifying a MP3 file, we used a concurrence order of metadata. We assumed that MP3 files with other music contents have other concurrence orders in their metadata. In experiments, we extracted metadata from MP3 files and rearranged metadata as column vector of matrix. The rearranged metadata were analyzed various numerical analyses such as singular value decomposition.",
   "method": "",
   "result": "",

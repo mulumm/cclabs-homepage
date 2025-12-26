@@ -6,11 +6,11 @@
   "korean_name": "정대식",
   "role": "advisor",
   "email": "jungsoft97@smu.ac.kr",
-  "research": "Pattern Recognition",
+  "research": "Bio-AI, Bio-Infomatics, Pattern Recognition(Banknote Recognition), Image Processing, Biometrics (Iris), BigData&Cloud(AWS), network pharmacology, EdgeAI Device, Agricultural Automation",
   "interest": "",
   "education": "",
   "career": "Assistant Professor\nNational Center of Excellence in Software\nFaculty of SW Convergence\nCollege of Convergence Engineering\nSangmyung University, Seoul, Republic of Korea",
-  "projects": "대립적 위협 모델에 대응하는 심층신경망의 방어기법에 관한 연구",
+  "projects": "K-AI 파운데이션 모델 기반 신약개발 임상시험 지원 플랫폼",
   "journal": "ODDM: Integration of SMOTE Tomek with Deep Learning on Imbalanced Color Fundus Images for Classification of Several Ocular Diseases",
   "people_image": "정대식교수님.jpg"
 }
