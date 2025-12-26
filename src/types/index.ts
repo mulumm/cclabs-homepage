@@ -1,5 +1,5 @@
 // 네비게이션 메뉴 타입
-export type MenuType = 'Main' | 'People' | 'Research' | 'Project' | 'News' | 'Patent' | 'Recruitment';
+export type MenuType = 'Main' | 'People' | 'Research' | 'Project' | 'Playground' | 'News' | 'Patent' | 'Recruitment';
 
 // 페이지 props 타입
 export interface PageProps {
