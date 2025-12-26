@@ -16,12 +16,12 @@ export interface ProseMirrorData {
   content: {
     type: string;
     attrs?: {
-      [key: string]: any;
+      [key: string]: unknown;
     };
     content?: {
       type: string;
       text?: string;
-      [key: string]: any;
+      [key: string]: unknown;
     }[];
   }[];
 }
@@ -48,7 +48,7 @@ export interface PatentData {
   abstract: ProseMirrorData;
 }
 
-export interface PatentDetailData extends PatentData {
+export interface PatentDetailData extends Omit<PatentData, 'abstract'> {
   abstract: {
     type: string;
     content: AbstractParagraph[];
