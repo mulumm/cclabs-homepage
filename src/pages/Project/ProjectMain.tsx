@@ -138,10 +138,20 @@ const ProjectPage = () => {
                       >
                         <h4 className="font-bold !text-gray-200 group-hover/item:!text-[#4dabf7] transition-colors mb-1 truncate">{p.title}</h4>
                         {/* [수정] flex-col로 변경하여 수직 배치 */}
-                        <div className="flex flex-col items-start gap-1 text-sm mt-1">
-                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI : {p.PI}</p>}
-                           <p className="!text-gray-400 truncate w-full">{p.participant || ''}</p>
-                           <p className="!text-gray-500 font-mono text-xs">{formatDate(p.start_date)}</p>
+                        <div className="flex flex-col items-start gap-2 text-sm mt-2">
+                          {p.PI && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full">Principal Investigator</span>
+                              <span className="!text-gray-200 font-bold">{p.PI}</span>
+                            </div>
+                          )}
+                          {p.participant && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-800 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full">Participants</span>
+                              <span className="!text-gray-400">{p.participant}</span>
+                            </div>
+                          )}
+                          <p className="!text-gray-500 font-mono text-xs pt-1">{formatDate(p.start_date)}</p>
                         </div>
                       </div>
                     </button>
@@ -162,10 +172,20 @@ const ProjectPage = () => {
                       >
                         <h4 className="font-bold !text-gray-300 group-hover/item:!text-white transition-colors mb-1 truncate">{p.title}</h4>
                          {/* [수정] flex-col로 변경하여 수직 배치 */}
-                         <div className="flex flex-col items-start gap-1 text-sm mt-1">
-                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
-                           <p className="!text-gray-500 truncate w-full">{p.participant || ''}</p>
-                           <p className="!text-gray-600 font-mono text-xs">{formatDate(p.start_date)}</p>
+                         <div className="flex flex-col items-start gap-2 text-sm mt-2">
+                          {p.PI && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full">Principal Investigator</span>
+                              <span className="!text-gray-200 font-bold">{p.PI}</span>
+                            </div>
+                          )}
+                          {p.participant && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-800 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full">Participants</span>
+                              <span className="!text-gray-400">{p.participant}</span>
+                            </div>
+                          )}
+                          <p className="!text-gray-500 font-mono text-xs pt-1">{formatDate(p.start_date)}</p>
                         </div>
                       </div>
                     </button>
@@ -210,10 +230,20 @@ const ProjectPage = () => {
                        >
                          <h4 className="font-bold !text-gray-200 group-hover/item:!text-green-400 transition-colors mb-1 truncate">{p.title}</h4>
                           {/* [수정] flex-col로 변경하여 수직 배치 */}
-                          <div className="flex flex-col items-start gap-1 text-sm mt-1">
-                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
-                           <p className="!text-gray-400 truncate w-full">{p.participant || ''}</p>
-                           <p className="!text-gray-500 font-mono text-xs">{formatDate(p.start_date)}</p>
+                          <div className="flex flex-col items-start gap-2 text-sm mt-2">
+                          {p.PI && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full">Principal Investigator</span>
+                              <span className="!text-gray-200 font-bold">{p.PI}</span>
+                            </div>
+                          )}
+                          {p.participant && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-800 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full">Participants</span>
+                              <span className="!text-gray-400">{p.participant}</span>
+                            </div>
+                          )}
+                          <p className="!text-gray-500 font-mono text-xs pt-1">{formatDate(p.start_date)}</p>
                         </div>
                       </div>
                     </button>
@@ -234,10 +264,20 @@ const ProjectPage = () => {
                         >
                          <h4 className="font-bold !text-gray-300 group-hover/item:!text-white transition-colors mb-1 truncate">{p.title}</h4>
                           {/* [수정] flex-col로 변경하여 수직 배치 */}
-                          <div className="flex flex-col items-start gap-1 text-sm mt-1">
-                           {p.PI && <p className="!text-gray-300 truncate w-full font-medium">PI :  {p.PI}</p>}
-                           <p className="!text-gray-500 truncate w-full">{p.participant || ''}</p>
-                           <p className="!text-gray-600 font-mono text-xs">{formatDate(p.start_date)}</p>
+                          <div className="flex flex-col items-start gap-2 text-sm mt-2">
+                          {p.PI && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full">Principal Investigator</span>
+                              <span className="!text-gray-200 font-bold">{p.PI}</span>
+                            </div>
+                          )}
+                          {p.participant && (
+                            <div className="flex items-center gap-2">
+                              <span className="bg-gray-800 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full">Participants</span>
+                              <span className="!text-gray-400">{p.participant}</span>
+                            </div>
+                          )}
+                          <p className="!text-gray-500 font-mono text-xs pt-1">{formatDate(p.start_date)}</p>
                         </div>
                       </div>
                     </button>

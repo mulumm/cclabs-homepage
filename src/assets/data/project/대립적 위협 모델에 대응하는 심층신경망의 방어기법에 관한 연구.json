@@ -5,7 +5,7 @@
   "start_date": "2020-09-01",
   "end_date": "2023-02-28",
   "PI": "정대식",
-  "participant": "정대식",
+  "participant": "-",
   "project_method": " - ",
   "project_target": "객체인식에 사용되는 심층신경망을 기만하는 기술에 대응하기 위한 신경망의 취약점 보완과 새로운 방어 구조를 포함하는 심층신경망 연구\n\n",
   "abstract": "심층신경망의 방어기법에 관한 연구를 진행함",

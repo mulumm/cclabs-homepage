@@ -120,7 +120,7 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
                     `}
                     style={{ WebkitTapHighlightColor: 'transparent' }}
                   >
-                    <span className="font-sans text-base">{item}</span>
+                    <span className="font-sans text-base">{item === 'Research' ? 'PAPER & RESEARCH' : item}</span>
                     <span
                       className={`absolute -bottom-2 left-0 w-full h-0.5 bg-[#4dabf7] transition-opacity duration-200 
                         ${currentPage.toLowerCase() === item.toLowerCase() ? 'opacity-100' : 'opacity-0'}
@@ -169,7 +169,7 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
                   onClick={() => handleNavigation(item)}
                   className="block w-full text-left px-3 py-4 text-base font-bold text-white bg-transparent border-none hover:bg-white/5 border-b border-white/5 uppercase focus:outline-none"
                 >
-                  {item}
+                  {item === 'Research' ? 'PAPER & RESEARCH' : item}
                 </button>
                 {/* 모바일에서도 서브메뉴를 보여주고 싶다면 아래 주석 해제 */}
                 {/* {subMenus[item] && (

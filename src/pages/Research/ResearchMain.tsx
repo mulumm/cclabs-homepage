@@ -117,7 +117,7 @@ const ResearchPage = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">Academic Publications</h2>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight !text-white">Research</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight !text-white">Paper & Research</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">Let me introduce the academic papers and research results of our lab</p>
         </div>
 

@@ -205,16 +205,19 @@ const ProjectList = ({ statusFilter, onBack }: Props) => {
                       {p.title}
                     </h3>
                     
-                    {p.PI && (
-                        <div className="flex items-center gap-2 text-sm text-gray-300 mb-1 font-medium">
-                            <User size={14} className="text-gray-500" />
-                            <span>PI : {p.PI}</span>
+                    <div className="flex flex-col items-start gap-2 mt-3">
+                      {p.PI && (
+                        <div className="flex items-center gap-2">
+                          <span className="bg-gray-700 text-gray-300 text-xs font-semibold px-2 py-1 rounded-full">Principal Investigator</span>
+                          <span className="text-gray-200 font-bold">{p.PI}</span>
                         </div>
-                    )}
-                    
-                    <div className="flex items-center gap-2 text-sm text-gray-400">
-                      <User size={14} className="text-gray-500" />
-                      <span className="truncate">{p.participant || 'No participants listed'}</span>
+                      )}
+                      {p.participant && (
+                        <div className="flex items-center gap-2">
+                           <span className="bg-gray-800 text-gray-400 text-xs font-semibold px-2 py-1 rounded-full">Participants</span>
+                           <span className="text-gray-400 truncate">{p.participant}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
 

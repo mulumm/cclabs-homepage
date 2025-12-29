@@ -93,17 +93,19 @@ const ProjectDetail = ({ projectTitle, onBack }: ProjectDetailProps) => {
           )}
         </div>
 
-        <div className="space-y-4 !text-gray-200">
+        <div className="space-y-6 !text-gray-200">
           {item.PI && (
-            <div>
-              <h3 className="font-semibold !text-white">PI</h3>
-              <p className="!text-gray-300">{item.PI}</p>
+            <div className="flex items-center gap-3">
+              <h3 className="bg-gray-700 text-gray-300 text-sm font-semibold px-3 py-1 rounded-full">Principal Investigator</h3>
+              <p className="!text-gray-100 font-bold text-lg">{item.PI}</p>
             </div>
           )}
-          <div>
-            <h3 className="font-semibold !text-white">Participants</h3>
-            <p className="!text-gray-300">{item.participant}</p>
-          </div>
+          {item.participant && (
+            <div className="flex items-center gap-3">
+              <h3 className="bg-gray-800 text-gray-400 text-sm font-semibold px-3 py-1 rounded-full">Participants</h3>
+              <p className="!text-gray-300">{item.participant}</p>
+            </div>
+          )}
 
           <div>
             <h3 className="font-semibold !text-white">Project Method</h3>
