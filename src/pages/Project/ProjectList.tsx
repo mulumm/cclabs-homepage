@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useRef } from 'react';
-import { ChevronLeft, ArrowRight, Calendar, User, Search, ChevronDown } from 'lucide-react';
+import { ChevronLeft, ArrowRight, Calendar, Search, ChevronDown } from 'lucide-react';
 import type { ProjectData } from '../../types';
 import ProjectDetail from './ProjectDetail';
 
