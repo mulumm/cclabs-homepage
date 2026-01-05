@@ -1,0 +1,20 @@
+{
+  "title": "Multi-Currency Integrated Serial Number Recognition Model of Images Acquired by Banknote Counters",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "MDPI(SENSORS)",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2022-11-08"
+  },
+  "link": "https://www.mdpi.com/1424-8220/22/22/8612",
+  "authors": "정대식 교수님(교신)",
+  "abstract": "이 연구는 딥러닝 기반 광학문자인식(OCR) 시스템을 개발하여 은행권 카운터로 촬영된 지폐 이미지의 일련번호를 자동으로 인식하는 모델을 제안함.\n\n4개국 통합 모델: 한국 원화(KRW), 미국 달러(USD), 인도 루피(INR), 일본 엔(JPY) 지폐를 대상으로 함.\n\n데이터: 약 150,000장 이미지의 일련번호 영역을 학습에 사용.\n\n이미지 왜곡 및 입력 오차를 고려한 기하학적 데이터 증강 적용.\n\n1-Stage 객체 탐지기 (SSD) 기반으로 문자 탐지와 분류를 동시에 수행.\n\n실시간 처리 (<30 ms) 및 99.97 % 수준의 높은 인식 정확도를 확보함",
+  "method": "1) 데이터 수집 & 전처리\n\n은행권 카운터 (CIS)로 획득된 단일 채널 이미지를 사용.\n\n각 지폐에서 **일련번호 영역(ROI)**을 자동 크롭; 상단-좌/하단-우 두 위치 모두 포함.\n\n지폐가 들어갈 때 발생하는 오차를 반영하여 회전, 이동, 블러 기반 증강을 수행. \n\n2) 1-Stage 객체 탐지 기반 OCR\n\n기존 문자열 인식 방식은 문자 위치 분리 + 분류의 2단계였음.\n\n본 연구는 단일 모델에서 문자 위치 탐지와 인식(분류)을 동시에 수행하는 SSD (Single Shot MultiBox Detector) 구조 사용. \n\nSSD 구조에 DenseNet 스타일 백본을 적용해 특징 추출력을 강화.\n\n문자 클래스는 숫자 0–9, 알파벳 A–Z 및 특수 문자까지 합쳐 총 37개 클래스로 처리. \n\n3) 데이터 불균형 & 일반화 대응\n\n여러 국가 지폐를 통합하여 학습 → 글꼴, 크기, 배경 패턴의 다양성 증가로 일반화 성능 향상.\n\n단일 국가로만 학습했을 때보다 정확도 향상이 나타남.",
+  "result": "~99.97 % 정확도, 실시간 처리 (<30 ms), 기존 방식 대비 일반화 성능 우수",
+  "method_image_name": "Multi-Currency Integrated Serial Number Recognition Model of Images Acquired by Banknote Counters_Methodology.png",
+  "result_image_name": "Multi-Currency Integrated Serial Number Recognition Model of Images Acquired by Banknote Counters_Methodology.png",
+  "createdAt": "2026-01-05T03:13:12.531Z"
+}
