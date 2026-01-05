@@ -10,7 +10,7 @@
     "publish": "2024-06-26"
   },
   "link": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1402835/full",
-  "authors": "정대식 교수님(교신)",
+  "authors": "Maria Tariq(1저자, 공동1저자), Usman Ali(2저자, 공동1저자), Sagheer Abbas(3저자), Shahzad Hassan(4저자), Rizwan Ali Naqvi(5저자), Muhammad Adnan Khan(6저자, 교신저자), Daesik Jeong(교신저자)",
   "abstract": "이 연구는 옥수수 잎의 질병을 조기 진단하고 정확히 분류하기 위해 딥러닝 기반 모델 + 설명 가능한 AI(XAI) 를 제안함.\n\nVGG16 사전학습된 CNN 모델을 전이학습(transfer learning)으로 활용해 옥수수 잎을 4가지 범주(건강, blight, gray spot, common rust)로 분류함.\n\nLayer-wise Relevance Propagation (LRP) 을 적용해 모델의 예측을 설명하는 시각적 해석(heatmap)을 생성함으로써 결정 과정의 투명성을 제공함.\n\n제안된 모델은 높은 분류 정확도와 해석 가능성을 동시에 확보하여, 단순 예측을 넘어 농업 실무에서 신뢰할 수 있는 진단 도구로 작동할 수 있음을 보여함.",
   "method": "1) 데이터셋 및 전처리\n\n총 4,188장의 이미지를 사용 (blight 1,146, common rust 1,306, gray spot 574, healthy 1,162).\n\n이미지를 70%:30% 비율로 학습/테스트 세트로 분리.\n\n전처리: 리사이징, 정규화, 증강(augmentation) 적용. \n\n2) 모델 구조\n\nVGG16 사전학습 모델을 기반으로 전이학습 적용 → 마지막 분류 레이어를 4개 클래스에 맞게 재구성.\n\n특징 추출 후 Dense 레이어(Dense) + Softmax 를 통해 질병 분류 수행. \n\n3) Explainable AI (XAI)\n\nLayer-wise Relevance Propagation (LRP): 각 입력 이미지에서 해당 예측 결과에 영향을 준 픽셀/영역을 시각화.\n\nLRP heatmap을 통해 모델의 결정이 이미지 내 어떤 병변 부분에 기반했는지 직관적으로 확인 가능.",
   "result": "전체 테스트 정확도: 94.67% 로 안정적인 성능 달성.\n\n훈련 정확도는 99.89%, 테스트에서는 다소 낮아지지만 여전히 높은 수준.\n\n출력 혼동행렬(confusion matrix) 기준 misclassification rate ~5.33% 수준.",
