@@ -3,6 +3,6 @@
   "status": "seminar",
   "date": "2024-09-05",
   "introduce": "YOLOv8-segmentation을 활용하여 mythic board에서 홍채 segmentation을 학습함.\n이후, MFC 통합 프로그램을 통해 iris_code를 추출하여 홍채 인식을 진행함.\n9/5에는 Worldcoin, 현대 MIB, 상명대 CCLABS 담당자들이 참가하여 mythic board에서의 inference time 측정과 MFC 통합 프로그램을 시연함.",
-  "image_name": "Worldcoin 미팅 (홍채인식 데모).jpg",
+  "image_name": "Worldcoin 미팅 (홍채인식 데모).png",
   "createdAt": "2025-12-15T06:12:24.877Z"
 }
