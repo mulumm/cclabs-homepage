@@ -1,0 +1,20 @@
+{
+  "title": "Real-Time Fluorescence-Based COVID-19 Diagnosis Using a Lightweight Deep Learning System",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "MDPI",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2026-01-05"
+  },
+  "link": "https://www.mdpi.com/1424-8220/26/1/339",
+  "authors": "Hui Jae Bae(1저자), Jongweon Kim(교신저자), Daesik Jeong(교신저자)",
+  "abstract": "The coronavirus is highly contagious, making rapid early diagnosis essential. Although deep learning-based diagnostic methods using CT or X-ray images have advanced significantly, they still face limitations in cost, processing time, and radiation exposure. In addition, for the possibility of real-time COVID-19 diagnosis, model lightweighting is required. This study proposes a lightweight deep learning model for COVID-19 diagnosis based on fluorescence images and demonstrates its applicability in embedded environments. To prevent data imbalance caused by noise and experimental variations, images were preprocessed using Gray Scale conversion, CLAHE, and Z-Score normalization to equalize brightness values. Among the tested architectures—VGG, ResNet, DenseNet, and EfficientNet—ResNet152 and VGG13 achieved the highest accuracies of 97.25% and 93.58%, respectively, and were selected for lightweighting. Layer-wise importance was calculated using an imprinting-based method, and less important layers were pruned. The pruned VGG13 maintained its accuracy while reducing model size by 18.9 MB and parameters by 4.2 M. ResNet152 (Prune 39) improved accuracy by 1% while reducing size by 161.5 MB and parameters by 40.22 M. The optimized model achieved 129.97 ms, corresponding to 7.69 frames per second (FPS) on an NPU(Furiosa AI Warboy), proving real-time COVID-19 diagnosis is feasible even on low-power edge devices.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "Real-Time Fluorescence-Based COVID-19 Diagnosis Using a Lightweight Deep Learning System.png",
+  "createdAt": "2026-01-07T01:40:24.732Z"
+}
