@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { ChevronRight, Dna, ScanEye, ChartNoAxesCombined, Newspaper, Briefcase } from 'lucide-react'; // 아이콘 추가
+import { ChevronRight, Dna, ScanEye, ChartNoAxesCombined, Newspaper, Briefcase } from 'lucide-react';
 import Footer from '../../components/layout/Footer';
 import type { NewsData, ProjectData } from '../../types';
 

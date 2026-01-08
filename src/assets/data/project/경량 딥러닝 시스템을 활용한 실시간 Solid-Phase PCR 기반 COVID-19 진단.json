@@ -1,0 +1,14 @@
+{
+  "title": "경량 딥러닝 시스템을 활용한 실시간 Solid-Phase PCR 기반 COVID-19 진단",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2025-04-01",
+  "end_date": "2026-01-12",
+  "PI": "정대식",
+  "participant": "배희재",
+  "project_method": "1. 데이터셋 증강 및  전처리\n2. CNN 계열 모델 학습 (VGG, ResNet, DenseNet, EfficientNet)\n3. Imprinting기반 Layer Pruning 방법을 활용한 모델 경량화\n4. 여러 엣지 디바이스별 추론 시간 검증",
+  "project_target": "병원 장비나 고성능 서버 없이도, 현장이나 이동형 장치에서 빠르고 안전하게 COVID-19를 진단할 수 있는 경량 딥러닝 시스템 개발",
+  "abstract": "본 프로젝트는 실시간 COVID-19 진단의 현장 적용 가능성을 높이기 위해, 형광 이미지를 기반으로 한 경량 딥러닝 진단 모델을 제안한다. 기존 CT 및 X-ray 기반 진단 방식은 비용과 처리 시간, 방사선 노출 측면에서 한계가 있으며, 임베디드 환경에서의 실시간 활용에도 제약이 있다. 이를 해결하기 위해 본 프로젝트에서는 이미지 전처리 과정에서 Gray Scale 변환, CLAHE, Z-Score 정규화를 적용하여 실험 환경 및 노이즈로 인한 데이터 불균형을 완화하였다. 다양한 딥러닝 구조 중 성능이 우수한 VGG13과 ResNet152를 선정하고, imprinting 기반 레이어 중요도 분석을 통해 불필요한 레이어를 제거하는 경량화 기법을 적용하였다. 그 결과, 정확도를 유지하거나 향상시키면서도 모델 크기와 파라미터 수를 크게 감소시킬 수 있었으며, 최종적으로 저전력 NPU 환경에서도 실시간 추론이 가능함을 확인하였다. 본 프로젝트는 엣지 디바이스 기반 의료 진단 시스템의 실용적 가능성을 제시한다.",
+  "imageName": "경량 딥러닝 시스템을 활용한 실시간 Solid-Phase PCR 기반 COVID-19 진단.png",
+  "createdAt": "2026-01-08T01:11:40.714Z"
+}

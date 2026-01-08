@@ -6,11 +6,11 @@
   "korean_name": "배희재",
   "role": "Alumni",
   "email": "baehj100@gmail.com",
-  "research": "Deep Learning (BIO), Computer Vision",
-  "interest": "Deep Learning (BIO), Computer Vision",
-  "education": "2020-2024 상명대학교 융합전자공학과 (1전공), 휴먼지능공학과 (2전공) 졸업\n2024- 상명대학교 일반대학원 컴퓨터과학과 재학",
+  "research": "Deep Learning, Computer Vision, Embedded System",
+  "interest": "Deep Learning, Computer Vision, Data Analysis",
+  "education": "2024-02 상명대학교 학부 (컴퓨터과학전공/휴먼지능공학과)졸업\n2026-02 상명대학교 석사 (컴퓨터과학전공) 졸업",
   "career": "",
-  "projects": "PC-Mythic 환경 기반 지폐인식 및 fitness 딥러닝 알고리즘 기초연구",
+  "projects": "경량 딥러닝 시스템을 활용한 실시간 Solid-Phase PCR 기반 COVID-19 진단",
   "journal": "Real-Time Fluorescence-Based COVID-19 Diagnosis Using a Lightweight Deep Learning System",
   "people_image": "배희재.png"
 }
