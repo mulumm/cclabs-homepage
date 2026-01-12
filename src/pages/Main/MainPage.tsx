@@ -135,7 +135,7 @@ const MainPage = () => {
                 <span className="text-[#4dabf7]">Labs</span>
               </h1>
               <p className="text-xl md:text-2xl font-light text-gray-300 mb-10 leading-relaxed max-w-2xl">
-                Our lab conducts research across diverse areas of computer science, Bio-AI(LLM, NPU), Computer Vision, and Data Analysis,<br className="hidden md:block"/>with the goal of developing practical AI technologies.
+                Our lab conducts research across diverse areas of computer science, Bio-AI, BioLLM, On-Device AI(NPU), Computer Vision, and Data Analysis with the goal of developing practical AI technologies.
               </p>
             </div>
           </div>
