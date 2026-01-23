@@ -1,0 +1,13 @@
+{
+  "title": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템",
+  "status": "Industry Collaboration",
+  "progress_status": "completed",
+  "start_date": "2023-10-01",
+  "end_date": "2023-12-08",
+  "participant": "배희재, 정대식",
+  "project_method": "1. 지폐 영상 입력\n2. Skew 보정 전처리 및 권종 인식\n3. MemSeg 모델 학습\n4. 지폐 부적합 정도 예측 (지폐 정사 판단)",
+  "project_target": "MemSeg를 활용한 지폐 정사 판단 시스템 개발",
+  "abstract": "국가별 중앙은행의 주관적인 정사 분류 기준에 의해 발생할 수 있는 문제점을 극복하기 위해 MemSeg를 활용한 지폐 정사 판단 시스템을 제안한다.",
+  "imageName": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템.png",
+  "createdAt": "2026-01-23T05:01:37.331Z"
+}

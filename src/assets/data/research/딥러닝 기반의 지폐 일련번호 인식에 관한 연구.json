@@ -1,0 +1,20 @@
+{
+  "title": "딥러닝 기반의 지폐 일련번호 인식에 관한 연구",
+  "status": "Korean academic conference",
+  "progress_status": "publish",
+  "scholarly_society": "제25회 전자정보통신학술대회 - CEIC 2023",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2023-12-08"
+  },
+  "link": "",
+  "authors": "윤은수 (1저자), 정대식(교신저자)",
+  "abstract": "본 논문에서는 전 세계적으로 줄어들고 있는 실물 지 폐 사용에도 불구하고, 여전히 중요한 역할을 수행하고 있는 지폐 일련번호 인식에 대한 방법을 연구하고자 한다. 이를 위해 CRNN(Convolutional Recurrent Neural Network) 기반의 방법을 제안한다. 러시아 루블 (RUB) 지폐의 다양한 권종에 대한 이미지와 일련번호를 수집하고, 이를 통해 모델을 학습시킨다. 데이터 전처리 과정에서는 가우시안 노이즈를 추가하여 데이터 증강을 적용하고, 이미지 크기 조정 및 정규화를 통해 모델의 학습 효율성을 높인다. 모델은 ResNet 기반의 CNN과 BiLSTM 기반의 RNN을 결합하여 특징 추출 및 시퀀스 예측을 수행하고, CTC Loss 함수와 Adadelta 옵티마이저를 사용하여 학습한다. 실험 결과, 모델은 99.15%의 높은 전체 정확도를 도출하였다.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "딥러닝 기반의 지폐 일련번호 인식에 관한 연구.png",
+  "createdAt": "2026-01-23T04:54:34.183Z"
+}

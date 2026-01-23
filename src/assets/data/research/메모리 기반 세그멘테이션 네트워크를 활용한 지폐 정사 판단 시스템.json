@@ -1,0 +1,20 @@
+{
+  "title": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템",
+  "status": "Korean academic conference",
+  "progress_status": "publish",
+  "scholarly_society": "제25회 전자정보통신학술대회 - CEIC 2023",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2023-12-08"
+  },
+  "link": "",
+  "authors": "배희재 (1저자), 정대식(교신저자)",
+  "abstract": "본 논문은 국가별 중앙은행의 주관적인 정사 분류 기준에 의해 발생할 수 있는 문제점을 극복하기 위해 MemSeg를 활용한 지폐 정사 판단 시스템을 제안한다. 이 시스템은 (1)지폐 입력, (2)지폐 영상 취득,\n(3)Skew 보정 전처리 및 권종 인식, (4)MemSeg 모델 학습, (5)지폐 부적합 정도 예측으로 구성된다. 본 논문에서 약 5800개의 데이터셋 중 모델 학습에 약 4000장 정도, Test에 약 1800장 정도 사용한 결과 평균적으로 AUROC-image는 약 82%가 나오고, AUROC-pixel는 약 54%가 나온 것을 확인할 수 있었다.",
+  "method": "",
+  "result": "",
+  "method_image_name": "",
+  "result_image_name": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템.png",
+  "createdAt": "2026-01-23T04:54:11.123Z"
+}
