@@ -131,7 +131,7 @@ const MainPage = () => {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 mt-20 text-center md:text-left">
             <div className="max-w-4xl animate-fade-in-up">
               <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-                Cognitive Computing<br/>
+                Creative Computing<br/>
                 <span className="text-[#4dabf7]">Labs</span>
               </h1>
               <p className="text-xl md:text-2xl font-light text-gray-300 mb-10 leading-relaxed max-w-2xl">
