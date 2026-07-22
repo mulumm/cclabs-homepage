@@ -1,0 +1,14 @@
+{
+  "title": "2026년 문화체육관광 연구개발사업 신규 지원과제",
+  "status": "Government projects",
+  "progress_status": "progress",
+  "start_date": "2026-06-01",
+  "end_date": "2029-12-31",
+  "PI": "김종원",
+  "participant": "정대식, 전경민, 박선균, 조현서, 김성한, 우수환, 박윤서, 강수민",
+  "project_method": "AX 시대적 요구에 맞춰 CORE-AX 인재 양성을 위한 파이프라인을 구축함.\n- Tech-Law 시너지 기반의 법공학적(Legal-Engineered) 접근: 단순한 기술 개발을 넘어 저작권법의 추상적 가치를 알고리즘으로 치환하는 국내 유일의 융합 방법론을 채택함.\nCode as Law 파이프라인 구축\n   - 추상적 권리 → 수치화: 실질적 유사성이나 공정 이용의 범위를 KNN-Shapley와 시맨틱 계보 추적 기술을 통해 정량적 데이터(Score)로 변환.\n   - 법적 의무 → 기술적 강제: 저작권자의 삭제 요청(Opt-out) 권리를 SISA 프레임워크 기반의 머신 언러닝 기술로 구현하여, 법적 요구사항을 시스템 레벨에서 즉시 이행.\n컨소시엄 강점: 상명대와 SJSU, MPA의 법공학적 이론과 참여기업의 보안 실무 역량이 결합되어, 법률적 분쟁 소지가 없는 Compliance-ready 기술을 도출.\n- 글로벌 표준(C2PA) 선도 및 역수출 전략: SJSU와 MPA라는 강력한 글로벌 네트워크를 활용하여, 국내 기술이 세계 시장의 De Facto Standard(사실상 표준)가 되도록 설계.\nGlobal Testbed & Standard-First\n   - 미국 현지 실증: 개발된 기술을 MPA(미국영화협회)의 글로벌 산업 경험과 SJSU의 연구 인프라에 투입하여 글로벌 통용성을 검증.\n   - 표준 기고서 채택: C2PA 및 ISO 표준화 기구에 본 컨소시엄의 기여도 산출 모델과 DID 연동 규격을 기고하여, 기술적 장벽(Technical Barrier)을 구축.\n컨소시엄 강점: 글로벌 시장의 Rule Maker인 MPA와 Tech Hub인 SJSU가 참여함으로써, 국내 기술의 글로벌 신뢰도를 확보하고 해외 시장 진출의 교두보를 마련\n- 저작물 생애주기 전반의 Zero-Trust 신뢰 체인 구축: 데이터 수집부터 AI 학습, 생성물 유통, 수익 정산까지 끊어짐 없는 Full-Stack 보호 체계를 제안.\nEnd-to-End Integrity Chain\n   - Ingestion: 디알엠인사이드의 Dataset Guard를 통해 오염된 데이터 및 저작권 침해 데이터의 학습 진입을 원천 차단.\n   - Tracking: 상명대와 SJSU의 시맨틱 지문 기술로 AI 생성물의 원본 계보를 추적.\n   - Settlement: 어셈브릭스의 DID 및 스마트 컨트랙트를 통해 산출된 기여도에 따라 실시간으로 로열티를 투명하게 배분.\n컨소시엄 강점: 보안-AI-블록체인 전문 기관이 협력하여 데이터 유실이나 정산 누락이 없는 Trust-by-Design 플랫폼을 완성.",
+  "project_target": "인재의 4대 CORE 역량: \n① C(Copyright Domain Expert): 저작권법과 저작권 기술 구조를 완벽히 이해하는 인재, \n② O(On-site Problem Solver): 기업의 현장 솔루션에 즉시 투입가능한 실무 역량, \n③ R(Research Excellence): 글로벌 저작권을 선도하는 R&D 수행 능력, \n④ E(Ethical Leader): AI 윤리와 저작권 보호 의식을 갖춘 리더\n\n- Global Core Talent: 세계 최고 수준의 R&D 실무형 인재 양성- 단순 연수가 아닌, 현지 파견 및 공동 연구⸳논문⸳특허 실적을 통한 글로벌 즉시 전력감 인재 육성\n- Original Tech & Standard: AX 대응 원천기술 확보 및 글로벌 표준화 주도- 생성형 AI 저작권 보호 원천기술 연구 및 TTA, ISO/IEC 등 국내외 표준화 활동으로 글로벌 저작권 기술 표준 주도\n- Sustainable Network: 지속 가능한 글로벌 저작권 R&D 거점 구축- 해외 협력 기관과 글로벌 저작권 기술 조인트 랩 운영 및 국내외 기업 기술 이전 체계로 산업적 확산 도모",
+  "abstract": "본 사업은 AI 대전환의 시대에 발생하는 저작권 기술 문제를 선제적으로 대응할 수 있도록 상명대학교 – 미국 산호세주립대학교 - 미국영화산업협회의 글로벌 기술 동맹을 통해 선진 저작권 기술을 교육/연구하고, 참여기업과 함께 AX 시대 저작권 기술 표준을 선도할 실무형 CORE 인재를 양성하는 '인재-기술-표준 주권' 확보 통합 파이프라인을 목표로 함.",
+  "imageName": "2026년 문화체육관광 연구개발사업 신규 지원과제.png",
+  "createdAt": "2026-07-22T06:30:16.466Z"
+}

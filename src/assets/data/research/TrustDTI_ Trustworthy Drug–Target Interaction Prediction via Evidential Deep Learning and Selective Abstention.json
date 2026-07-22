@@ -1,0 +1,20 @@
+{
+  "title": "TrustDTI: Trustworthy Drug–Target Interaction Prediction via Evidential Deep Learning and Selective Abstention",
+  "status": "International journal",
+  "progress_status": "publish",
+  "scholarly_society": "IEEE ACCESShttps://www.researchgate.net/publication/408099845_TrustDTI_Trustworthy_Drug-Target_Interaction_Prediction_via_Evidential_Deep_Learning_and_Selective_Abstention",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2026-06-25"
+  },
+  "link": "https://ieeexplore.ieee.org/document/11579286",
+  "authors": "전경민, 박선균, 정대식",
+  "abstract": "1. 문제 배경\n기존 DTI 모델은 벤치마크 데이터의 데이터 누출로 인해 일반화 성능이 부풀려져 있으며, 콜드 스타트 시나리오에서 근거 없는 과도한 확신을 보이는 한계가 있다\n\n2. 핵심 기여\n다중 모달 인코더는 약물과 단백질의 구조적 정보를 정교하게 통합한다.\n증거 기반 딥러닝(EDL)은 결과를 디리클레 분포로 모델링하여 에피스테믹·알레아토릭 불확실성을 수학적으로 정량화 가능하다.\n선택적 유보(Selective Abstention)는 불확실성이 높은 예측은 스스로 거부하여 임상적 오류 방지한다.\n\n3. 성과 및 의의\n데이터 누출을 차단한 엄격한 콜드 스타트 평가에서 최고 수준의 예측 정확도 달성했다. 또한 불확실성 기반의 예측 유보를 통해 오류율을 유의미하게 감소시켜 고위험 신약 개발 환경에 최적화된 의사결정 지원 가능하다.",
+  "method": "1. 다중 모달 하이브리드 인코더\n약물과 단백질 각각의 구조적 정보를 정교하게 추출하여 결합한다. 사전 학습된 KPGT와 DrugGNN을 결합해 구조적 우선순위와 위상 정보를 모두 포착한다. 이후 ESM-2의 잔기 수준 특징을 3차원 구조 기반의 잔기 접촉 그래프 위에서 GATv2로 정교화하여 공간적 근접성을 반영한다. 마지막으로 8-헤드 양방향 공동와 게이트 채널 융합을 통해 두 정보를 통합한다.\n\n2. 증거 기반 딥러닝\n출력층에서 단순 확률값이 아닌 디리클레 분포를 예측해 불확실성을 정량화한다. 에피스테믹 불확실성으로 모델이 학습하지 못한 데이터에 대한 지식 부족을 정량화하고, 알레아토릭 불확실성으로 데이터 자체의 내재된 노이즈를 정량화한다.\n\n3. 선택적 헤드\n불확실성 및 어텐션 품질 등을 결합한 특징 벡터를 생성해, 모델이 예측을 신뢰할 수 없는 경우 출력을 거부하게 한다. 즉, 학습된 불확실성 정보를 바탕으로 모델이 예측을 수행할지 유보할지 결정한다. 이는 단순히 정확도를 최대화하는 것이 아니라, 예측 오류를 최소화하면서 일정 수준의 커버리지를 유지하도록 설계된 것이다.",
+  "result": "불확실한 예측을 스스로 유보하는 메커니즘을 통해 실제 신약 개발 현장에서 요구되는 '예측의 신뢰도'를 확보했다. 특히, 기존 모델들이 실패했던 콜드 스타트 환경에서 월등한 성능을 보이며, 생물학적으로 의미 있는 해석까지 가능함을 입증했다.",
+  "method_image_name": "TrustDTI_Result.png",
+  "result_image_name": "TrustDTI_Method.png",
+  "createdAt": "2026-07-22T07:46:57.093Z"
+}
