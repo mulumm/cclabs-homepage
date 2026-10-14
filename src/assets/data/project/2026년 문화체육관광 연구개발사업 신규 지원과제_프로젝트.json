@@ -1,6 +1,10 @@
 {
   "title": "2026년 문화체육관광 연구개발사업 신규 지원과제",
   "status": "Government projects",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2026-06-01",
   "end_date": "2029-12-31",

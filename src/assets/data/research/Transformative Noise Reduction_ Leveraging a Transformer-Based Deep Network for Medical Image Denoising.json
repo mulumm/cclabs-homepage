@@ -1,6 +1,10 @@
 {
   "title": "Transformative Noise Reduction: Leveraging a Transformer-Based Deep Network for Medical Image Denoising",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Mathematics",
   "date": {

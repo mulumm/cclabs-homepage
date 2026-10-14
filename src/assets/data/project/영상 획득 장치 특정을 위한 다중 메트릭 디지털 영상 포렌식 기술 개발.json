@@ -1,0 +1,18 @@
+{
+  "title": "영상 획득 장치 특정을 위한 다중 메트릭 디지털 영상 포렌식 기술 개발",
+  "status": "Government projects",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "aims",
+  "progress_status": "completed",
+  "start_date": "2018-03-01",
+  "end_date": "2022-02-28",
+  "PI": "강상욱",
+  "participant": "-",
+  "project_method": "한국연구재단",
+  "project_target": "(연구 목표)\n주어진 디지털 형태의 정지 및 동영상 콘텐츠의 특징을 분석하여, 영상 콘텐츠가 최초 생성된 영상 획득 장치를 특정하고, 영상의 조작 여부를 판별할 수 있는 기능을 가진 다중 메트릭 디지털 영상 포렌식 기술 개발\n\n(연구 내용)\n- 영상 데이터 세트 구축\n- 영상 포렌식용 인공지능망 개발\n- 다중 메트릭 장치식별 알고리즘 개발\n- 포렌식 응용 기술 개발",
+  "abstract": "Multi-metric digital image forensic technology for image source identification",
+  "imageName": "aims_image_forensic.png",
+  "createdAt": "2026-10-01T06:06:53.592Z"
+}

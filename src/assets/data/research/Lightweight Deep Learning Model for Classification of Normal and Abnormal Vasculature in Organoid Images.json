@@ -1,6 +1,10 @@
 {
   "title": "Lightweight Deep Learning Model for Classification of Normal and Abnormal Vasculature in Organoid Images",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "MDPI",
   "date": {

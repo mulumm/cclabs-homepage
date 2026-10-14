@@ -1,6 +1,10 @@
 {
   "title": "공간 데이터기반 문화콘텐츠 창,제작 인프라 생성 기술 개발",
   "status": "Industry Collaboration",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2017-06-01",
   "end_date": "2019-12-31",

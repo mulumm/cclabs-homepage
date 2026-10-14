@@ -1,6 +1,10 @@
 {
   "title": "2019년 해외 ISD 현황 파악 및 대응방안 수립",
   "status": "Industry Collaboration",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2019-07-24",
   "end_date": "2019-12-13",

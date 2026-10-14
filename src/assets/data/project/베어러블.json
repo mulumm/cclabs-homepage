@@ -1,6 +1,10 @@
 {
   "title": "생기부 정보 자동 추출 - 베어러블",
   "status": "Industry Collaboration",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-11-01",
   "end_date": "2026-10-31",

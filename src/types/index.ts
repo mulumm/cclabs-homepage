@@ -1,3 +1,5 @@
+import type { TopicKey } from '../constants/topics';
+
 // 네비게이션 메뉴 타입
 export type MenuType = 'Main' | 'People' | 'Research' | 'Project' | 'Playground' | 'News' | 'Patent' | 'Recruitment';
 
@@ -94,7 +96,7 @@ export interface PersonData {
   name: string;
   name_en?: string;
   // role must be one of the four canonical values used in JSON files
-  role?: 'Alumni' | 'Advisor' | "Master's Student" | 'Undergraduate Student';
+  role?: 'Alumni' | 'Advisor' | 'Research Professor' | 'Ph.D. Student' | "Master's Student" | 'Undergraduate Student';
   affiliation?: string;
   email?: string;
   phone?: string;
@@ -104,6 +106,7 @@ export interface PersonData {
   positions?: PeoplePosition[];
   social?: PeopleSocial;
   tags?: string[];
+  lab_origin?: 'cclab' | 'aims' | string;
   people_image?: string; // 파일명
   image_name?: string; // alternate
   uploadsPath?: string;
@@ -120,7 +123,8 @@ export interface PeopleDetailData {
   createdAt?: string;
   name: string;
   korean_name?: string;
-  role: 'Alumni' | 'Advisor' | "Master's Student" | 'Undergraduate Student';
+  role: 'Alumni' | 'Advisor' | 'Research Professor' | 'Ph.D. Student' | "Master's Student" | 'Undergraduate Student';
+  lab_origin?: 'cclab' | 'aims' | string;
   email?: string;
   research?: string;
   interest?: string;
@@ -155,6 +159,8 @@ export interface NewsDetailProps {
 export interface ProjectData {
   title: string;
   status: 'Industry Collaboration' | 'Government projects' | string;
+  topics?: TopicKey[];
+  lab_origin?: 'cclab' | 'aims' | string;
   progress_status: 'progress' | 'completed' | string;
   start_date?: string;
   end_date?: string;
@@ -183,6 +189,8 @@ export interface ResearchDate {
 export interface ResearchData {
   title: string;
   status: 'Korean academic conference' | 'Korean journal' | 'International conference' | 'International journal' | string;
+  topics?: TopicKey[];
+  lab_origin?: 'cclab' | 'aims' | string;
   progress_status: 'progress' | 'completed' | string;
   scholarly_society?: string;
   date?: ResearchDate;

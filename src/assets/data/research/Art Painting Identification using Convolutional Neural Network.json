@@ -1,6 +1,10 @@
 {
   "title": "Art Painting Identification using Convolutional Neural Network",
   "status": "International journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "International Journal of Applied Engineering Research",
   "date": {

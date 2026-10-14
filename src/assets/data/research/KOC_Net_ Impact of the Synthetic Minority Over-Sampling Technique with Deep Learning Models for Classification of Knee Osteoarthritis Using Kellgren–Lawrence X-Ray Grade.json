@@ -1,6 +1,10 @@
 {
   "title": "KOC_Net: Impact of the Synthetic Minority Over-Sampling Technique with Deep Learning Models for Classification of Knee Osteoarthritis Using Kellgren–Lawrence X-Ray Grade",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Mathematics",
   "date": {

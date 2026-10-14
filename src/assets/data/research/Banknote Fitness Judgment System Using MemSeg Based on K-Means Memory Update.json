@@ -1,6 +1,10 @@
 {
   "title": "Banknote Fitness Judgment System Using MemSeg Based on K-Means Memory Update",
   "status": "International conference",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "International Conference on Electronics, Information and Communications (ICEIC)",
   "date": {

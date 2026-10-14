@@ -1,6 +1,10 @@
 {
   "title": "Automated Detection of Construction Worker Inattention Using IMU Sensors and Visual Focus of Attention",
   "status": "International journal",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Technical gazette",
   "date": {

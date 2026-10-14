@@ -1,0 +1,17 @@
+{
+  "title": "Kang Chang Hee",
+  "content": "",
+  "createdAt": "2026-10-01T06:06:53.592Z",
+  "name": "Kang Chang Hee",
+  "korean_name": "강창희",
+  "role": "Ph.D. Student",
+  "email": "orage1040@gmail.com",
+  "research": "Deep Learning, Computer Vision",
+  "interest": "Knowledge Distillation, Transfer Learning, Domain Generalization, Image Processing",
+  "education": "2013-02 Gyeonggi High School\n2020-08 B.S., Sangmyung University (Computer Science)\n2022-08 M.S., Sangmyung University (Computer Science)\n2024-08 Ph.D. candidate, Sangmyung University (Computer Science)",
+  "career": "2019-02 ~ AIMS Lab, Sangmyung University",
+  "projects": "영상 획득 장치 특정을 위한 다중 메트릭 디지털 영상 포렌식 기술 개발",
+  "journal": "Deep Transfer Learning Method Using Self-Pixel and Global Channel Attentive Regularization",
+  "people_image": "강창희.jpg",
+  "lab_origin": "aims"
+}

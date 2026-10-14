@@ -1,6 +1,10 @@
 {
   "title": "TrustDTI: Trustworthy Drug–Target Interaction Prediction via Evidential Deep Learning and Selective Abstention",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "IEEE ACCESShttps://www.researchgate.net/publication/408099845_TrustDTI_Trustworthy_Drug-Target_Interaction_Prediction_via_Evidential_Deep_Learning_and_Selective_Abstention",
   "date": {

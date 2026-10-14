@@ -1,6 +1,10 @@
 {
   "title": "UCI 표준개정 및 UCI 활용 개선방안 연구",
   "status": "Government projects",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2020-06-24",
   "end_date": "2020-11-30",

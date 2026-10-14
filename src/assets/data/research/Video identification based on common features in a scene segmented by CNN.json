@@ -1,6 +1,10 @@
 {
   "title": "Video identification based on common features in a scene segmented by CNN",
   "status": "Korean academic conference",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "한국과학예술융합학회",
   "date": {

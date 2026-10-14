@@ -1,6 +1,10 @@
 {
   "title": "K-AI 파운데이션 모델 기반 신약개발 임상시험 지원 플랫폼",
   "status": "Government projects",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-09-01",
   "end_date": "",

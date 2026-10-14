@@ -1,6 +1,10 @@
 {
   "title": "Corn leaf disease: insightful diagnosis using VGG16 empowered by explainable AI",
   "status": "International journal",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Frontiers in Plant Science",
   "date": {

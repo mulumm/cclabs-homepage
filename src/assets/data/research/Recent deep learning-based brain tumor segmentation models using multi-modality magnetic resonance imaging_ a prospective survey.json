@@ -1,6 +1,10 @@
 {
   "title": "Recent deep learning-based brain tumor segmentation models using multi-modality magnetic resonance imaging: a prospective survey",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Frontiers in Bioengineering and Biotechnology",
   "date": {

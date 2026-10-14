@@ -1,6 +1,10 @@
 {
   "title": "Artwork Recognition for Panorama Images Based on Optimized ASIFT and Cubic Projection",
   "status": "International journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "International Journal of Machine Learning and Computing",
   "date": {

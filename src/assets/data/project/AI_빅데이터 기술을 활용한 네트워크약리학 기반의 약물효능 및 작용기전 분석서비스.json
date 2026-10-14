@@ -1,6 +1,10 @@
 {
   "title": "AI/빅데이터 기술을 활용한 네트워크약리학 기반의 약물효능 및 작용기전 분석서비스",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2024-03-01",
   "end_date": "",

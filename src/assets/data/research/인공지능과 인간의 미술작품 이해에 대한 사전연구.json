@@ -1,6 +1,10 @@
 {
   "title": "인공지능과 인간의 미술작품 이해에 대한 사전연구",
   "status": "International journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Asia-pacific Journal of Convergent Research Interchange (APJCRI)",
   "date": {

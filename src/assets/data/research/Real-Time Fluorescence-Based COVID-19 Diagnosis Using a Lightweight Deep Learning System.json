@@ -1,6 +1,10 @@
 {
   "title": "Real-Time Fluorescence-Based COVID-19 Diagnosis Using a Lightweight Deep Learning System",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "MDPI",
   "date": {

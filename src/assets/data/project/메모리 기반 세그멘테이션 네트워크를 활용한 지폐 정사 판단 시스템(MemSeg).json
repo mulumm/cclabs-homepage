@@ -1,6 +1,10 @@
 {
   "title": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템(MemSeg)",
   "status": "Industry Collaboration",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2024-03-01",
   "end_date": "2024-10-21",

@@ -5,13 +5,14 @@
   "name": "Jeon Kyung Min",
   "korean_name": "전경민",
   "role": "master's student",
+  "lab_origin": "cclab",
   "email": "wjsrudals69@naver.com",
   "research": "Deep Learning, Machine Learning, Data analysis",
   "interest": "Data Analysis, Deep Learning, Frontend",
-  "education": "2018-02 한성고등학교 졸업\n2025-02 상명대학교 학부 (컴퓨터과학전공/지적재산권전공) 졸업\n2025-09 상명대학교 석사 (컴퓨터과학전공) 입학",
-  "career": "2023-01 ~ 2024-07 상명대학교 CCLabs 학부연구원\n2024-08 ~ 2024-10 NHN AD 인턴\n2024-11 ~ 2025-08 NHN AD 사원\n2025-09 ~ 상명대학교 CCLabs 랩장",
+  "education": "2018-02 Hanseong High School\n2025-02 B.S., Sangmyung University (Computer Science / Intellectual Property)\n2025-09 M.S., Sangmyung University (Computer Science)",
+  "career": "2023-01 ~ 2024-07 Undergraduate Researcher, CCLabs, Sangmyung University\n2024-08 ~ 2024-10 Intern, NHN AD\n2024-11 ~ 2025-08 Staff, NHN AD\n2025-09 ~ Lab Leader, CCLabs, Sangmyung University",
   "projects": "인공지능과 빅데이터를 활용한 천연물 유래 신규 성분의 가상 효능 예측",
   "journal": "크롤링과 머신러닝 기법을 활용한 키워드 광고비 예측",
-  "degree":"2학기",
+  "degree": "3rd semester",
   "people_image": "전경민.jpg"
 }

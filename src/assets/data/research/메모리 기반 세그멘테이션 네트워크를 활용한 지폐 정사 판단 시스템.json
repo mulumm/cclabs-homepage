@@ -1,6 +1,10 @@
 {
   "title": "메모리 기반 세그멘테이션 네트워크를 활용한 지폐 정사 판단 시스템",
   "status": "Korean academic conference",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "제25회 전자정보통신학술대회 - CEIC 2023",
   "date": {

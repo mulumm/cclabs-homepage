@@ -1,6 +1,10 @@
 {
   "title": "Dual-task hierarchical feature refinement and fusion network for precise segmentation of surgical tools and polyps in endoscopy",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "ScienceDirect",
   "date": {

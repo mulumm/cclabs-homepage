@@ -1,6 +1,10 @@
 {
   "title": "Hybrid Iris Recognition for Authentication Systems in AI Edge Device (NPU) Environments",
   "status": "International conference",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "International Conference on Green and Human Information Technology(ICGHIT)",
   "date": {

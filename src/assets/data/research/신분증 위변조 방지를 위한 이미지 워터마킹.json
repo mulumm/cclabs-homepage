@@ -1,6 +1,10 @@
 {
   "title": "신분증 위변조 방지를 위한 이미지 워터마킹",
   "status": "Korean journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "한국콘텐츠학회",
   "date": {

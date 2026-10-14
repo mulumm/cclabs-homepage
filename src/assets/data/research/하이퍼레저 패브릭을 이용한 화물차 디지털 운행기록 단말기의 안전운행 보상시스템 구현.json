@@ -1,6 +1,10 @@
 {
   "title": "하이퍼레저 패브릭을 이용한 화물차 디지털 운행기록 단말기의 안전운행 보상시스템 구현",
   "status": "Korean journal",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "인터넷정보학회논문지(JICS)",
   "date": {

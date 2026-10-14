@@ -1,6 +1,10 @@
 {
   "title": "경량 딥러닝 시스템을 활용한 실시간 Solid-Phase PCR 기반 COVID-19 진단",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2025-04-01",
   "end_date": "2026-01-12",

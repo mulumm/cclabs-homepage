@@ -1,6 +1,10 @@
 {
   "title": "초고화질 및 화질열화 동영상 콘텐츠에 대한 CFC(Continue Feature Code)기반 실시간 보호-필터링 및 검색 SW 플랫폼 기술 개발",
   "status": "Industry Collaboration",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2016-06-25",
   "end_date": "2018-06-23",

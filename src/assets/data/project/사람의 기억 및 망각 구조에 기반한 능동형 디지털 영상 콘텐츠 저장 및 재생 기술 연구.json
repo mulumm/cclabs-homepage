@@ -1,0 +1,18 @@
+{
+  "title": "사람의 기억 및 망각 구조에 기반한 능동형 디지털 영상 콘텐츠 저장 및 재생 기술 연구",
+  "status": "Government projects",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "aims",
+  "progress_status": "completed",
+  "start_date": "2015-07-01",
+  "end_date": "2018-06-30",
+  "PI": "강상욱",
+  "participant": "-",
+  "project_method": "한국연구재단",
+  "project_target": "(연구 목표)\n영상 콘텐츠에 대한 타인 배포 및 조작 허용 여부와 같은 저작자의 의도를 인간의 기억 및 망각 메커니즘을 기반으로 콘텐츠 자체 저장 및 재생 가능한 프레임워크를 개발하여 디지털 정보사회에서의 부작용을 완화\n\n(연구 내용)\n- JPEG 및 H.264 콘텐츠 가역 정보은닉 및 품질제어 알고리즘 연구\n- 배포 후 은닉정보의 재생, 복제, 소멸하는 기능 제어 메커니즘 연구\n- 은닉정보에 최적화된 능동형 콘텐츠 저장을 위한 파일포맷 및 저작도구 개발\n- 능동형 콘텐츠의 기능 해제, 불법적 콘텐츠 추출 공격에 대한 보안성 유지기술 개발",
+  "abstract": "Development of active digital image content store and play technologies inclusive of self oblivion functionality and content author’s intention",
+  "imageName": "aims_active_content.png",
+  "createdAt": "2026-10-01T06:06:53.592Z"
+}

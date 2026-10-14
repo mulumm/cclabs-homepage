@@ -1,6 +1,10 @@
 {
   "title": "화물차 운전자(차량)의 안전운행 행위에 대한 보상을 위한, 블록체인 기반 디지털운행기록 단말장치와 안전운행 보상 시스템 개발",
   "status": "Government projects",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2019-04-19",
   "end_date": "2021-12-31",

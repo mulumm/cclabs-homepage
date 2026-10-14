@@ -1,6 +1,10 @@
 {
   "title": "Optimizing optic cup and optic disc delineation: Introducing the efficient feature preservation segmentation network",
   "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "ENGINEERING APPLICATIONS OF ARTIFICIAL INTELLIGENCE",
   "date": {

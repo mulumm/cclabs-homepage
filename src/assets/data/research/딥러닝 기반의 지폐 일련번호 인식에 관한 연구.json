@@ -1,6 +1,10 @@
 {
   "title": "딥러닝 기반의 지폐 일련번호 인식에 관한 연구",
   "status": "Korean academic conference",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "제25회 전자정보통신학술대회 - CEIC 2023",
   "date": {

@@ -1,6 +1,10 @@
 {
   "title": "Human Organoid 기반 약물 반응 정량 예측 모델 개발",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-11-01",
   "end_date": "",

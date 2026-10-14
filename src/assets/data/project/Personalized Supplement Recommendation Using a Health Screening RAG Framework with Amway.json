@@ -1,6 +1,10 @@
 {
   "title": "Personalized Supplement Recommendation Using a Health Screening RAG Framework with Amway",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-02-01",
   "end_date": "2025-12-15",

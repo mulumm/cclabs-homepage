@@ -1,6 +1,10 @@
 {
   "title": "A 3D Skeletonization Algorithm for 3D Mesh Models Using Partial Parallel 3D Thinning Algorithm",
   "status": "International journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "MDPI(applied science)",
   "date": {

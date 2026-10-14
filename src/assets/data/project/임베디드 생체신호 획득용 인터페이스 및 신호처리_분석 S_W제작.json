@@ -1,6 +1,10 @@
 {
   "title": "임베디드 생체신호 획득용 인터페이스 및 신호처리/분석 S/W제작",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2017-07-18",
   "end_date": "2017-09-18",

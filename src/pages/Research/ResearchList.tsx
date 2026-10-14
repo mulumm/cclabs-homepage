@@ -2,9 +2,12 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { ChevronLeft, ArrowRight, BookOpen, Users, Calendar, Search, ChevronDown } from 'lucide-react';
 import type { ResearchData } from '../../types';
 import ResearchDetail from './ResearchDetail';
+import { ALL_TOPICS, matchesTopic } from '../../constants/topics';
+import type { TopicSelection } from '../../constants/topics';
 
 type Props = {
   statusFilter: string;
+  topicFilter?: TopicSelection;
   onBack?: () => void;
   onOpen?: (title: string) => void;
 };
@@ -18,7 +21,7 @@ const SEARCH_CATEGORIES: { key: SearchCategory, label: string }[] = [
     { key: 'title+abstract', label: '제목+내용' },
 ];
 
-const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
+const ResearchList: React.FC<Props> = ({ statusFilter, topicFilter = ALL_TOPICS, onBack }) => {
   const [items, setItems] = useState<ResearchData[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<string | null>(null);
@@ -80,7 +83,11 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
   }, []);
 
   const filtered = useMemo(() => {
-    const statusFiltered = items.filter((it) => (it.status || '').toLowerCase() === statusFilter.toLowerCase());
+    const statusFiltered = items.filter(
+      (it) =>
+        (it.status || '').toLowerCase() === statusFilter.toLowerCase() &&
+        matchesTopic(it.topics, topicFilter)
+    );
 
     if (!searchTerm) {
         return statusFiltered;
@@ -105,7 +112,7 @@ const ResearchList: React.FC<Props> = ({ statusFilter, onBack }) => {
                 return true;
         }
     });
-  }, [items, statusFilter, searchTerm, searchCategory]);
+  }, [items, statusFilter, topicFilter, searchTerm, searchCategory]);
 
   if (selected) {
     return <ResearchDetail researchTitle={selected} onBack={() => setSelected(null)} />;

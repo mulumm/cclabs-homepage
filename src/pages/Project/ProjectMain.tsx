@@ -1,14 +1,18 @@
 import { useEffect, useMemo, useState, useCallback } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft } from 'lucide-react';
 import type { ProjectData } from '../../types';
 import ProjectList from './ProjectList';
 import ProjectDetail from './ProjectDetail';
+import TopicGate from '../../components/TopicGate';
+import { TOPICS, ALL_TOPICS, matchesTopic } from '../../constants/topics';
+import type { TopicSelection } from '../../constants/topics';
 
 const ProjectPage = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedStatus, setSelectedStatus] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<TopicSelection | null>(null);
 
   useEffect(() => {
     const load = async () => {
@@ -45,6 +49,7 @@ const ProjectPage = () => {
           } else {
             setSelectedStatus(v || null);
             setSelectedProject(null);
+            if (v) setSelectedTopic(ALL_TOPICS);
           }
         }
       } catch {
@@ -57,12 +62,17 @@ const ProjectPage = () => {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
+  const topicProjects = useMemo(
+    () => projects.filter((p) => matchesTopic(p.topics, selectedTopic ?? ALL_TOPICS)),
+    [projects, selectedTopic]
+  );
+
   const filterBy = useCallback((statusName: string, prog?: string) => {
-    return projects.filter((p) => 
+    return topicProjects.filter((p) => 
       (p.status || '').toLowerCase() === statusName.toLowerCase() && 
       (prog ? (p.progress_status || '').toLowerCase() === prog.toLowerCase() : true)
     );
-  }, [projects]);
+  }, [topicProjects]);
 
   const govProgress = useMemo(() => filterBy('Government projects', 'progress').slice(0, 5), [filterBy]);
   const govCompleted = useMemo(() => filterBy('Government projects', 'completed').slice(0, 5), [filterBy]);
@@ -71,12 +81,12 @@ const ProjectPage = () => {
   const indCompleted = useMemo(() => filterBy('Industry Collaboration', 'completed').slice(0, 5), [filterBy]);
 
   const stats = useMemo(() => {
-    const gov = projects.filter((p) => (p.status || '').toLowerCase() === 'government projects').length;
-    const ind = projects.filter((p) => (p.status || '').toLowerCase() === 'industry collaboration').length;
-    const ongoing = projects.filter((p) => (p.progress_status || '').toLowerCase() === 'progress').length;
-    const completed = projects.filter((p) => (p.progress_status || '').toLowerCase() === 'completed').length;
+    const gov = topicProjects.filter((p) => (p.status || '').toLowerCase() === 'government projects').length;
+    const ind = topicProjects.filter((p) => (p.status || '').toLowerCase() === 'industry collaboration').length;
+    const ongoing = topicProjects.filter((p) => (p.progress_status || '').toLowerCase() === 'progress').length;
+    const completed = topicProjects.filter((p) => (p.progress_status || '').toLowerCase() === 'completed').length;
     return { gov, ind, ongoing, completed };
-  }, [projects]);
+  }, [topicProjects]);
 
   const formatDate = (s?: string) => s || '';
 
@@ -85,8 +95,29 @@ const ProjectPage = () => {
   }
 
   if (selectedStatus) {
-    return <ProjectList statusFilter={selectedStatus} onBack={() => setSelectedStatus(null)} onOpen={(title) => setSelectedProject(title)} />;
+    return (
+      <ProjectList
+        statusFilter={selectedStatus}
+        topicFilter={selectedTopic ?? ALL_TOPICS}
+        onBack={() => setSelectedStatus(null)}
+        onOpen={(title) => setSelectedProject(title)}
+      />
+    );
   }
+
+  if (!selectedTopic) {
+    return (
+      <TopicGate
+        eyebrow="Research Portfolio"
+        title="Projects"
+        subtitle="Choose a research topic to explore our projects"
+        allLabel="View All Projects"
+        onSelect={(t) => setSelectedTopic(t)}
+      />
+    );
+  }
+
+  const activeTopic = TOPICS.find((t) => t.key === selectedTopic);
 
   return (
     // [설정 1] color-scheme: dark 및 배경색/글자색 강제 고정
@@ -95,8 +126,16 @@ const ProjectPage = () => {
       style={{ colorScheme: 'dark' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <button
+          onClick={() => setSelectedTopic(null)}
+          className="group inline-flex items-center gap-2 mb-10 px-4 py-2 rounded-full !bg-gray-500/10 hover:!bg-gray-500/20 border !border-white/5 hover:!border-white/15 text-gray-400 hover:!text-white transition-all duration-300"
+        >
+          <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+          <span className="font-medium">Back to Topics</span>
+        </button>
+
         <div className="text-center mb-20">
-          <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">Research Portfolio</h2>
+          <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">{activeTopic ? activeTopic.label : 'All Topics'}</h2>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight !text-white">Projects</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">Our ongoing and completed research projects</p>
         </div>

@@ -1,6 +1,10 @@
 {
   "title": "Network Pharmacological Analysis on the Herbal Combinations Containing Panax Ginseng for Mitigating Inflammation in Respiratory Tracts",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-01-01",
   "end_date": "",

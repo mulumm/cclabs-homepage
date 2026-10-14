@@ -1,6 +1,10 @@
 {
   "title": "신규 저작권 침해 유형 조사 및 대응방안 연구",
   "status": "Industry Collaboration",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2017-07-18",
   "end_date": "2017-09-18",

@@ -1,6 +1,10 @@
 {
   "title": "Amway Skincare Application Development",
   "status": "Industry Collaboration",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2026-04-01",
   "end_date": "2026-06-30",

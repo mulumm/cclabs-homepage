@@ -1,8 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowRight, Globe, BookOpen, Users, Award, Calendar } from 'lucide-react';
+import { ArrowRight, Globe, BookOpen, Users, Award, Calendar, ChevronLeft } from 'lucide-react';
 import type { ResearchData } from '../../types';
 import ResearchList from './ResearchList';
 import ResearchDetail from './ResearchDetail';
+import TopicGate from '../../components/TopicGate';
+import { TOPICS, ALL_TOPICS, matchesTopic } from '../../constants/topics';
+import type { TopicSelection } from '../../constants/topics';
 
 // 순서: International이 먼저 나오도록 설정
 const CATEGORIES = [
@@ -45,6 +48,7 @@ const ResearchPage = () => {
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedResearch, setSelectedResearch] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<TopicSelection | null>(null);
 
   useEffect(() => {
     const load = async () => {
@@ -79,6 +83,7 @@ const ResearchPage = () => {
           const v = decodeURIComponent(h.slice('#research:'.length));
           setSelectedResearch(null);
           setSelectedCategory(v || null);
+          if (v) setSelectedTopic(ALL_TOPICS);
         }
       } catch {
         // ignore
@@ -90,24 +95,50 @@ const ResearchPage = () => {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
-  const filterBy = (status: string) => items.filter((i) => (i.status || '').toLowerCase() === status.toLowerCase());
+  const topicItems = useMemo(
+    () => items.filter((i) => matchesTopic(i.topics, selectedTopic ?? ALL_TOPICS)),
+    [items, selectedTopic]
+  );
+
+  const filterBy = (status: string) => topicItems.filter((i) => (i.status || '').toLowerCase() === status.toLowerCase());
   const categoryItems = (cat: string) => filterBy(cat).slice(0, 3);
 
   const stats = useMemo(() => {
     const counts = CATEGORIES.reduce((acc: Record<string, number>, c) => {
-      acc[c] = items.filter((i) => (i.status || '').toLowerCase() === c.toLowerCase()).length;
+      acc[c] = topicItems.filter((i) => (i.status || '').toLowerCase() === c.toLowerCase()).length;
       return acc;
     }, {} as Record<string, number>);
     return { counts };
-  }, [items]);
+  }, [topicItems]);
 
   if (selectedResearch) {
     return <ResearchDetail researchTitle={selectedResearch} onBack={() => setSelectedResearch(null)} />;
   }
 
   if (selectedCategory) {
-    return <ResearchList statusFilter={selectedCategory} onBack={() => setSelectedCategory(null)} onOpen={(title) => setSelectedResearch(title)} />;
+    return (
+      <ResearchList
+        statusFilter={selectedCategory}
+        topicFilter={selectedTopic ?? ALL_TOPICS}
+        onBack={() => setSelectedCategory(null)}
+        onOpen={(title) => setSelectedResearch(title)}
+      />
+    );
   }
+
+  if (!selectedTopic) {
+    return (
+      <TopicGate
+        eyebrow="Academic Publications"
+        title="Paper & Research"
+        subtitle="Choose a research topic to explore our publications"
+        allLabel="View All Publications"
+        onSelect={(t) => setSelectedTopic(t)}
+      />
+    );
+  }
+
+  const activeTopic = TOPICS.find((t) => t.key === selectedTopic);
 
   return (
     <div 
@@ -115,8 +146,16 @@ const ResearchPage = () => {
       style={{ colorScheme: 'dark' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <button
+          onClick={() => setSelectedTopic(null)}
+          className="group inline-flex items-center gap-2 mb-10 px-4 py-2 rounded-full !bg-gray-500/10 hover:!bg-gray-500/20 border !border-white/5 hover:!border-white/15 text-gray-400 hover:!text-white transition-all duration-300"
+        >
+          <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+          <span className="font-medium">Back to Topics</span>
+        </button>
+
         <div className="text-center mb-20">
-          <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">Academic Publications</h2>
+          <h2 className="text-[#4dabf7] font-semibold tracking-widest uppercase text-lg mb-3">{activeTopic ? activeTopic.label : 'All Topics'}</h2>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight !text-white">Paper & Research</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">Let me introduce the academic papers and research results of our lab</p>
         </div>

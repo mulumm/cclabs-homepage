@@ -1,6 +1,10 @@
 {
   "title": "2차전지 검사장비 최적화 알고리즘 개발",
   "status": "Industry Collaboration",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2024-05-02",
   "end_date": "2024-12-07",

@@ -1,6 +1,10 @@
 {
   "title": "Digital Watermarking Using Group Quantization for CityGML Objects",
   "status": "International conference",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "International Conference on Ubiquitous and Future Networks(ICUFN)",
   "date": {

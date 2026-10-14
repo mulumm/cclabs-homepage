@@ -1,0 +1,24 @@
+{
+  "title": "QML: quantum machine learning and vanilla GAN-based classification of dental caries using bitewing radiographs",
+  "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
+  "progress_status": "publish",
+  "scholarly_society": "Cluster Computing",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2026-06-15"
+  },
+  "link": "https://link.springer.com/article/10.1007/s10586-026-06116-7",
+  "authors": "Hassaan Malik, Ahmad Naeem, Daesik Jeong, Rizwan Ali Naqvi, Seung-Won Lee",
+  "abstract": "Dental caries are bacterial infections that cause demineralization and loss of the tooth structure. Bitewing radiography (BWR) is performed, which captures the crowns of the top and bottom teeth for identifying dental caries. If dentists are not able to identify dental caries at an early stage, they may lead the patients to severe complications such as tooth pain, tooth loss, or decay. Thus, this study aims to use BWR images for the classification of dental caries, such as carious lesions and non-carious lesions. This work proposed two novel models, i.e., quantum machine learning (QML) and classical deep learning (CDL), for the classification of dental caries using BWR images. The recent advances in quantum computing (QC) with QML have inspired researchers to investigate novel approaches and strategies. The proposed QML model is based on a 4-qubit quantum circuit. These two proposed models are trained and tested on two publicly available benchmark dental caries datasets. A very limited number of BWR images are contained in the dental caries datasets. Therefore, the proposed framework contains two phases: in the first phase, a vanilla generative adversarial network (V-GAN) is applied to synthetically increase the size of the dataset for better training and testing of the proposed models. In the second phase, the classification of dental caries using QML and CDL models has been performed. Additionally, the performance of these models has been compared with six baseline models, such as ResNet-50 (H1), VGG-19 (H2), DenseNet-169 (H3), Xception (H4), Inception-V3 (H5), and DenseNet-201 (H6). The QML model achieved 98.95% accuracy (S1), 99.06% sensitivity (S2), 98.84% specificity (S3), 98.75% precision (S4), 98.91% F1-score (S5), 97.89% Matthews correlation coefficient (S6), and 96.13% Fowlkes–Mallows index (S7), which is superior to CDL and six baseline models. The proposed QML model is effective and produced significant outcomes when compared to recent work in this area, and can assist dentists in identifying carious lesions from BWR images.",
+  "method": "This work proposed two novel models, i.e., quantum machine learning (QML) and classical deep learning (CDL), for the classification of dental caries using BWR images. The proposed QML model is based on a 4-qubit quantum circuit. These two proposed models are trained and tested on two publicly available benchmark dental caries datasets. A very limited number of BWR images are contained in the dental caries datasets. Therefore, the proposed framework contains two phases: in the first phase, a vanilla generative adversarial network (V-GAN) is applied to synthetically increase the size of the dataset for better training and testing of the proposed models. In the second phase, the classification of dental caries using QML and CDL models has been performed. Additionally, the performance of these models has been compared with six baseline models, such as ResNet-50 (H1), VGG-19 (H2), DenseNet-169 (H3), Xception (H4), Inception-V3 (H5), and DenseNet-201 (H6).",
+  "result": "The QML model achieved 98.95% accuracy (S1), 99.06% sensitivity (S2), 98.84% specificity (S3), 98.75% precision (S4), 98.91% F1-score (S5), 97.89% Matthews correlation coefficient (S6), and 96.13% Fowlkes–Mallows index (S7), which is superior to CDL and six baseline models. The proposed QML model is effective and produced significant outcomes when compared to recent work in this area, and can assist dentists in identifying carious lesions from BWR images.",
+  "method_image_name": "QML quantum machine learning and vanilla GAN-based classification of dental caries using bitewing radiographs.png",
+  "result_image_name": "QML quantum machine learning and vanilla GAN-based classification of dental caries using bitewing radiographs.png",
+  "createdAt": "2026-10-02T01:52:12.445Z"
+}

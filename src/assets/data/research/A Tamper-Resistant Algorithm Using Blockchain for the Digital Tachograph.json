@@ -1,6 +1,10 @@
 {
   "title": "A Tamper-Resistant Algorithm Using Blockchain for the Digital Tachograph",
   "status": "International journal",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Electronics",
   "date": {

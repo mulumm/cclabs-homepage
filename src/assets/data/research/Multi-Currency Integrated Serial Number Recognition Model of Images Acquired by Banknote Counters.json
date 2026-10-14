@@ -1,6 +1,10 @@
 {
   "title": "Multi-Currency Integrated Serial Number Recognition Model of Images Acquired by Banknote Counters",
   "status": "International journal",
+  "topics": [
+    "applied-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "MDPI(SENSORS)",
   "date": {

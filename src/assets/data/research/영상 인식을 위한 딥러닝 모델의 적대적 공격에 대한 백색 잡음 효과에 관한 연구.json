@@ -1,6 +1,10 @@
 {
   "title": "영상 인식을 위한 딥러닝 모델의 적대적 공격에 대한 백색 잡음 효과에 관한 연구",
   "status": "Korean journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "한국정보전자통신기술학회 논문지(JIIECT)",
   "date": {

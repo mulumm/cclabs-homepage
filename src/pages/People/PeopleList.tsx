@@ -4,7 +4,7 @@ import type { PersonData } from '../../types';
 import PeopleDetail from './PeopleDetail';
 
 // canonical categories
-const CATEGORIES = ['Advisor', 'Alumni', "Master's Student", 'Undergraduate Student'] as const;
+const CATEGORIES = ['Advisor', 'Research Professor', 'Ph.D. Student', "Master's Student", 'Undergraduate Student', 'Alumni'] as const;
 type Category = (typeof CATEGORIES)[number];
 const categories: Category[] = [...CATEGORIES];
 
@@ -47,7 +47,9 @@ const PeoplePage = () => {
           const mapToCanonical = (r: string): Category | null => {
             const lowered = r.toLowerCase();
             if (lowered === 'advisor') return 'Advisor';
+            if (lowered === 'research professor' || lowered === '연구교수') return 'Research Professor';
             if (lowered === 'alumni') return 'Alumni';
+            if (lowered === 'ph.d. student' || lowered === 'ph.d student' || lowered === 'phd student' || lowered === 'doctoral student' || lowered === 'ph.d.' || lowered === 'phd') return 'Ph.D. Student';
             if (lowered === "master's student" || lowered === 'masters student' || lowered === 'master student' || lowered === 'm.s.' || lowered === 'ms') return "Master's Student";
             if (lowered === 'undergraduate student' || lowered === 'undergrad' || lowered === 'undergraduate' || lowered === 'ug') return 'Undergraduate Student';
             for (const c of categories) {

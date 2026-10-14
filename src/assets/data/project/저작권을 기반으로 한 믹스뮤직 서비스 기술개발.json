@@ -1,6 +1,10 @@
 {
   "title": "저작권을 기반으로 한 믹스뮤직 서비스 기술개발",
   "status": "Industry Collaboration",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2015-08-03",
   "end_date": "2016-02-29",

@@ -1,0 +1,18 @@
+{
+  "title": "비정형 객체의 인식, 생성, 이해를 통한 추상 영역의 인공지능 기술 개발",
+  "status": "Government projects",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "aims",
+  "progress_status": "completed",
+  "start_date": "2022-03-01",
+  "end_date": "2026-02-28",
+  "PI": "강상욱",
+  "participant": "-",
+  "project_method": "한국연구재단",
+  "project_target": "(연구 목표)\n예술 활동, 사물의 추상화를 통한 간편하고 인간적인 소통(communication) 및 노이즈가 있는 환경 등 비정형적인 일상에서의 인공지능 활용을 위해 사람과 유사하게 객체를 인식하고, 창작하고, 이해할 수 있는 추상영역의 인공지능 기술 개발\n\n(연구 내용)\n- 확장성 있는 비정형 객체 인식을 위한 다중 도메인 인식용 심층신경망 개발\n- 경험 DB와 심층신경망의 인지기능 결합을 위한 DB-NN 앙상블 모델 개발\n- 체계적 비정형 객체 인식 연구를 위한 데이터셋 수집 및 구축\n- 응용 연구 (비정형객체 생성, 잡음 필터링 없는 인식 모델)",
+  "abstract": "A Study on Abstractional Artificial Intelligence through the recognition, generation and understanding of atypical objects",
+  "imageName": "aims_abstractional_ai_01.png",
+  "createdAt": "2026-10-01T06:06:53.592Z"
+}

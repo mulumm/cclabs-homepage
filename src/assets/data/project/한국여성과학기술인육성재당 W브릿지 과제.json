@@ -1,6 +1,10 @@
 {
   "title": "성별 맞춤 간독성 예측 및 정밀 위험도 평가 체계 구축",
   "status": "Government projects",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "completed",
   "start_date": "2026-04-01",
   "end_date": "",

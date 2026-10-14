@@ -12,10 +12,11 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const menuItems: MenuType[] = ['Main', 'People', 'Research', 'Project', 'Playground','News', 'Patent', 'Recruitment'];
+  // Playground는 준비 중이라 메뉴에서 숨김 (다시 보이려면 아래 배열에 'Playground' 추가)
+  const menuItems: MenuType[] = ['Main', 'People', 'Research', 'Project', 'News', 'Patent', 'Recruitment'];
 
   const subMenus: { [key: string]: string[] } = {
-    People: ['ADVISOR', 'ALUMNI', "MASTER'S STUDENTS", 'UNDERGRADUATE STUDENTS'],
+    People: ['ADVISOR', 'RESEARCH PROFESSORS', 'PH.D. STUDENTS', "MASTER'S STUDENTS", 'UNDERGRADUATE STUDENTS', 'ALUMNI'],
     Research: ['International Conference', 'International Journal', 'Korean Conference', 'Korean Journal'],
     Project: ['GOVERNMENT PROJECT', 'INDUSTRY COLLABORATION'],
   };
@@ -26,6 +27,8 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
     if (menu === 'People') {
       if (lowered.includes('alumni')) return 'Alumni';
       if (lowered.includes('advisor')) return 'Advisor';
+      if (lowered.includes('research professor')) return 'research professor';
+      if (lowered.includes('ph.d') || lowered.includes('phd')) return 'ph.d. student';
       if (lowered.includes('master')) return "master's student";
       if (lowered.includes('undergrad')) return 'undergraduate student';
       return subItem;
@@ -95,8 +98,8 @@ const Header = ({ currentPage, onPageChange }: HeaderProps) => {
           {/* 로고 영역 */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => handleNavigation('Main')}>
             <img
-              src="/cclab_icon.svg"
-              alt="CCLAB"
+              src="/IC_SRI_logo.svg"
+              alt="IC-SRI"
               className="h-10 w-auto object-contain hover:opacity-90 transition-opacity"
             />
           </div>

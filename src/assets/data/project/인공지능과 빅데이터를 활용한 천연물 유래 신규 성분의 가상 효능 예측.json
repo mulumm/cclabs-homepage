@@ -1,6 +1,10 @@
 {
   "title": "인공지능과 빅데이터를 활용한 천연물 유래 신규 성분의 가상 효능 예측",
   "status": "Government projects",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "progress",
   "start_date": "2025-03-01",
   "end_date": "2026-02-28",

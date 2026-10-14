@@ -1,6 +1,10 @@
 {
   "title": "Art painting detection and identification based on deep learning and image local features",
   "status": "International journal",
+  "topics": [
+    "copyright-ai"
+  ],
+  "lab_origin": "cclab",
   "progress_status": "publish",
   "scholarly_society": "Multimedia Tools and Applications",
   "date": {

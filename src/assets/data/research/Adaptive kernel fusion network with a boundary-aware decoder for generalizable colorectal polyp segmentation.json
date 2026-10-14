@@ -1,0 +1,24 @@
+{
+  "title": "Adaptive kernel fusion network with a boundary-aware decoder for generalizable colorectal polyp segmentation",
+  "status": "International journal",
+  "topics": [
+    "bio-health"
+  ],
+  "lab_origin": "cclab",
+  "progress_status": "publish",
+  "scholarly_society": "Expert Systems With Applications 331 ",
+  "date": {
+    "prepare": "",
+    "submit": "",
+    "accept": "",
+    "publish": "2026-06-06"
+  },
+  "link": "https://doi.org/10.1016/j.eswa.2026.133162",
+  "authors": "Syeda Mohtadia Zahra Naqvi, Rizwan Ali Naqvi, Muhammad Zubair Islam, Zain Ul Abidin, Zoraiz Elya, Daesik Jeong, Yeonhyeon Gu, Seung-Won Lee",
+  "abstract": "대장내시경 영상에서 작고 저대비인 용종, 큰 형태 변이, 기관 간 도메인 시프트 문제를 해결하기 위해 **경계 인식 디코더를 갖춘 Adaptive Kernel Fusion Network(AKF-Net)**를 제안합니다. 피라미드 구조 인코더에 얕은/중간/깊은 단계별로 세 가지 상보적 컨텍스트 모듈(CAHFR, MK-DRB, TGC)을 배치하고, 교차 스케일 디코더에 RHBA를 통합해 경계 모호성을 명시적으로 완화합니다. 5개 공개 벤치마크에서 in-domain Dice는 CVC-ClinicDB 94.0%, Kvasir-SEG 92.3%, cross-dataset은 BKAI-IGH 84.5%, CVC-ColonDB 81.5%, ETIS 81.7%를 기록했습니다. 추가로 피부병변·족부궤양·유방 초음파 분할에도 적용 가능성을 보였습니다.",
+  "method": "AKF-Net은 PVTv2-B2를 백본으로 쓰는 인코더-디코더 구조로(입력 352×352, 4단계 특징 C∈{64,128,320,512}), 고정된 융합 규칙 대신 샘플별 receptive-field 라우팅을 학습한다는 점이 핵심입니다. 얕은 단계의 CAHFR은 전역 컨텍스트 가중치로 배경을 억제한 뒤 3×3 average pooling을 뺀 고주파 잔차를 학습 스칼라 β_c로 더해 엣지를 보존하고(f₂ = p₂^ctx + β_c·ψ_C(h₂)), 중간 단계의 MK-DRB는 3×3·5×5 depthwise 분기를 GAP 기반 게이팅과 온도 스케일 Softmax로 융합하며([a₃,a₅] = Softmax(g(GAP(u₃))/T), 민감도 분석으로 T=0.5 채택), 깊은 단계의 TGC는 채널 어텐션으로 전역 의미를 주입합니다(g₅ = p₅ ⊙ σ(W₂ᵀδ(W₁ᵀGAP(p₅)))). 디코더에서는 보조 로짓 z_aux4를 시그모이드로 변환해 전경/배경/경계 마스크를 정의하고(m_bd = 4p(1−p)) 영역별 프로토타입 채널 어텐션과 dilated conv 공간 어텐션을 잔차 블렌딩하는 RHBA가 외부 엣지 주석 없이 경계를 정교화합니다. 손실은 구조 인식 손실(weighted BCE + weighted IoU)에 Sobel 기반 경계 손실, 명시적 엣지 감독, 심층 감독을 결합했습니다(λ_aux4=0.4, λ_aux3=0.2, λ_bd=0.15, λ_edge=0.25). 학습은 PraNet 프로토콜을 따라 CVC-ClinicDB 550장 + Kvasir-SEG 900장을 쓰고, CVC-ColonDB(380), BKAI-IGH(200), ETIS(196)는 fine-tuning 없이 교차 데이터셋 평가에만 사용했으며, Adam·lr 1e-4·batch 8·50 epochs에 seed {42,777,999}로 3회 반복했습니다.",
+  "result": "In-domain CVC-ClinicDB에서 mDice 0.940/mIoU 0.892로 BMANet 대비 각각 0.9%p, 1.0%p 상회했고 HD95 7.66px, ASSD 1.95px로 경계 품질이 가장 우수했습니다. Kvasir-SEG(0.923)에서는 BMANet에 소폭 뒤지며 recall은 높고 precision은 낮은 trade-off를 보였습니다. Cross-dataset에서는 BKAI-IGH 0.845(Polyp-PVT 대비 +2.5%p), ETIS 0.817(+2.8%p)로 도메인 시프트 강건성을 입증했으나 CVC-ColonDB(0.815)는 CIFFormer보다 낮았습니다. 3회 반복 실험의 paired t-test에서 UNet·PraNet 대비 전 지표 p<0.01, Polyp-PVT 대비 mDice p=0.038로 유의했습니다. Ablation에서 네 모듈 모두 상보적이며(전체 결합 시 최고 성능), T=0.5가 최적임을 확인했고, 25.13M 파라미터·10.43G MACs·71.32 FPS로 Polyp-PVT급 경량성을 유지했습니다(연산량의 92.23%는 백본).",
+  "method_image_name": "Adaptive kernel fusion network with a boundary-aware decoder for generalizable colorectal polyp segmentation.png",
+  "result_image_name": "Adaptive kernel fusion network with a boundary-aware decoder for generalizable colorectal polyp segmentation.png",
+  "createdAt": "2026-10-02T02:15:06.227Z"
+}
